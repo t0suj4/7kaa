@@ -21,8 +21,10 @@
 //Filename    : vga_sdl.h
 //Description : Header file for class OVGA (SDL version)
 
-#ifndef __VGA_SDL_H
-#define __VGA_SDL_H
+#ifdef _VGA_SDL_H_
+#error "Multiple inclusion of vga_sdl.h"
+#endif
+#define _VGA_SDL_H_
 
 #include <OCOLTBL.h>
 #include <vga_base.h>
@@ -81,5 +83,3 @@ private:
 typedef VgaSDL Vga;
 
 //--------------------------------------------//
-
-#endif

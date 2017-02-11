@@ -21,8 +21,10 @@
 //Filename    : OUNITALL.H
 //Description : Include header files of all firm types
 
-#ifndef __OUNITALL_H
-#define __OUNITALL_H
+#ifdef _OUNITALL_H_
+#error "Multiple inclusion of OUNITALL.h"
+#endif
+#define _OUNITALL_H_
 
 #include <OU_CARA.h>
 #include <OU_VEHI.h>
@@ -30,5 +32,3 @@
 #include <OU_CART.h>
 #include <OU_MONS.h>
 #include <OU_GOD.h>
-
-#endif

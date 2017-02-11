@@ -21,20 +21,16 @@
 //Filename	  : OTALKRES.H
 //Description : Header file for class TalkRes
 
-#ifndef __OTALKRES_H
-#define __OTALKRES_H
+#ifdef _OTALKRES_H_
+#error "Multiple inclusion of OTALKRES.h"
+#endif
+#define _OTALKRES_H_
 
-#ifndef __OSTR_H
 #include <OSTR.h>
-#endif
 
-#ifndef __ODYNARRB_H
 #include <ODYNARRB.h>
-#endif
 
-#ifndef __OTALKMSG_H
 #include <OTALKMSG.h>
-#endif
 
 //-------- define constant ----------//
 
@@ -213,5 +209,3 @@ private:
 extern TalkRes talk_res;
 
 //------------------------------------//
-
-#endif

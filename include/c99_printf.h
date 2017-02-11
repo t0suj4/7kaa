@@ -21,8 +21,10 @@
 //Filename    : c99_printf.h
 //Description : Wrapper to MSVC printf for c99 compatibility
 
-#ifndef __C99_PRINTF_H
-#define __C99_PRINTF_H
+#ifdef _C99_PRINTF_H_
+#error "Multiple inclusion of c99_printf.h"
+#endif
+#define _C99_PRINTF_H_
 
 #include <stdio.h>
 
@@ -58,5 +60,3 @@ inline int c99_snprintf(char *outBuf, size_t size, const char *format, ...)
 }
 
 #endif // _MSC_VER < 1900
-
-#endif

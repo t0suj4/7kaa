@@ -21,8 +21,10 @@
 //Filename    : VGAFUN.H
 //Description : Header file for image manipulation functions
 
-#ifndef __VGAFUN_H
-#define __VGAFUN_H
+#ifdef _IMGFUN_H_
+#error "Multiple inclusion of IMGFUN.h"
+#endif
+#define _IMGFUN_H_
 
 #include <asmfun.h>
 
@@ -90,6 +92,4 @@ extern "C"
 };
 
 //-------------------------------------------//
-
-#endif
 

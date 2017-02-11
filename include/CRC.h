@@ -21,8 +21,10 @@
 // Filename    : CRC.H
 // Description : header of assembly function crc.asm
 
-#ifndef __CRC_H
-#define __CRC_H
+#ifdef _CRC_H_
+#error "Multiple inclusion of CRC.h"
+#endif
+#define _CRC_H_
 
 #include <asmfun.h>
 
@@ -33,6 +35,3 @@ extern "C"
 {
 	CRC_TYPE IMGcall crc8(unsigned char *, int);
 }
-
-
-#endif

@@ -21,8 +21,10 @@
 //Filename	  : OGAME.H
 //Description : Header file for Game class
 
-#ifndef __OGAME_H
-#define __OGAME_H
+#ifdef _OGAME_H_
+#error "Multiple inclusion of OGAME.h"
+#endif
+#define _OGAME_H_
 
 #include <ALL.h>
 #include <OCONFIG.h>
@@ -163,7 +165,5 @@ extern Game game;
 extern char game_demo_mode, game_design_mode;
 
 //-------------------------------------//
-
-#endif
 
 

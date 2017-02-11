@@ -18,8 +18,10 @@
  *
  */
 
-#ifndef _DBGLOG_H
-#define _DBGLOG_H
+#ifdef _DBGLOG_H_
+#error "Multiple inclusion of dbglog.h"
+#endif
+#define _DBGLOG_H_
 
 #define DBGLOG_ALL_OFF   0x00
 #define DBGLOG_ERR_ON    0x01
@@ -55,5 +57,3 @@ extern void dbglog_printf(enum __dbglog_class msg_class, struct __dbglog_channel
 #define DBGLOG_DEFAULT_CHANNEL(s)
 
 #endif /* DEBUG */
-
-#endif /* _DBGLOG_H */

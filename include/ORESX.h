@@ -21,8 +21,10 @@
 //Filename    : ORESX.H
 //Description : Header file of Object ResourceIdx
 
-#ifndef __ORESX_H
-#define __ORESX_H
+#ifdef _ORESX_H_
+#error "Multiple inclusion of ORESX.h"
+#endif
+#define _ORESX_H_
 
 #include <stdint.h>
 
@@ -86,5 +88,3 @@ public:
 };
 
 //--------------------------------------------//
-
-#endif

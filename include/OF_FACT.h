@@ -21,12 +21,12 @@
 //Filename    : OF_FACT.H
 //Description : Header of FirmFactory
 
-#ifndef __OF_FACT_H
-#define __OF_FACT_H
-
-#ifndef __OFIRM_H
-#include <OFIRM.h>
+#ifdef _OF_FACT_H_
+#error "Multiple inclusion of OF_FACT.h"
 #endif
+#define _OF_FACT_H_
+
+#include <OFIRM.h>
 
 //------- Define class FirmFactory --------//
 
@@ -94,5 +94,3 @@ private:
 #pragma pack()
 
 //--------------------------------------//
-
-#endif

@@ -22,8 +22,10 @@
 // Description : in-game menu (async version)
 
 
-#ifndef __OINGMENU_H
-#define __OINGMENU_H
+#ifdef _OINGMENU_H_
+#error "Multiple inclusion of OINGMENU.h"
+#endif
+#define _OINGMENU_H_
 
 class InGameMenu
 {
@@ -48,5 +50,3 @@ public:
 };
 
 extern InGameMenu in_game_menu;
-
-#endif

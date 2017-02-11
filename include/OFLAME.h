@@ -22,8 +22,10 @@
 // Description : header file of class Flame
 // Ownership   : Gilbert
 
-#ifndef __OFLAME_H
-#define __OFLAME_H
+#ifdef _OFLAME_H_
+#error "Multiple inclusion of OFLAME.h"
+#endif
+#define _OFLAME_H_
 
 //---------- define constant -------//
 #define FLAME_GROW_STEP 4
@@ -84,5 +86,3 @@ private:
 };
 
 extern Flame flame[FLAME_GROW_STEP];
-
-#endif

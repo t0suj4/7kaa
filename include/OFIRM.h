@@ -21,32 +21,22 @@
 //Filename    : OFIRM.H
 //Description : Header file of Object Firm
 
-#ifndef __OFIRM_H
-#define __OFIRM_H
+#ifdef _OFIRM_H_
+#error "Multiple inclusion of OFIRM.h"
+#endif
+#define _OFIRM_H_
 
-#ifndef __GAMEDEF_H
 #include <GAMEDEF.h>
-#endif
 
-#ifndef __OFIRMA_H
 #include <OFIRMA.h>
-#endif
 
-#ifndef __OINFO_H
 #include <OINFO.h>
-#endif
 
-#ifndef __OFIRMID_H
 #include <OFIRMID.h>
-#endif
 
-#ifndef __OFIRMRES_H
 #include <OFIRMRES.h>
-#endif
 
-#ifndef __OSKILL_H
 #include <OSKILL.h>
-#endif
 
 //----------- Define constant ------------//
 
@@ -435,6 +425,4 @@ protected:
 #pragma pack()
 
 //------------------------------------------//
-
-#endif
 

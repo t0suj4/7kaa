@@ -21,16 +21,14 @@
 //Filename    : ONATIONA.H
 //Description : Object nation array
 
-#ifndef __ONATIONA_H
-#define __ONATIONA_H
+#ifdef _ONATIONA_H_
+#error "Multiple inclusion of ONATIONA.h"
+#endif
+#define _ONATIONA_H_
 
-#ifndef __ODYNARRB_H
 #include <ODYNARRB.h>
-#endif
 
-#ifndef __ONATION_H
 #include <ONATION.h>
-#endif
 
 //---- at least wait for 1 year after a nation is deleted before setting up a new nation. ---//
 
@@ -171,5 +169,3 @@ struct NewNationPara
 extern NationArray nation_array;
 
 //---------------------------------------------//
-
-#endif

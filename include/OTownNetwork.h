@@ -23,8 +23,10 @@
 //              which is binary compatible with existing data by dynamically
 //				generating from existing data
 
-#ifndef __OTOWNNETWORK_H
-#define __OTOWNNETWORK_H
+#ifdef _OTOWNNETWORK_H_
+#error "Multiple inclusion of OTownNetwork.h"
+#endif
+#define _OTOWNNETWORK_H_
 
 #include <vector>
 #include <ODYNARRB.h>
@@ -95,5 +97,3 @@ private:
 };
 
 extern TownNetworkArray town_network_array;
-
-#endif

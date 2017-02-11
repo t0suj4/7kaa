@@ -21,16 +21,14 @@
 //Filename    : OF_MINE.H
 //Description : Header of FirmMine
 
-#ifndef __OF_MINE_H
-#define __OF_MINE_H
+#ifdef _OF_MINE_H_
+#error "Multiple inclusion of OF_MINE.h"
+#endif
+#define _OF_MINE_H_
 
-#ifndef __OFIRM_H
 #include <OFIRM.h>
-#endif
 
-#ifndef __ORAWRES_H
 #include <ORAWRES.h>
-#endif
 
 //-------- define constant ---------//
 
@@ -99,5 +97,3 @@ private:
 #pragma pack()
 
 //--------------------------------------//
-
-#endif

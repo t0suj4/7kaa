@@ -32,8 +32,10 @@
  * %End-Header%
  */
 
-#ifndef _MISC_UUID_H
-#define _MISC_UUID_H
+#ifdef _MISC_UUID_H_
+#error "Multiple inclusions of misc_uuid.h"
+#endif
+#define _MISC_UUID_H_
 
 typedef unsigned char guuid_t[16];
 
@@ -54,6 +56,4 @@ typedef unsigned char guuid_t[16];
 #else
 #define UUID_DEFINE(name,u0,u1,u2,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,u14,u15) \
 	static const guuid_t name = {u0,u1,u2,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,u14,u15}
-#endif
-
 #endif

@@ -23,8 +23,10 @@
 // Ownership   : Gilbert
 
 
-#ifndef __OANLINE_H
-#define __OANLINE_H
+#ifdef _OANLINE_H_
+#error "Multiple inclusion of OANLINE.h"
+#endif
+#define _OANLINE_H_
 
 class VgaBuf;
 
@@ -70,4 +72,3 @@ private:
 
 extern AnimLine anim_line;
 
-#endif

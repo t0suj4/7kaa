@@ -21,8 +21,10 @@
 //Filename    : OBUTT3D.H
 //Description : Header file of button object
 
-#ifndef __OBUTT3D_H
-#define __OBUTT3D_H
+#ifdef _OBUTT3D_H_
+#error "Multiple inclusion of OBUTT3D.h"
+#endif
+#define _OBUTT3D_H_
 
 //------- Define button type -------//
 
@@ -100,5 +102,3 @@ public:
 };
 
 //-------------------------------------------------//
-
-#endif

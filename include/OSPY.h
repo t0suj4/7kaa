@@ -21,12 +21,12 @@
 //Filename    : OSPY.H
 //Description : class Spy
 
-#ifndef __OSPY_H
-#define __OSPY_H
-
-#ifndef __ODYNARRB_H
-#include <ODYNARRB.h>
+#ifdef _OSPY_H_
+#error "Multiple inclusion of OSPY.h"
 #endif
+#define _OSPY_H_
+
+#include <ODYNARRB.h>
 
 //------- define constant -------//
 
@@ -199,5 +199,3 @@ public:
 extern SpyArray spy_array;
 
 //----------------------------------------//
-
-#endif

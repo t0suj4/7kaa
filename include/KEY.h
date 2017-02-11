@@ -21,8 +21,10 @@
 //Filename    : KEY.H
 //Description : Header file for Object Keyboard input handler
 
-#ifndef __KEY_H
-#define __KEY_H
+#ifdef _KEY_H_
+#error "Multiple inclusion of KEY.H"
+#endif
+#define _KEY_H_
 
 //-------------------------------------------------------//
 //
@@ -196,6 +198,4 @@
 #define   KEY_ALT_F10      0x7100
 */
 //-------------------------------------------------//
-
-#endif
 

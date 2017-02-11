@@ -21,20 +21,16 @@
 //Filename    : OMOUSECR.H
 //Description : Header file of Object Cursor resource
 
-#ifndef __OMOUSECR_H
-#define __OMOUSECR_H
+#ifdef _OMOUSECR_H_
+#error "Multiple inclusion of OMOUSECR.h"
+#endif
+#define _OMOUSECR_H_
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
 
-#ifndef __OVGA_H
 #include <OVGA.h>
-#endif
 
-#ifndef __ORESDB_H
 #include <ORESDB.h>
-#endif
 
 //------------ Define cursor id. ----------//
 
@@ -190,6 +186,4 @@ private:
 extern MouseCursor mouse_cursor;
 
 //----------------------------------------------//
-
-#endif
 

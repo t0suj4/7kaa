@@ -21,16 +21,14 @@
 //Filename    : ORAWRES.H
 //Description : Header file of object RawRes
 
-#ifndef __ORAWRES_H
-#define __ORAWRES_H
+#ifdef _ORAWRES_H_
+#error "Multiple inclusion of ORAWRES.h"
+#endif
+#define _ORAWRES_H_
 
-#ifndef __ORES_H
 #include <ORES.h>
-#endif
 
-#ifndef __ODYNARR_H
 #include <ODYNARR.h>
-#endif
 
 //------------- define constant --------------//
 
@@ -127,5 +125,3 @@ private:
 extern RawRes raw_res;
 
 //----------------------------------------------------//
-
-#endif

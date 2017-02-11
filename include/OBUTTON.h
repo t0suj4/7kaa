@@ -21,12 +21,12 @@
 //Filename    : OBUTTON.H
 //Description : Header file of button object
 
-#ifndef __OBUTTON_H
-#define __OBUTTON_H
-
-#ifndef __OVGABUF_H
-#include <OVGABUF.h>
+#ifdef _OBUTTON_H_
+#error "Multiple inclusion of OBUTTON.h"
 #endif
+#define _OBUTTON_H_
+
+#include <OVGABUF.h>
 
 //------- Define constant ---------//
 
@@ -141,5 +141,3 @@ public:
 };
 
 //-------------------------------------------------//
-
-#endif

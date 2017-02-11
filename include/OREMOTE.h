@@ -21,8 +21,10 @@
 //Filename    : OREMOTE.H
 //Description : Header file of object Remote
 
-#ifndef __OREMOTE_H
-#define __OREMOTE_H
+#ifdef _OREMOTE_H_
+#error "Multiple inclusion of OREMOTE.h"
+#endif
+#define _OREMOTE_H_
 
 // #ifndef __WINDOWS_
 // #include <windows.h>
@@ -461,5 +463,3 @@ public:
 extern Remote remote;
 
 //------------------------------------//
-
-#endif

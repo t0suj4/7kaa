@@ -21,16 +21,14 @@
 //Filename    : OSFRMRES.H
 //Description : Header file of Object SpriteFrame resource
 
-#ifndef __OSFRMRES_H
-#define __OSFRMRES_H
+#ifdef _OSFRMRES_H_
+#error "Multiple inclusion of OSFRMRES.h"
+#endif
+#define _OSFRMRES_H_
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
 
-#ifndef __OSPRTRES_H
 #include <OSPRTRES.h>
-#endif
 
 
 //-------- Define struct SpriteFrameRec ----------//
@@ -92,6 +90,4 @@ public:
 extern SpriteFrameRes sprite_frame_res;
 
 //----------------------------------------------//
-
-#endif
 

@@ -21,16 +21,14 @@
 //Filename    : OBOX.H
 //Description : Header file of button object
 
-#ifndef __OBOX_H
-#define __OBOX_H
+#ifdef _OBOX_H_
+#error "Multiple inclusion of OBOX.h"
+#endif
+#define _OBOX_H_
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
 
-#ifndef __OBUTTON_H
 #include <OBUTTON.h>
-#endif
 
 //------- constant for arrow box ----------//
 
@@ -84,5 +82,3 @@ public:
 extern Box box;
 
 //----------------------------------------------//
-
-#endif

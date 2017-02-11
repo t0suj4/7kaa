@@ -22,9 +22,10 @@
 // Description : in-game option menu (async version)
 
 
-#ifndef __OOPTMENU_H
-#define __OOPTMENU_H
-
+#ifdef _OOPTMENU_H_
+#error "Multiple inclusion of OOPTMENU.h"
+#endif
+#define _OOPTMENU_H_
 
 #include <OCONFIG.h>
 #include <OBUTTCUS.h>
@@ -68,4 +69,3 @@ public:
 
 extern OptionMenu option_menu;
 
-#endif

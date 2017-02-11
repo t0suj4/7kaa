@@ -21,8 +21,10 @@
 //Filename	  : OSYS.H
 //Description : Header file for Game class
 
-#ifndef __OSYS_H
-#define __OSYS_H
+#ifdef _OSYS_H_
+#error "Multiple inclusion of OSYS.h"
+#endif
+#define _OSYS_H_
 
 #include <ALL.h>
 #include <stdint.h>
@@ -246,7 +248,5 @@ extern int	debug_sim_game_type;
 #endif
 
 //-------------------------------------//
-
-#endif
 
 

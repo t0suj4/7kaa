@@ -21,20 +21,16 @@
 //Filename    : OSPRITE.H
 //Description : Sprite object
 
-#ifndef __OSPRITE_H
-#define __OSPRITE_H
+#ifdef _OSPRITE_H_
+#error "Multiple inclusion of OSPRITE.h"
+#endif
+#define _OSPRITE_H_
 
-#ifndef __ODYNARRB_H
 #include <ODYNARRB.h>
-#endif
 
-#ifndef __OSPRTRES_H
 #include <OSPRTRES.h>
-#endif
 
-#ifndef __OWORLD_H
 #include <OWORLD.h>
-#endif
 
 //---------- Define action types ---------//
 
@@ -208,5 +204,3 @@ extern unsigned long last_unit_attack_profile_time;
 extern unsigned long unit_attack_profile_time;
 extern unsigned long last_unit_assign_profile_time;
 extern unsigned long unit_assign_profile_time;
-
-#endif

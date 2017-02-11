@@ -22,8 +22,10 @@
 // Description : header file for class SnowLayer
 // Ownership   : Gilbert
 
-#ifndef __OSNOW_H
-#define __OSNOW_H
+#ifdef _OSNOW_H_
+#error "Multiple inclusion of OSNOW.h"
+#endif
+#define _OSNOW_H_
 
 //------------ Define constant -------------//
 
@@ -78,5 +80,3 @@ public:
 };
 
 //------------------------------------------//
-
-#endif

@@ -21,12 +21,12 @@
 //Filename    : OMLINK.H
 //Description : Header file of object Multiple Linker
 
-#ifndef __OMLINK_H
-#define __OMLINK_H
-
-#ifndef __ODYNARRB_H
-#include <ODYNARRB.h>
+#ifdef _OMLINK_H_
+#error "Multiple inclusion of OMLINK.h"
 #endif
+#define _OMLINK_H_
+
+#include <ODYNARRB.h>
 
 //--------- Define struct MLinkNode -----------//
 
@@ -66,5 +66,3 @@ public:
 };
 
 //---------------------------------------------//
-
-#endif

@@ -21,12 +21,12 @@
 //Filename    : ORESTXT.H
 //Description : Header file of Object Text ResTxt
 
-#ifndef __ORESTXT_H
-#define __ORESTXT_H
-
-#ifndef __OFILE_H
-#include <OFILE.h>
+#ifdef _ORESTXT_H_
+#error "Multiple inclusion of ORESTXT.h"
 #endif
+#define _ORESTXT_H_
+
+#include <OFILE.h>
 
 //------ Begin of function TxtIndex ------//
 
@@ -76,5 +76,3 @@ public:
 };
 
 //-------------------------------------------//
-
-#endif

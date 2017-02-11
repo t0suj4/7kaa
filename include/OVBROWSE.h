@@ -21,12 +21,12 @@
 //Filename    : OVBROWSE.H
 //Description : Object List Box
 
-#ifndef __OVBROWSE_H
-#define __OVBROWSE_H
-
-#ifndef __OSCROLL_H
-#include <OSCROLL.h>
+#ifdef _OVBROWSE_H_
+#error "Multiple inclusion of OVBROWSE.h"
 #endif
+#define _OVBROWSE_H_
+
+#include <OSCROLL.h>
 
 //------------ Define macro constant --------------//
 
@@ -112,6 +112,4 @@ protected:
 };
 
 //--------------------------------------------------//
-
-#endif
 

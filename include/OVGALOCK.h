@@ -22,8 +22,10 @@
 // Description : header file for VgaFrontLock
 // Owner       : Gilbert
 
-#ifndef __OVGALOCK_H
-#define __OVGALOCK_H
+#ifdef _OVGALOCK_H_
+#error "Multiple inclusion of OVGALOCK.h"
+#endif
+#define _OVGALOCK_H_
 
 class VgaFrontLock
 {
@@ -57,6 +59,4 @@ public:
 	MouseDispCount();
 	~MouseDispCount();
 };
-
-#endif
 

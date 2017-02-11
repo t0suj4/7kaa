@@ -21,16 +21,14 @@
 //Filename    : OSITE.H
 //Description : Object Site 
 
-#ifndef __OSITE_H
-#define __OSITE_H
+#ifdef _OSITE_H_
+#error "Multiple inclusion of OSITE.h"
+#endif
+#define _OSITE_H_
 
-#ifndef __ODYNARRB_H
 #include <ODYNARRB.h>
-#endif
 
-#ifndef __ORAWRES_H
 #include <ORAWRES.h>
-#endif
 
 //-------- Define Site Type --------//
 
@@ -126,5 +124,3 @@ public:
 extern SiteArray site_array;
 
 //--------------------------------------------//
-
-#endif

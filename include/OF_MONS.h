@@ -21,12 +21,12 @@
 //Filename    : OF_MONS.H
 //Description : Header of Firm Monster
 
-#ifndef __OF_MONS_H
-#define __OF_MONS_H
-
-#ifndef __OFIRM_H
-#include <OFIRM.h>
+#ifdef _OF_MONS_H_
+#error "Multiple inclusion of OF_MONS.h"
 #endif
+#define _OF_MONS_H_
+
+#include <OFIRM.h>
 
 //---------- Define constant ---------//
 
@@ -148,5 +148,3 @@ private:
 #pragma pack()
 
 //--------------------------------------//
-
-#endif

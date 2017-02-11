@@ -17,8 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#ifndef INPUT_STREAM_H
-#define INPUT_STREAM_H
+#ifdef _INPUT_STREAM_H_
+#error "Multiple inclusion of input_stream.h"
+#endif
+#define _INPUT_STREAM_H_
 
 #include <stdint.h>
 #include <stdio.h>
@@ -63,4 +65,3 @@ template <> bool read_le<float>(InputStream *is, float *valp);
 template <> bool read_le<double>(InputStream *is, double *valp);
 
 /* vim: set ts=8 sw=3: */
-#endif

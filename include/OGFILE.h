@@ -21,20 +21,16 @@
 //Filename    : OGFILE.H
 //Description : Oject Game file, save and restore game
 
-#ifndef __OGFILE_H
-#define __OGFILE_H
+#ifdef _OGFILE_H_
+#error "Multiple inclusion of OGFILE.h"
+#endif
+#define _OGFILE_H_
 
-#ifndef __OFILE_H
 #include <OFILE.h>
-#endif
 
-#ifndef __ODYNARR_H
 #include <ODYNARR.h>
-#endif
 
-#ifndef __ONATION_H
 #include <ONATION.h>
-#endif
 
 
 //------------ Define constant for game version == 1xx -----------------//
@@ -163,5 +159,3 @@ extern GameFileArray game_file_array;
 extern GameFile      game_file;        //**BUGHERE
 
 //-----------------------------------------
-
-#endif

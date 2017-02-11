@@ -22,8 +22,10 @@
 //Filename    : OMOUSE.H
 //Description : Header file for Mouse Handling Object (OMOUSE.CPP)
 
-#ifndef __OMOUSE_H
-#define __OMOUSE_H
+#ifdef _OMOUSE_H_
+#error "Multiple inclusion of OMOUSE.h"
+#endif
+#define _OMOUSE_H_
 
 //------ Default settting ---------//
 
@@ -37,5 +39,3 @@
 #endif
 
 extern Mouse mouse;
-
-#endif

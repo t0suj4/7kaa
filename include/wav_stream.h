@@ -19,8 +19,10 @@
  *
  */
 
-#ifndef WAV_STREAM_H
-#define WAV_STREAM_H
+#ifdef _WAV_STREAM_H_
+#error "Multiple inclusion of wav_stream.h"
+#endif
+#define _WAV_STREAM_H_
 
 #include <audio_stream.h>
 #include <input_stream.h>
@@ -53,5 +55,3 @@ public:
    int channels() const;
    int sample_size() const;
 };
-
-#endif

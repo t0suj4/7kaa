@@ -18,8 +18,10 @@
  *
  */
 
-#ifndef OAUDIO_H
-#define OAUDIO_H
+#ifdef _OAUDIO_H_
+#error "Multiple inclusion of OAUDIO.h"
+#endif
+#define _OAUDIO_H_
 
 #if defined(USE_OPENAL)
 #include <openal_audio.h>
@@ -28,5 +30,3 @@
 #endif
 
 extern Audio audio;
-
-#endif

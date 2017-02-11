@@ -22,13 +22,13 @@
 //Description : Registers the selected backend for the surface class
 
 
-#ifndef __SURFACE_H
-#define __SURFACE_H
+#ifdef _SURFACE_H_
+#error "Multiple inclusion of surface.h"
+#endif
+#define _SURFACE_H_
 
 #if defined(USE_SDL)
 #include <surface_sdl.h>
 #else
 #error "A video backend must be specified."
 #endif
-
-#endif // __SURFACE_H

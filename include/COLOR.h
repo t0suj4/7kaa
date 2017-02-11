@@ -21,8 +21,10 @@
 //Filename    : COLOR.H
 //Description : Game Color Definition
 
-#ifndef __COLOR_H
-#define __COLOR_H
+#ifdef _COLOR_H_
+#error "Multiple inclusion of COLOR.h"
+#endif
+#define _COLOR_H_
 
 //--------- Define color codes ----------//
 
@@ -68,5 +70,3 @@
 #define INDEPENDENT_NATION_COLOR		V_WHITE
 
 //---------------------------------------------//
-
-#endif

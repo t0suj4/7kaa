@@ -21,8 +21,10 @@
 //Filename    : ORESDB.H
 //Description : Header file of Object Resource Database
 
-#ifndef __ORESDB_H
-#define __ORESDB_H
+#ifdef _ORESDB_H_
+#error "Multiple inclusion of ORESDB.h"
+#endif
+#define _ORESDB_H_
 
 #include <OFILE.h>
 
@@ -48,5 +50,3 @@ public:
     void  init_imported(const char * filename, int cacheWholeFile, int useCommonBuffer = 0);
     char* read_imported(long);
 };
-
-#endif

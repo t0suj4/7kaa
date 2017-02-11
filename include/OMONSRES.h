@@ -21,12 +21,12 @@
 //Filename    : OMONSRES.H
 //Description : Header file of object RaceRes
 
-#ifndef __OMONSRES_H
-#define __OMONSRES_H
-
-#ifndef __ORESDB_H
-#include <ORESDB.h>
+#ifdef _OMONSRES_H_
+#error "Multiple inclusion of OMONSRES.h"
 #endif
+#define _OMONSRES_H_
+
+#include <ORESDB.h>
 
 //----------- Define constant ------------//
 
@@ -107,5 +107,3 @@ private:
 extern MonsterRes monster_res;
 
 //----------------------------------------------------//
-
-#endif

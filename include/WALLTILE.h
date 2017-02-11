@@ -23,8 +23,10 @@
 // Ownership  : Gilbert
 
 
-#ifndef __WALLTILE_H
-#define __WALLTILE_H
+#ifdef _WALLTILE_H_
+#error "Multiple inclusion of WALLTILE.h"
+#endif
+#define _WALLTILE_H_
 
 // North gate, west tower
 #define NGATE_WTOWER_NW 0x01
@@ -149,5 +151,3 @@ inline int is_wall_rubble(int w)
 
 #define GATE_LENGTH 8
 #define GATE_WIDTH 2
-
-#endif

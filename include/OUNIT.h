@@ -21,32 +21,22 @@
 //Filename    : OUNIT.H
 //Description : Header file of Object Unit
 
-#ifndef __OUNIT_H
-#define __OUNIT_H
+#ifdef _OUNIT_H_
+#error "Multiple inclusion of OUNIT.h"
+#endif
+#define _OUNIT_H_
 
-#ifndef __OSPRITE_H
 #include <OSPRITE.h>
-#endif
 
-#ifndef __OSPATH_H
 #include <OSPATH.h>
-#endif
 
-#ifndef __OUNITRES_H
 #include <OUNITRES.h>
-#endif
 
-#ifndef __OBUTTON_H
 #include <OBUTTON.h>
-#endif
 
-#ifndef __OSKILL_H
 #include <OSKILL.h>
-#endif
 
-#ifndef __OSPREUSE_H
 #include <OSPREUSE.h>
-#endif
 
 #ifdef NO_DEBUG_UNIT
 #undef DEBUG
@@ -874,7 +864,5 @@ extern int     unit_search_tries;        // the number of tries used in the curr
 extern char    unit_search_tries_flag;   // indicate num of tries is set, reset after searching
 #ifdef DEBUG
 extern int check_unit_dir1, check_unit_dir2;
-#endif
-
 #endif
 

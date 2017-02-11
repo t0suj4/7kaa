@@ -21,8 +21,10 @@
 // Filename    : OB_HOMIN.H
 // Description : header file for BulletHoming
 
-#ifndef __OB_HOMIN_H
-#define __OB_HOMIN_H
+#ifdef _OB_HOMIN_H_
+#error "Multiple inclusion of OB_HOMIN.h"
+#endif
+#define _OB_HOMIN_H_
 
 #include <OBULLET.h>
 
@@ -52,5 +54,3 @@ public:
 	virtual	void	clear_ptr();
 };
 #pragma pack()
-
-#endif

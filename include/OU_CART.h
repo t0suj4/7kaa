@@ -21,8 +21,10 @@
 // Filename    : OU_CART.H
 // Description : Header file for Explosive Cart
 
-#ifndef __OU_CART_H
-#define __OU_CART_H
+#ifdef _OU_CART_H_
+#error "Multiple inclusion of OU_CART.h"
+#endif
+#define _OU_CART_H_
 
 #include <OUNIT.h>
 
@@ -44,5 +46,3 @@ public:
 	virtual	void	clear_ptr();
 };
 #pragma pack()
-
-#endif

@@ -21,12 +21,12 @@
 //Filename    : OREBEL.H
 //Description : class Rebel
 
-#ifndef __OREBEL_H
-#define __OREBEL_H
-
-#ifndef __ODYNARRB_H
-#include <ODYNARRB.h>
+#ifdef _OREBEL_H_
+#error "Multiple inclusion of OREBEL.h"
 #endif
+#define _OREBEL_H_
+
+#include <ODYNARRB.h>
 
 
 //------- action mode definitions --------//
@@ -140,5 +140,3 @@ public:
 extern RebelArray rebel_array;
 
 //----------------------------------------//
-
-#endif

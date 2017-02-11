@@ -22,12 +22,12 @@
 //Description : Header file of Object Tornado
 //Ownership   : Gilbert
 
-#ifndef __OTORNADO_H
-#define __OTORNADO_H
-
-#ifndef __OSPRITE_H
-#include <OSPRITE.h>
+#ifdef _OTORNADO_H_
+#error "Multiple inclusion of OTORNADO.h"
 #endif
+#define _OTORNADO_H_
+
+#include <OSPRITE.h>
 
 //#ifndef __OUNIT_H
 //#include <OUNIT.h>
@@ -100,5 +100,3 @@ public:
 extern TornadoArray tornado_array;
 
 //-----------------------------------------//
-
-#endif

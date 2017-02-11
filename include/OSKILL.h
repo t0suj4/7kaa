@@ -21,8 +21,10 @@
 //Filename    : OSKILL.H
 //Description : Skill class
 
-#ifndef __OSKILL_H
-#define __OSKILL_H
+#ifdef _OSKILL_H_
+#error "Multiple inclusion of OSKILL.h"
+#endif
+#define _OSKILL_H_
 
 //--- Define the default skill of the citizens ---//
 
@@ -75,5 +77,3 @@ public:
 #pragma pack()
 
 //---------------------------------------//
-
-#endif

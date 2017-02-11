@@ -21,16 +21,14 @@
 //Filename   : OU_GOD.CPP
 //Description: Unit God header file
 
-#ifndef __OU_GOD_H
-#define __OU_GOD_H
+#ifdef _OU_GOD_H_
+#error "Multiple inclusion of OU_GOD.h"
+#endif
+#define _OU_GOD_H_
 
-#ifndef __OUNIT_H
 #include <OUNIT.h>
-#endif
 
-#ifndef __OFIRM_H
 #include <OFIRM.h>
-#endif
 
 //----------- Define class God -----------//
 
@@ -102,6 +100,4 @@ private:
 #pragma pack()
 
 //--------------------------------------------//
-
-#endif
 

@@ -18,24 +18,18 @@
  *
  */
 
-#ifndef __OGF_V1_H
-#define __OGF_V1_H
+#ifdef _OGF_V1_H_
+#error "Multiple inclusion of OGF_V1.h"
+#endif
+#define _OGF_V1_H_
 
-#ifndef __OTOWN_H
 #include <OTOWN.h>
-#endif
 
-#ifndef __NATIONA_H
 #include <ONATIONA.h>
-#endif
 
-#ifndef __NATION_H
 #include <ONATION.h>
-#endif
 
-#ifndef __OGFILE_H
 #include <OGFILE.h>
-#endif
 
 #pragma pack(1)
 class Version_1_Town
@@ -417,5 +411,3 @@ class Version_1_Nation : public Version_1_NationBase
 		virtual void dummy();
 };
 #pragma pack()
-
-#endif

@@ -21,8 +21,10 @@
 // Filename    : OEFFECT.H
 // Description : header file of effect array
 
-#ifndef __OEFFECT_H
-#define __OEFFECT_H
+#ifdef _OEFFECT_H_
+#error "Multiple inclusion of OEFFECT.h"
+#endif
+#define _OEFFECT_H_
 
 #include <OSPRITE.h>
 
@@ -51,5 +53,3 @@ public:
 // or call Effect::create();
 
 extern SpriteArray effect_array;
-
-#endif

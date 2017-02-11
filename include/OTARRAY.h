@@ -22,8 +22,10 @@
 // Description : template for temporary array
 
 
-#ifndef __OTARRAY_H
-#define __OTARRAY_H
+#ifdef _OTARRAY_H_
+#error "Multiple inclusion of OTARRAY.h"
+#endif
+#define _OTARRAY_H_
 
 // to create a temp. array of char[10], 
 // TArray<char> charArray(10);
@@ -61,8 +63,5 @@ TArray<T>::~TArray()
 	delete[] array_ptr;
 }
 // --------- end of function TArray::~TArray --------//
-
-
-#endif
 
 

@@ -21,8 +21,10 @@
 //Filename    : GAMEDEF.H
 //Description : Maximum game constant
 
-#ifndef __GAMEDEF_H
-#define __GAMEDEF_H
+#ifdef _GAMEDEF_H_
+#error "Multiple inclusion of GAMEDEF.h"
+#endif
+#define _GAMEDEF_H_
 
 //----------- define game version ------------//
 
@@ -147,5 +149,3 @@ enum { COMMAND_PLAYER=0, COMMAND_REMOTE=1, COMMAND_AI, COMMAND_AUTO };
 #define SPY_KILLED_REPUTATION_DECREASE		3
 
 //-----------------------------------------------//
-
-#endif

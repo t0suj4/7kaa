@@ -21,20 +21,16 @@
 //Filename    : OF_BASE.H
 //Description : Header of FirmBase
 
-#ifndef __OF_BASE_H
-#define __OF_BASE_H
+#ifdef _OF_BASE_H_
+#error "Multiple inclusion of OF_BASE.h"
+#endif
+#define _OF_BASE_H_
 
-#ifndef __OUNIT_H
 #include <OUNIT.h>
-#endif
 
-#ifndef __OSKILL_H
 #include <OSKILL.h>
-#endif
 
-#ifndef __OFIRM_H
 #include <OFIRM.h>
-#endif
 
 //------- Define constant -----------//
 
@@ -93,5 +89,3 @@ private:
 #pragma pack()
 
 //--------------------------------------//
-
-#endif

@@ -21,20 +21,16 @@
 // Filename    : OU_MARI.H
 // Description : header file of sea unit
 
-#ifndef __OU_MARI_H
-#define __OU_MARI_H
+#ifdef _OU_MARI_H_
+#error "Multiple inclusion of OU_MARI.h"
+#endif
+#define _OU_MARI_H_
 
-#ifndef __OUNIT_H
 #include <OUNIT.h>
-#endif
 
-#ifndef __F_MARK_H
 #include <OF_MARK.h>
-#endif
 
-#ifndef __OU_CARA_H
 #include <OU_CARA.h>
-#endif
 
 //------- Define constant ---------//
 
@@ -215,5 +211,3 @@ private:
 #pragma pack()
 
 //---------------------------------------//
-
-#endif

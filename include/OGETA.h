@@ -22,8 +22,10 @@
 // Description : get field, non-blocking
 
 
-#ifndef __OGETA_H
-#define __OGETA_H
+#ifdef _OGETA_H_
+#error "Multiple inclusion of OGETA.h"
+#endif
+#define _OGETA_H_
 
 class Font;
 
@@ -85,8 +87,5 @@ public:
    GetA& operator[](int);
 	int	operator()();
 };
-
-
-#endif
 
 

@@ -21,20 +21,16 @@
 //Filename    : OF_INN.H
 //Description : Header of FirmInn
 
-#ifndef __OF_INN_H
-#define __OF_INN_H
+#ifdef _OF_INN_H_
+#error "Multiple inclusion of OF_INN.h"
+#endif
+#define _OF_INN_H_
 
-#ifndef __OUNIT_H
 #include <OUNIT.h>
-#endif
 
-#ifndef __OSKILL_H
 #include <OSKILL.h>
-#endif
 
-#ifndef __OFIRM_H
 #include <OFIRM.h>
-#endif
 
 //----------- Define constant --------------//
 
@@ -114,5 +110,3 @@ private:
 #pragma pack()
 
 //--------------------------------------//
-
-#endif

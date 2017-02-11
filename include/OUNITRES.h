@@ -21,16 +21,14 @@
 //Filename    : OUNITRES.H
 //Description : Header file of Object Unit resource
 
-#ifndef __OUNITRES_H
-#define __OUNITRES_H
+#ifdef _OUNITRES_H_
+#error "Multiple inclusion of OUNITRES.h"
+#endif
+#define _OUNITRES_H_
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
 
-#ifndef __ORESDB_H
 #include <ORESDB.h>
-#endif
 
 #ifdef NO_DEBUG_UNIT
 #undef DEBUG
@@ -382,6 +380,4 @@ private:
 extern UnitRes unit_res;
 
 //----------------------------------------------//
-
-#endif
 

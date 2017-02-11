@@ -22,8 +22,10 @@
 //Filename    : OVGA.H
 //Description : Video display management class
 
-#ifndef __OVGA_H
-#define __OVGA_H
+#ifdef _OVGA_H_
+#error "Multiple inclusion of OVGA.h"
+#endif
+#define _OVGA_H_
 
 #if defined(USE_SDL)
 #include <vga_sdl.h>
@@ -32,5 +34,3 @@
 #endif
 
 extern Vga vga;
-
-#endif

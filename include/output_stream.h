@@ -17,8 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#ifndef OUTPUT_STREAM_H
-#define OUTPUT_STREAM_H
+#ifdef _OUTPUT_STREAM_H_
+#error "Multiple inclusion of output_stream.h"
+#endif
+#define _OUTPUT_STREAM_H_
 
 #include <stdint.h>
 #include <stdio.h>
@@ -60,4 +62,3 @@ template <> bool write_le<float>(OutputStream *os, float val);
 template <> bool write_le<double>(OutputStream *os, double val);
 
 /* vim: set ts=8 sw=3: */
-#endif

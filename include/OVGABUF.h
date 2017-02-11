@@ -21,8 +21,10 @@
 //Filename    : VGABUF.H
 //Description : Header file for class VgaBuffer, Direct Draw Buffer.
 
-#ifndef __VGABUF_H
-#define __VGABUF_H
+#ifdef _OVGABUF_H_
+#error "Multiple inclusion of OVGABUF.h"
+#endif
+#define _OVGABUF_H_
 
 #include <win32_compat.h>
 #include <IMGFUN.h>
@@ -260,5 +262,3 @@ public:
 extern VgaBuf vga_front, vga_back, vga_true_front;
 
 //--------------------------------------------//
-
-#endif

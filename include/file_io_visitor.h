@@ -17,8 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#ifndef FILE_IO_VISITOR_H
-#define FILE_IO_VISITOR_H
+#ifdef _FILE_IO_VISITOR_H_
+#error "Multiple inclusion of file_io_visitor.h"
+#endif
+#define _FILE_IO_VISITOR_H_
 
 #include <file_reader.h>
 #include <file_writer.h>
@@ -182,4 +184,3 @@ namespace FileIOVisitor
 } /* namespace FileIOVisitor */
 
 /* vim: set ts=8 sw=3: */
-#endif

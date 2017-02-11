@@ -21,16 +21,14 @@
 //Filename    : OWORLDMT.H
 //Description : Header file for World Matrix WorldMap & WorldZoom
 
-#ifndef __OWORLDMT_H
-#define __OWORLDMT_H
+#ifdef _OWORLDMT_H_
+#error "Multiple inclusion of OWORLDMT.h"
+#endif
+#define _OWORLDMT_H_
 
-#ifndef __OMATRIX_H
 #include <OMATRIX.h>
-#endif
 
-#ifndef __ODYNARR_H
 #include <ODYNARR.h>
-#endif
 
 //-------- World matrix size ------------//
 
@@ -164,5 +162,3 @@ protected:
 };
 
 //------------------------------------------------//
-
-#endif

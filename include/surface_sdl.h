@@ -21,9 +21,10 @@
 //Filename    : surface_sdl.h
 //Description : Header file for an SDL Surface.
 
-#ifndef __SURFACE_SDL_H
-#define __SURFACE_SDL_H
-
+#ifdef _SURFACE_SDL_H_
+#error "Multiple inclusion of surface_sdl.h"
+#endif
+#define _SURFACE_SDL_H_
 #include <stdlib.h>
 #include <SDL.h>
 
@@ -63,5 +64,3 @@ public:
 };
 
 typedef SurfaceSDL Surface;
-
-#endif // __SURFACE_SDL_H

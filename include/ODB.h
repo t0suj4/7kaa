@@ -21,8 +21,10 @@
 //Filename    : ODB.H
 //Description : Header file of ODB.CPP object Database
 
-#ifndef __ODB_H
-#define __ODB_H
+#ifdef _ODB_H_
+#error "Multiple inclusion of ODB.h"
+#endif
+#define _ODB_H_
 
 #include <stdint.h>
 
@@ -95,5 +97,3 @@ public:
 extern Database db_movie_hdr, db_movie_dtl;
 
 //----------------------------------------------//
-
-#endif

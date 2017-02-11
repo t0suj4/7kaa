@@ -21,12 +21,12 @@
 //Filename    : OU_VEHI.H
 //Description : Header file of Unit Vehicle
 
-#ifndef __OU_VEHI_H
-#define __OU_VEHI_H
-
-#ifndef __OUNIT_H
-#include <OUNIT.h>
+#ifdef _OU_VEHI_H_
+#error "Multiple inclusion of OU_VEHI.h"
 #endif
+#define _OU_VEHI_H_
+
+#include <OUNIT.h>
 
 //----------- Define class UnitVehicle -----------//
 
@@ -48,5 +48,3 @@ public:
 #pragma pack()
 
 //--------------------------------------------//
-
-#endif

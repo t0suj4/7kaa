@@ -21,8 +21,10 @@
 //Filename    : OSLIDER.H
 //Description : Header of object Slider
 
-#ifndef __OSLIDER_H
-#define __OSLIDER_H
+#ifdef _OSLIDER_H_
+#error "Multiple inclusion of OSLIDER.h"
+#endif
+#define _OSLIDER_H_
 
 //--------- Define class Slider --------//
 
@@ -65,5 +67,3 @@ public:
 };
 
 //-----------------------------------------//
-
-#endif

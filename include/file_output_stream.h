@@ -17,8 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#ifndef FILE_OUTPUT_STREAM_H
-#define FILE_OUTPUT_STREAM_H
+#ifdef _FILE_OUTPUT_STREAM_H_
+#error "Multiple inclusion of file_output_stream.h"
+#endif
+#define _FILE_OUTPUT_STREAM_H_
 
 #include <OFILE.h>
 #include <output_stream.h>
@@ -39,4 +41,3 @@ public:
 };
 
 /* vim: set ts=8 sw=3: */
-#endif

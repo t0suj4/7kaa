@@ -21,12 +21,12 @@
 //Filename    : OSTR.H
 //Description : Header file of object String
 
-#ifndef __OSTR_H
-#define __OSTR_H
-
-#ifndef __STRING_H
-#include <string.h>
+#ifdef _OSTR_H_
+#error "Multiple inclusion of OSTR.h"
 #endif
+#define _OSTR_H_
+
+#include <string.h>
 
 //--------- Define macro ant ------------//
 
@@ -100,5 +100,3 @@ public:
 };
 
 //------------------------------------------------------//
-
-#endif

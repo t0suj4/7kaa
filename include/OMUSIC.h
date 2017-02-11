@@ -22,8 +22,10 @@
 // Description : header of music
 
 
-#ifndef __OMUSIC_H
-#define __OMUSIC_H
+#ifdef _OMUSIC_H_
+#error "Multiple inclusion of OMUSIC.h"
+#endif
+#define _OMUSIC_H_
 
 #define MUSIC_PLAY_LOOPED 1
 #define MUSIC_PLAY_CD 2
@@ -54,5 +56,3 @@ public:
 };
 
 extern Music music;
-
-#endif

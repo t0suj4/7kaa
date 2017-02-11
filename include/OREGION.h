@@ -22,16 +22,16 @@
 // Description : Header file of RegionArray
 // Owner       : Gilbert
 
-#ifndef __OREGION_H
-#define __OREGION_H
+#ifdef _OREGION_H_
+#error "Multiple inclusion of OREGION.h"
+#endif
+#define _OREGION_H_
 
 #ifndef DEBUG
 #include <OREGIONS.h>
 #endif
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
 
 //---------- define constant ---------//
 
@@ -139,5 +139,3 @@ public:
 extern RegionArray region_array;
 
 //------------------------------------------//
-
-#endif

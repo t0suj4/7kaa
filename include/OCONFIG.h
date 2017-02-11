@@ -21,12 +21,12 @@
 //Filename	  : OCONFIG.H
 //Description : Header file for Game Config class
 
-#ifndef __OCONFIG_H
-#define __OCONFIG_H
-
-#ifndef __OFILE_H
-#include <OFILE.h>
+#ifdef _OCONFIG_H_
+#error "Multiple inclusion of OCONFIG.h"
 #endif
+#define _OCONFIG_H_
+
+#include <OFILE.h>
 
 //------------- Define constant -------------//
 
@@ -237,5 +237,3 @@ public:
 //------------------------------------------//
 
 extern Config config;
-
-#endif

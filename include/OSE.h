@@ -22,8 +22,10 @@
 // Description: Header file of Sound Effect Controller
 // Owner      : Gilbert
 
-#ifndef __OSE_H
-#define __OSE_H
+#ifdef _OSE_H_
+#error "Multiple inclusion of OSE.h"
+#endif
+#define _OSE_H_
 
 #include <OAUDIO.h>
 #include <ORESX.h>
@@ -106,5 +108,3 @@ private:
 };
 
 extern SECtrl se_ctrl;
-
-#endif

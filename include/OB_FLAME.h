@@ -22,8 +22,10 @@
 // Description : non-moving bullet attack (flamethrower)
 
 
-#ifndef __OB_FLAME_H
-#define __OB_FLAME_H
+#ifdef _OB_FLAME_H_
+#error "Multiple inclusion of OB_FLAME.h"
+#endif
+#define _OB_FLAME_H_
 
 #include <OBULLET.h>
 
@@ -44,5 +46,3 @@ public:
 	virtual	void	clear_ptr();
 };
 #pragma pack()
-
-#endif

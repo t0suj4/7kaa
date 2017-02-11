@@ -22,8 +22,10 @@
 //Filename    : mouse_sdl.h
 //Description : Implements the sdl input backend
 
-#ifndef __MOUSE_SDL_H
-#define __MOUSE_SDL_H
+#ifdef _MOUSE_SDL_H_
+#error "Multiple inclusion of mouse_sdl.h"
+#endif
+#define _MOUSE_SDL_H_
 
 #include <win32_compat.h>
 
@@ -220,5 +222,3 @@ private:
 //---------- End of define class ---------------//
 
 typedef MouseSDL Mouse;
-
-#endif

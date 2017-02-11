@@ -21,20 +21,16 @@
 //Filename    : OFIRMRES.H
 //Description : Header file of object FirmRes
 
-#ifndef __OFIRMRES_H
-#define __OFIRMRES_H
+#ifdef _OFIRMRES_H_
+#error "Multiple inclusion of OFIRMRES.h"
+#endif
+#define _OFIRMRES_H_
 
-#ifndef __GAMEDEF_H
 #include <GAMEDEF.h>
-#endif
 
-#ifndef __OFIRM_H
 #include <OFIRM.h>
-#endif
 
-#ifndef __ORESDB_H
 #include <ORESDB.h>
-#endif
 
 //------- Define constant ----------//
 
@@ -296,5 +292,3 @@ private:
 extern FirmRes firm_res;
 
 //----------------------------------------------------//
-
-#endif

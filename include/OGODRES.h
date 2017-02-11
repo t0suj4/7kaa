@@ -21,16 +21,14 @@
 //Filename    : OGODRES.H
 //Description : Header file of object RaceRes
 
-#ifndef __OGODRES_H
-#define __OGODRES_H
+#ifdef _OGODRES_H_
+#error "Multiple inclusion of OGODRES.h"
+#endif
+#define _OGODRES_H_
 
-#ifndef __ONATION_H
 #include <ONATION.h>
-#endif
 
-#ifndef __OFILE_H
 #include <OFILE.h>
-#endif
 
 //------------ Define god id. -------------//
 
@@ -128,5 +126,3 @@ private:
 extern GodRes god_res;
 
 //----------------------------------------------------//
-
-#endif

@@ -23,12 +23,12 @@
 // Ownership   : Gilbert
 
 
-#ifndef __OHILLRES_H
-#define __OHILLRES_H
-
-#ifndef __ORESDB_H
-#include <ORESDB.h>
+#ifdef _OHILLRES_H_
+#error "Multiple inclusion of OHILLRES.h"
 #endif
+#define _OHILLRES_H_
+
+#include <ORESDB.h>
 
 //---------- Define constant -------//
 enum
@@ -116,5 +116,3 @@ private:
 extern HillRes hill_res;
 
 //----------------------------------------------------//
-
-#endif

@@ -21,16 +21,14 @@
 //Filename    : OFONT.H
 //Description : Header file of Object Font
 
-#ifndef __OFONT_H
-#define __OFONT_H
+#ifdef _OFONT_H_
+#error "Multiple inclusion of OFONT.h"
+#endif
+#define _OFONT_H_
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
 
-#ifndef __OVGABUF_H
 #include <OVGABUF.h>
-#endif
 
 //------- Define constant ------------//
 
@@ -193,5 +191,3 @@ extern Font font_hall;
 #endif
 
 //------------------------------------------------//
-
-#endif

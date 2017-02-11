@@ -22,8 +22,10 @@
 //Filename    : vga_util.h
 //Description : Vga utilities that should work with any backend.
 
-#ifndef __VGA_UTIL_H
-#define __VGA_UTIL_H
+#ifdef _VGA_UTIL_H_
+#error "Multiple inclusion of vga_util.h"
+#endif
+#define _VGA_UTIL_H_
 
 //-------- Define class VgaUtil ----------------//
 
@@ -48,5 +50,3 @@ public:
 extern VgaUtil vga_util;
 
 //--------------------------------------------//
-
-#endif

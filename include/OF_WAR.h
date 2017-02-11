@@ -21,12 +21,12 @@
 //Filename    : OF_WAR.H
 //Description : Header of FirmWar war factory.
 
-#ifndef __OF_WAR_H
-#define __OF_WAR_H
-
-#ifndef __OFIRM_H
-#include <OFIRM.h>
+#ifdef _OF_WAR_H_
+#error "Multiple inclusion of OF_WAR.h"
 #endif
+#define _OF_WAR_H_
+
+#include <OFIRM.h>
 
 //-------- Define constant ---------//
 
@@ -93,5 +93,3 @@ private:
 #pragma pack()
 
 //--------------------------------------//
-
-#endif

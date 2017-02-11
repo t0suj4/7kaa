@@ -21,16 +21,14 @@
 //Filename    :: ODYNARR.H
 //Description :: Dynamic Array Object
 
-#ifndef __ODYNARR_H
-#define __ODYNARR_H
+#ifdef _ODYNARR_H_
+#error "Multiple inclusion of ODYNARR.h"
+#endif
+#define _ODYNARR_H_
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
 
-#ifndef __STRING_H
 #include <string.h>
-#endif
 
 
 //--------- Define constant ------------//
@@ -296,7 +294,3 @@ inline int DynArray::is_end()
 }
 
 //-------- END OF FUNCTION DynArray::isstart,isend --------//
-
-
-
-#endif

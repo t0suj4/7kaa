@@ -21,8 +21,10 @@
 //Filename    : OFILE.H
 //Description : Header file for file object
 
-#ifndef __OFILE_H
-#define __OFILE_H
+#ifdef _OFILE_H_
+#error "Multiple inclusion of OFILE.h"
+#endif
+#define _OFILE_H_
 
 #include <win32_compat.h>
 #include <stdio.h>
@@ -66,5 +68,3 @@ public:
 	int     file_put_long(int32_t);
 	int32_t file_get_long();
 };
-
-#endif

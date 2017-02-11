@@ -21,8 +21,10 @@
 //Filename    : OERROR.h
 //Description : Header file for the Error class
 
-#ifndef __OERROR_H
-#define __OERROR_H
+#ifdef _OERROR_H_
+#error "Multiple inclusion of OERROR.h"
+#endif
+#define _OERROR_H_
 
 //------- Define Class Error ------------//
 
@@ -63,5 +65,3 @@ extern Error err;
    #define err_else
    #define err_now(msg)
 #endif
-
-#endif // __OERROR_H

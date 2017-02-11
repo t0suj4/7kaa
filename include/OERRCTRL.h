@@ -21,8 +21,10 @@
 // Filename    : OERRCTRL.H
 // Description : Error control for dplay
 
-#ifndef __OERRCTRL_H
-#define __OERRCTRL_H
+#ifdef _OERRCTRL_H_
+#error "Multiple inclusion of OERRCTRL.h"
+#endif
+#define _OERRCTRL_H_
 
 #include <GAMEDEF.h>
 #include <MPTYPES.h>
@@ -128,5 +130,3 @@ public:
 };
 
 extern ErrorControl ec_remote;
-
-#endif

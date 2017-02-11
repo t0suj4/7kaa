@@ -22,8 +22,10 @@
 // Description : header file of variable length queue
 
 
-#ifndef __OVQUEUE_H
-#define __OVQUEUE_H
+#ifdef _OVQUEUE_H_
+#error "Multiple inclusion of OVQUEUE.h"
+#endif
+#define _OVQUEUE_H_
 
 class VLenQueue
 {
@@ -58,6 +60,4 @@ private:
 	// that it specifies _additional_ n elements (not total, like stl functions)
 	void   expand(int n);
 };
-
-#endif
 

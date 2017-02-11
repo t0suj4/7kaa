@@ -17,8 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#ifndef MEM_INPUT_STREAM_H
-#define MEM_INPUT_STREAM_H
+#ifdef _MEM_INPUT_STREAM_H_
+#error "Multiple inclusion of mem_input_stream.h"
+#endif
+#define _MEM_INPUT_STREAM_H_
 
 #include <input_stream.h>
 
@@ -39,5 +41,3 @@ public:
    long tell();
    void close();
 };
-
-#endif

@@ -22,8 +22,10 @@
 // Description: Header file of Snow Ground
 // Owner      : Gilbert
 
-#ifndef __SNOWG_H
-#define __SNOWG_H
+#ifdef _OSNOWG_H_
+#error "Multiple inclusion of OSNOWG.h"
+#endif
+#define _OSNOWG_H_
 
 #include <stdint.h>
 
@@ -84,5 +86,3 @@ private:
 #pragma pack()
 
 extern SnowGroundArray snow_ground_array;
-
-#endif

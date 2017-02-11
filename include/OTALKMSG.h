@@ -21,8 +21,10 @@
 //Filename	  : OTALKMSG.H
 //Description : Header file for class TalkMsg
 
-#ifndef __OTALKMSG_H
-#define __OTALKMSG_H
+#ifdef _OTALKMSG_H_
+#error "Multiple inclusion of OTALKMSG.h"
+#endif
+#define _OTALKMSG_H_
 
 //-------- define talk id. --------//
 
@@ -51,5 +53,3 @@ enum { TALK_PROPOSE_TRADE_TREATY=1,
 	  };
 
 //----------------------------------//
-
-#endif

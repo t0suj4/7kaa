@@ -22,12 +22,12 @@
 //Description : Header file of object TerrainRes
 //Ownership   : Gilbert
 
-#ifndef __OTERRAIN_H
-#define __OTERRAIN_H
-
-#ifndef __ORESDB_H
-#include <ORESDB.h>
+#ifdef _OTERRAIN_H_
+#error "Multiple inclusion of OTERRAIN.h"
 #endif
+#define _OTERRAIN_H_
+
+#include <ORESDB.h>
 
 //---------- Define terrain type id. ----------//
 
@@ -232,5 +232,3 @@ private:
 extern TerrainRes terrain_res;
 
 //----------------------------------------------------//
-
-#endif

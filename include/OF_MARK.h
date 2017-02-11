@@ -21,24 +21,18 @@
 //Filename    : OF_MARK.H
 //Description : Header of FirmMarket
 
-#ifndef __OF_MARK_H
-#define __OF_MARK_H
+#ifdef _OF_MARK_H_
+#error "Multiple inclusion of OF_MARK.h"
+#endif
+#define _OF_MARK_H_
 
-#ifndef __OFIRM_H
 #include <OFIRM.h>
-#endif
 
-#ifndef __OINFO_H
 #include <OINFO.h>
-#endif
 
-#ifndef __ORAWRES_H
 #include <ORAWRES.h>
-#endif
 
-#ifndef __TOWN_H
 #include <OTOWN.h>
-#endif
 
 //---------- Define constant -----------//
 
@@ -160,5 +154,3 @@ private:
 #pragma pack()
 
 //--------------------------------------//
-
-#endif

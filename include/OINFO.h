@@ -21,8 +21,10 @@
 //Filename	  : OINFO.H
 //Description : Header file for class Info
 
-#ifndef __OINFO_H
-#define __OINFO_H
+#ifdef _OINFO_H_
+#error "Multiple inclusion of OINFO.h"
+#endif
+#define _OINFO_H_
 
 #include <stdint.h>
 
@@ -248,5 +250,3 @@ public:
 extern Info info;
 
 //------------------------------------------//
-
-#endif

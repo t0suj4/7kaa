@@ -22,12 +22,12 @@
 // Description : Header file of snow resource
 // Owner       : Gilbert
 
-#ifndef __OSNOWRES_H
-#define __OSNOWRES_H
-
-#ifndef __ORESDB_H
-#include <ORESDB.h>
+#ifdef _OSNOWRES_H_
+#error "Multiple inclusion of OSNOWRES.h"
 #endif
+#define _OSNOWRES_H_
+
+#include <ORESDB.h>
 
 // ----------- Define struct SnowRec --------- //
 //
@@ -110,5 +110,3 @@ private:
 };
 
 extern SnowRes snow_res;
-
-#endif

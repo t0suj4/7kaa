@@ -22,12 +22,12 @@
 //Description : Header file of object PlantRes
 //Owner       : Gilbert
 
-#ifndef __OPLANT_H
-#define __OPLANT_H
-
-#ifndef __ORESDB_H
-#include <ORESDB.h>
+#ifdef _OPLANT_H_
+#error "Multiple inclusion of OPLANT.h"
 #endif
+#define _OPLANT_H_
+
+#include <ORESDB.h>
 
 //------------- Define climate zone ------------//
 
@@ -141,5 +141,3 @@ private:
 extern PlantRes plant_res;
 
 //----------------------------------------------------//
-
-#endif

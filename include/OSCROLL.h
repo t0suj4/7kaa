@@ -21,12 +21,12 @@
 //Filename    : OSCROLL.H
 //Description : Header file of Object Scroll Bar
 
-#ifndef __OSCROLL_H
-#define __OSCROLL_H
-
-#ifndef __ALL_H
-#include <ALL.h>
+#ifdef _OSCROLL_H_
+#error "Multiple inclusion of OSCROLL.h"
 #endif
+#define _OSCROLL_H_
+
+#include <ALL.h>
 
 //--------- Define class ScrollBar --------//
 
@@ -74,5 +74,3 @@ public :
 };
 
 //-------------------------------------//
-
-#endif

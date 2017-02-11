@@ -21,8 +21,10 @@
 //Filename    : MISC.H
 //Description : Header file for MISC function object
 
-#ifndef __MISC_H
-#define __MISC_H
+#ifdef _OMISC_H_
+#error "Multiple inclusion of OMISC.h"
+#endif
+#define _OMISC_H_
 
 #include <stdint.h>
 #include <misc_uuid.h>
@@ -161,5 +163,3 @@ inline int Misc::is_touch(int x1, int y1, int x2, int y2, int a1, int b1, int a2
 			  (  x1 <= a1 &&  x2 >= a1 ));
 }
 //--------- End of inline function Misc::is_touch -----------//
-
-#endif

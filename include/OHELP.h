@@ -21,8 +21,10 @@
 //Filename    : OHELP.H
 //Description : Header file of object Help
 
-#ifndef __OHELP_H
-#define __OHELP_H
+#ifdef _OHELP_H_
+#error "Multiple inclusion of OHELP.h"
+#endif
+#define _OHELP_H_
 
 
 //----------- Define constant -------------//
@@ -120,5 +122,3 @@ public:
 //-----------------------------------------------//
 
 extern Help help;
-
-#endif

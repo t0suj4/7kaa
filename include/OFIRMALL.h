@@ -21,8 +21,10 @@
 //Filename    : OFIRMALL.H
 //Description : Include header files of all firm types
 
-#ifndef __OFIRMALL_H
-#define __OFIRMALL_H
+#ifdef _OFIRMALL_H_
+#error "Multiple inclusion of OFIRMALL.h"
+#endif
+#define _OFIRMALL_H_
 
 //---------------------------------------//
 
@@ -38,5 +40,3 @@
 #include <OF_MONS.h>
 
 //---------------------------------------//
-
-#endif

@@ -21,12 +21,12 @@
 // Filename    : OREGIONS.H
 // Description : Header file of RegionStat
 
-#ifndef __OREGIONS_H
-#define __OREGIONS_H
-
-#ifndef __OFIRMID_H
-#include <OFIRMID.h>
+#ifdef _OREGIONS_H_
+#error "Multiple inclusion of OREGIONS.h"
 #endif
+#define _OREGIONS_H_
+
+#include <OFIRMID.h>
 
 //-------- Define constant ---------//
 
@@ -87,5 +87,3 @@ public:
 #pragma pack()
 
 //--------------------------------------------//
-
-#endif

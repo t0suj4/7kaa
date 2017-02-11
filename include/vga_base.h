@@ -22,8 +22,10 @@
 //Filename    : vga_base.h
 //Description : Defines the base vga class
 
-#ifndef __VGA_BASE_H
-#define __VGA_BASE_H
+#ifdef _VGA_BASE_H_
+#error "Multiple inclusion of vga_base.h"
+#endif
+#define _VGA_BASE_H_
 
 #include <OVGABUF.h>
 #include <COLOR.h>
@@ -83,5 +85,3 @@ public:
 };
 
 //--------------------------------------------//
-
-#endif

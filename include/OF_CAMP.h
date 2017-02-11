@@ -21,12 +21,12 @@
 //Filename    : OF_CAMP.H
 //Description : Header of FirmCamp
 
-#ifndef __OF_CAMP_H
-#define __OF_CAMP_H
-
-#ifndef __OFIRM_H
-#include <OFIRM.h>
+#ifdef _OF_CAMP_H_
+#error "Multiple inclusion of OF_CAMP.h"
 #endif
+#define _OF_CAMP_H_
+
+#include <OFIRM.h>
 
 //------------ define constant -----------//
 
@@ -171,5 +171,3 @@ private:
 #pragma pack()
 
 //--------------------------------------//
-
-#endif

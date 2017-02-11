@@ -21,12 +21,12 @@
 //Filename    : OPOWER.H
 //Description : Header file of Object Power
 
-#ifndef __OPOWER_H
-#define __OPOWER_H
-
-#ifndef __ALL_H
-#include <ALL.h>
+#ifdef _OPOWER_H_
+#error "Multiple inclusion of OPOWER.h"
 #endif
+#define _OPOWER_H_
+
+#include <ALL.h>
 
 //-------- Define command id. -----------//
 
@@ -137,5 +137,3 @@ public:
 extern Power power;
 
 //---------------------------------------//
-
-#endif

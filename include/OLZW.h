@@ -22,8 +22,10 @@
 // Description : header file of LZW compression/decompression
 
 
-#ifndef __OLZW_H
-#define __OLZW_H
+#ifdef _OLZW_H_
+#error "Multiple inclusion of OLZW.h"
+#endif
+#define _OLZW_H_
 
 struct Dictionary;
 class File;
@@ -115,5 +117,3 @@ private:
 	unsigned short find_child_node( unsigned short parent_code, unsigned char child_character );
 	unsigned int decode_string( unsigned int count, unsigned short code );
 };
-
-#endif

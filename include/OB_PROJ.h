@@ -21,8 +21,10 @@
 // Filename    : OB_PROJ.H
 // Description : header file for Projectile
 
-#ifndef __OB_PROJ_H
-#define __OB_PROJ_H
+#ifdef _OB_PROJ_H_
+#error "Multiple inclusion of OB_PROJ.h"
+#endif
+#define _OB_PROJ_H_
 
 #include <OBULLET.h>
 
@@ -50,5 +52,3 @@ public:
 	virtual	void	clear_ptr();
 };
 #pragma pack()
-
-#endif

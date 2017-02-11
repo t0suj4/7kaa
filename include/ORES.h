@@ -21,12 +21,12 @@
 //Filename    : ORES.H
 //Description : Header file of Object Resource
 
-#ifndef __ORES_H
-#define __ORES_H
-
-#ifndef __OFILE_H
-#include <OFILE.h>
+#ifdef _ORES_H_
+#error "Multiple inclusion of ORES.h"
 #endif
+#define _ORES_H_
+
+#include <OFILE.h>
 
 //--------- Define class Resource ----------//
 
@@ -64,5 +64,3 @@ public:
 };
 
 //-------------------------------------------//
-
-#endif

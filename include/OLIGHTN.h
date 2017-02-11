@@ -22,8 +22,10 @@
 // Description : Header file for Lightning class
 // Ownership   : Gilbert
 
-#ifndef __LIGHTN_H
-#define __LIGHTN_H
+#ifdef _OLIGHTN_H_
+#error "Multiple inclusion of OLIGHTN.h"
+#endif
+#define _OLIGHTN_H_
 
 //----------- Define constant -----------//
 
@@ -89,6 +91,4 @@ public:
 };
 
 //--------------------------------------------//
-
-#endif
 

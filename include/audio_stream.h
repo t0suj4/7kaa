@@ -22,8 +22,10 @@
 #include <stddef.h>
 #include <stdint.h>
 
-#ifndef AUDIO_STREAM_H
-#define AUDIO_STREAM_H
+#ifdef _AUDIO_STREAM_H_
+#error "Multiple inclusion of audio_stream.h"
+#endif
+#define _AUDIO_STREAM_H_
 
 class AudioStream
 {
@@ -40,5 +42,3 @@ public:
 		return (this->channels() * this->sample_size());
 	}
 };
-
-#endif

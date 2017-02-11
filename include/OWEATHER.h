@@ -23,8 +23,10 @@
 // Ownership   : Gilbert
 
 
-#ifndef __OWEATHER_H
-#define __OWEATHER_H
+#ifdef _OWEATHER_H_
+#error "Multiple inclusion of OWEATHER.h"
+#endif
+#define _OWEATHER_H_
 
 #include <stdint.h>
 
@@ -151,5 +153,3 @@ public:
 
 extern Weather weather, weather_forecast[MAX_WEATHER_FORECAST];
 extern MagicWeather magic_weather;
-
-#endif

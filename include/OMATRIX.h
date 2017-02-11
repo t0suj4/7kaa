@@ -21,12 +21,12 @@
 //Filename    : OMATRIX.H
 //Description : Object road direction turn
 
-#ifndef __OMATRIX_H
-#define __OMATRIX_H
-
-#ifndef __OUNITRES_H
-#include <OUNITRES.h>
+#ifdef _OMATRIX_H_
+#error "Multiple inclusion of OMATRIX.h"
 #endif
+#define _OMATRIX_H_
+
+#include <OUNITRES.h>
 
 #include <OREGION.h>
 
@@ -371,5 +371,3 @@ inline int Location::is_accessible(int mobileType)
 	return 0;
 }
 //-------- End of function Location::is_accessible --------//
-
-#endif

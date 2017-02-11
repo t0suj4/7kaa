@@ -22,8 +22,10 @@
 // Description: Header file of class Rain & RainDrop
 // Ownership   : Gilbert
 
-#ifndef __ORAIN_H
-#define __ORAIN_H
+#ifdef _ORAIN_H_
+#error "Multiple inclusion of ORAIN.h"
+#endif
+#define _ORAIN_H_
 
 //------------ Define constant -------------//
 
@@ -102,5 +104,3 @@ private:
 	unsigned	rand_seed();
 };
 //-------------------------------------------------//
-
-#endif

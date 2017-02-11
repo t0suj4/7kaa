@@ -21,20 +21,16 @@
 //Filename    : OTOWNRES.H
 //Description : Town town resource
 
-#ifndef __OTOWNRES_H
-#define __OTOWNRES_H
+#ifdef _OTOWNRES_H_
+#error "Multiple inclusion of OTOWNRES.h"
+#endif
+#define _OTOWNRES_H_
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
 
-#ifndef __ORESDB_H
 #include <ORESDB.h>
-#endif
 
-#ifndef __OTOWNREC_H
 #include <OTOWNREC.h>
-#endif
 
 //--------- define game constants --------//
 
@@ -168,5 +164,3 @@ private:
 extern TownRes town_res;
 
 //------------------------------------------//
-
-#endif

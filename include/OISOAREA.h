@@ -22,8 +22,10 @@
 //Description : Object to determine an isolated area
 //Owner		  : Alex
 
-#ifndef __OISOAREA_H
-#define __OISOAREA_H
+#ifdef _OISOAREA_H_
+#error "Multiple inclusion of OISOAREA.h"
+#endif
+#define _OISOAREA_H_
 
 //--------- define cross_dir ---------//
 enum	{	CROSS_LINE_SAME_DIR=1,
@@ -78,5 +80,3 @@ protected:
 
 extern IsolateArea isolate_area;
 //-----------------------------------------//
-
-#endif

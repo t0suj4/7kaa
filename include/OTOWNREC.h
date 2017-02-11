@@ -21,8 +21,10 @@
 //Filename    : OTOWNREC.H
 //Description : Town database definition
 
-#ifndef __OTOWNREC_H
-#define __OTOWNREC_H
+#ifdef _OTOWNREC_H_
+#error "Multiple inclusion of OTOWNREC.h"
+#endif
+#define _OTOWNREC_H_
 
 //------------ Define struct TownLayoutRec ---------------//
 
@@ -95,6 +97,4 @@ struct TownNameRec
 };
 
 //-------------------------------------------------------//
-
-#endif
 

@@ -22,8 +22,10 @@
 // Filename    : multiplayer.h
 // Description : Multiplayer game support.
 
-#ifndef __MULTIPLAYER_H
-#define __MULTIPLAYER_H
+#ifdef _MULTIPLAYER_H_
+#error "Multiple inclusion of multiplayer.h"
+#endif
+#define _MULTIPLAYER_H_
 
 #include <MPTYPES.h>
 #include <player_desc.h>
@@ -255,6 +257,4 @@ private:
 };
 
 extern MultiPlayer mp_obj;
-
-#endif // __MULTIPLAYER_H
 

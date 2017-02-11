@@ -22,20 +22,16 @@
 //Description : Header file of Object SeekPath
 //Owner		  : Alex
 
-#ifndef __OSPATH_H
-#define __OSPATH_H
+#ifdef _OSPATH_H_
+#error "Multiple inclusion of OSPATH.h"
+#endif
+#define _OSPATH_H_
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
 
-#ifndef __OVGA_H
 #include <OVGA.h>
-#endif
 
-#ifndef __OWORLD_H
 #include <OWORLD.h>
-#endif
 
 //---------- Define constants ------------//
 
@@ -244,6 +240,4 @@ extern unsigned long last_seek_path_profile_time;
 //#### end alex 29/9 ####//
 
 //-----------------------------------------//
-
-#endif
 

@@ -21,8 +21,10 @@
 //Filename    : OFIRMID.H
 //Description : Identity no. of all firm types
 
-#ifndef __OFIRMID_H
-#define __OFIRMID_H
+#ifdef _OFIRMID_H_
+#error "Multiple inclusion of OFIRMID.h"
+#endif
+#define _OFIRMID_H_
 
 //--------- Define no. of firms ------------//
 
@@ -43,5 +45,3 @@ enum { FIRM_BASE=1,
 	  };
 
 //------------------------------------------//
-
-#endif

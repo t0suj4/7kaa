@@ -21,8 +21,10 @@
 // Filename    : OFIRERES.H
 // Description : Fire bitmap
 
-#ifndef __FIRERES_H
-#define __FIRERES_H
+#ifdef _OFIRERES_H_
+#error "Multiple inclusion of OFIRERES.h"
+#endif
+#define _OFIRERES_H_
 
 #include <OFLAME.h>
 #include <ORESDB.h>
@@ -73,5 +75,3 @@ public:
 private:
 	void	load_info();
 };
-
-#endif

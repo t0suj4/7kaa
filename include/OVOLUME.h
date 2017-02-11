@@ -21,8 +21,10 @@
 // Filename    : OVOLUME.H
 // Description : audio volume unit
 
-#ifndef __OVOLUME_H
-#define __OVOLUME_H
+#ifdef _OVOLUME_H_
+#error "Multiple inclusion of OVOLUME.h"
+#endif
+#define _OVOLUME_H_
 
 class DsVolume;
 class AbsVolume;
@@ -76,5 +78,3 @@ public:
 };
 
 extern RelVolume DEF_REL_VOLUME;
-
-#endif

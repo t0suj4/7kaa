@@ -21,20 +21,16 @@
 //Filename    : OWORLD.H
 //Description : Header file of Object World
 
-#ifndef __OWORLD_H
-#define __OWORLD_H
+#ifdef _OWORLD_H_
+#error "Multiple inclusion of OWORLD.h"
+#endif
+#define _OWORLD_H_
 
-#ifndef __OWORLDMT_H
 #include <OWORLDMT.h>
-#endif
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
 
-#ifndef __OUNITRES_H
 #include <OUNITRES.h>
-#endif
 
 //----------- Define constant ------------//
 
@@ -279,5 +275,3 @@ inline int World::distance_rating(int xLoc1, int yLoc1, int xLoc2, int yLoc2)
 
 
 extern World world;
-
-#endif

@@ -24,8 +24,8 @@
 //              Used also by resource (rc) file for Windows to generate executable details, so don't put anything too difficult in here.
 //              Note: the rc compiler requires a newline at the end of the file.
 
-#ifndef __VERSION_H
-#define __VERSION_H
+#ifndef _VERSION_H_
+#define _VERSION_H_
 
 #define SKVERSION "2.14.7"
 #define SKVERMAJ 2

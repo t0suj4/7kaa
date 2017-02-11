@@ -21,12 +21,12 @@
 //Filename    : OF_HARB.H
 //Description : Header of Firm Harbor
 
-#ifndef __OF_HARB_H
-#define __OF_HARB_H
-
-#ifndef __OFIRM_H
-#include <OFIRM.h>
+#ifdef _OF_HARB_H_
+#error "Multiple inclusion of OF_HARB.h"
 #endif
+#define _OF_HARB_H_
+
+#include <OFIRM.h>
 
 //----------- Define constant --------------//
 
@@ -142,5 +142,3 @@ private:
 #pragma pack()
 
 //--------------------------------------//
-
-#endif

@@ -21,8 +21,10 @@
 //Filename    : OBUTTCUS.H
 //Description : Header file of button object
 
-#ifndef __OBUTTCUS_H
-#define __OBUTTCUS_H
+#ifdef _OBUTTCUS_H_
+#error "Multiple inclusion of OBUTTCUS.h"
+#endif
+#define _OBUTTCUS_H_
 
 
 //------- Define type ButtonCustomFP -------//
@@ -105,5 +107,3 @@ public:
    int     operator()()          { return button_pressed; }
 };
 //-------------------------------------------------//
-
-#endif

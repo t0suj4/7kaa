@@ -17,8 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#ifndef FILE_WRITER_H
-#define FILE_WRITER_H
+#ifdef _FILE_WRITER_H_
+#error "Multiple inclusion of file_writer.h"
+#endif
+#define _FILE_WRITER_H_
 
 #include <file_output_stream.h>
 
@@ -78,4 +80,3 @@ public:
 };
 
 /* vim: set ts=8 sw=3: */
-#endif

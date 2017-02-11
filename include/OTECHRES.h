@@ -21,12 +21,12 @@
 //Filename    : OTECHRES.H
 //Description : class Tech
 
-#ifndef __OTECHRES_H
-#define __OTECHRES_H
-
-#ifndef __ORESX_H
-#include <ORESX.h>
+#ifdef _OTECHRES_H_
+#error "Multiple inclusion of OTECHRES.h"
 #endif
+#define _OTECHRES_H_
+
+#include <ORESX.h>
 
 //--------- Define constant -----------//
 
@@ -192,5 +192,3 @@ private:
 extern TechRes tech_res;
 
 //------------------------------------//
-
-#endif

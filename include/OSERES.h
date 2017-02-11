@@ -23,8 +23,10 @@
 // Onwer       : Gilbert
 
 
-#ifndef __OSERES_H
-#define __OSERES_H
+#ifdef _OSERES_H_
+#error "Multiple inclusion of OSERES.h"
+#endif
+#define _OSERES_H_
 
 
 // ------------- Define struct SERec -------------//
@@ -127,6 +129,4 @@ private:
 };
 
 extern SERes se_res;
-
-#endif
 

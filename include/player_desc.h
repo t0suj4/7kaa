@@ -22,8 +22,10 @@
 // Filename    : player_desc.h
 // Description : MultiPlayer's PlayerDesc class
 
-#ifndef __PLAYER_DESC_H
-#define __PLAYER_DESC_H
+#ifdef _PLAYER_DESC_H_
+#error "Multiple inclusion of player_desc.h"
+#endif
+#define _PLAYER_DESC_H_
 
 #include <MPTYPES.h>
 #include <enet/enet.h>
@@ -44,6 +46,4 @@ public:
 	char *friendly_name_str();
 	ENetAddress *get_address();
 };
-
-#endif // __PLAYER_DESC_H
 

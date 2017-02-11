@@ -21,8 +21,10 @@
 // Filename    : OLONGLOG.H
 // Description : 
 
-#ifndef __OLONGLOG_H
-#define __OLONGLOG_H
+#ifdef _OLONGLOG_H_
+#error "Multiple inclusion of OLONGLOG.h"
+#endif
+#define _OLONGLOG_H_
 
 #include <OFILE.h>
 
@@ -37,6 +39,4 @@ public:
 
 #ifdef DEBUG
 extern LongLog *long_log;
-#endif
-
 #endif

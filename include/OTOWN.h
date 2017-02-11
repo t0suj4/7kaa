@@ -21,28 +21,20 @@
 //Filename    : OTOWN.H
 //Description : Header file of Object Town
 
-#ifndef __OTOWN_H
-#define __OTOWN_H
+#ifdef _OTOWN_H_
+#error "Multiple inclusion of OTOWN.h"
+#endif
+#define _OTOWN_H_
 
-#ifndef __ODYNARRB_H
 #include <ODYNARRB.h>
-#endif
 
-#ifndef __OSKILL_H
 #include <OSKILL.h>
-#endif
 
-#ifndef __OFIRMID_H
 #include <OFIRMID.h>
-#endif
 
-#ifndef __ORAWRES_H
 #include <ORAWRES.h>
-#endif
 
-#ifndef __OTOWNRES_H
 #include <OTOWNRES.h>
-#endif
 
 //------- define constant --------//
 
@@ -460,5 +452,3 @@ public:
 extern TownArray town_array;
 
 //---------------------------------------------------//
-
-#endif

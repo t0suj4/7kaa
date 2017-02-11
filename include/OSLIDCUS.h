@@ -22,8 +22,10 @@
 // Description : Custom slide bar 
 
 
-#ifndef __OSLIDCUS_H
-#define __OSLIDCUS_H
+#ifdef _OSLIDCUS_H_
+#error "Multiple inclusion of OSLIDCUS.h"
+#endif
+#define _OSLIDCUS_H_
 
 
 // -------- define type SlideBarFP ---------//
@@ -141,6 +143,3 @@ public:
 	int	calc_view_recno(short scrnY);
 	int	max_view_recno();
 };
-
-
-#endif

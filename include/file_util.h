@@ -17,11 +17,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#ifndef FILE_UTIL_H
-#define FILE_UTIL_H
+#ifdef _FILE_UTIL_H_
+#error "Multiple inclusion of file_util.h"
+#endif
+#define _FILE_UTIL_H_
 
 #include <OFILE.h>
 
 bool seek(File *file, long off, int whence);
-
-#endif

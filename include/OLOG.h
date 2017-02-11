@@ -21,8 +21,10 @@
 // Filename    : LOG.H
 // Description : Logging to locate hang
 
-#ifndef __LOG_H
-#define __LOG_H
+#ifdef _OLOG_H_
+#error "Multiple inclusion of OLOG.h"
+#endif
+#define _OLOG_H_
 
 #include <OSTR.h>
 #include <OVQUEUE.h>
@@ -80,7 +82,4 @@ extern Log msg_log;
 	#define DEBUG_LOG(c)	Log::debug_log(c)
 #else
 	#define DEBUG_LOG(c)
-#endif
-
-
 #endif

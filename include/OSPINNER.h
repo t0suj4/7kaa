@@ -21,20 +21,16 @@
 //Filename   : OSPINNER.H
 //Description: Hander file for class Spinner
 
-#ifndef __OSPINNER_H
-#define __OSPINNER_H
+#ifdef _OSPINNER_H_
+#error "Multiple inclusion of OSPINNER.h"
+#endif
+#define _OSPINNER_H_
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
 
-#ifndef __OINFO_H
 #include <OINFO.h>
-#endif
 
-#ifndef __OFONT_H
 #include <OFONT.h>
-#endif
 
 //------------- Define constant --------------//
 
@@ -77,5 +73,3 @@ public:
 };
 
 //----------------------------------------------------//
-
-#endif

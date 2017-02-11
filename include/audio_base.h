@@ -18,8 +18,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#ifndef AUDIO_BASE_H
-#define AUDIO_BASE_H
+#ifdef _AUDIO_BASE_H_
+#error "Multiple inclusion of audio_base.h"
+#endif
+#define _AUDIO_BASE_H_
 
 #include <ORESX.h>
 #include <OVOLUME.h>
@@ -97,5 +99,3 @@ public:
 
    virtual int	get_wav_volume() const = 0; // 0 to 100
 };
-
-#endif

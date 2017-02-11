@@ -21,12 +21,12 @@
 //Filename    : OFIRMA.H
 //Description : Object Firm Array
 
-#ifndef __OFIRMA_H
-#define __OFIRMA_H
-
-#ifndef __ODYNARRB_H
-#include <ODYNARRB.h>
+#ifdef _OFIRMA_H_
+#error "Multiple inclusion of OFIRMA.h"
 #endif
+#define _OFIRMA_H_
+
+#include <ODYNARRB.h>
 
 //--------- Define class FirmArray ----------//
 
@@ -87,5 +87,3 @@ extern MLink     firm_mlink;
 extern FirmArray firm_array;
 
 //---------------------------------------------//
-
-#endif

@@ -21,8 +21,10 @@
 //Filename    : OBATTLE.H
 //Description : Header file for Battle object
 
-#ifndef __OBATTLE_H
-#define __OBATTLE_H
+#ifdef _OBATTLE_H_
+#error "Multiple inclusion of OBATTLE.h"
+#endif
+#define _OBATTLE_H_
 
 //---------- Define class Battle --------//
 
@@ -59,5 +61,3 @@ private:
 extern Battle battle;
 
 //---------------------------------------//
-
-#endif

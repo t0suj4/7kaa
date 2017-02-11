@@ -21,8 +21,10 @@
 //Filename    : OGET.H
 //Description : Header file of OGET.CPP
 
-#ifndef __OGET_H
-#define __OGET_H
+#ifdef _OGET_H_
+#error "Multiple inclusion of OGET.h"
+#endif
+#define _OGET_H_
 
 
 //-------- Define macros -------------//
@@ -147,8 +149,6 @@ private:
 };
 
 //---------------------------------------------------//
-
-#endif
 
 
 

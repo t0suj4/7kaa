@@ -22,8 +22,10 @@
 // Description : store of crc of objects
 
 
-#ifndef __OCRC_STO_H
-#define __OCRC_STO_H
+#ifdef _OCRC_STO_H_
+#error "Multiple inclusion of OCRC_STO.h"
+#endif
+#define _OCRC_STO_H_
 
 #include <OVQUEUE.h>
 #include <OSTR.h>
@@ -64,5 +66,3 @@ public:
 };
 
 extern CrcStore crc_store;
-
-#endif 

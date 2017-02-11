@@ -17,8 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#ifndef FILE_INPUT_STREAM_H
-#define FILE_INPUT_STREAM_H
+#ifdef _FILE_INPUT_STREAM_H_
+#error "Multiple inclusion of file_input_stream.h"
+#endif
+#define _FILE_INPUT_STREAM_H_
 
 #include <OFILE.h>
 #include <input_stream.h>
@@ -41,4 +43,3 @@ public:
 };
 
 /* vim: set ts=8 sw=3: */
-#endif

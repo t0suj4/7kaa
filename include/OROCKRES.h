@@ -23,8 +23,10 @@
 //Owner       : Gilbert
 
 
-#ifndef __OROCKRES_H
-#define __OROCKRES_H
+#ifdef _OROCKRES_H_
+#error "Multiple inclusion of OROCKRES.h"
+#endif
+#define _OROCKRES_H_
 
 
 #include <GAMEDEF.h>
@@ -212,5 +214,3 @@ private:
 };
 
 extern RockRes rock_res;
-
-#endif

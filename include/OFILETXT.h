@@ -21,12 +21,12 @@
 //Filename    : OFILETXT.H
 //Description : Header file for text file stream
 
-#ifndef __FILETXT_H
-#define __FILETXT_H
-
-#ifndef __OFILE_H
-#include <OFILE.h>
+#ifdef _OFILETXT_H_
+#error "Multiple inclusion of OFILETXT.h"
 #endif
+#define _OFILETXT_H_
+
+#include <OFILE.h>
 
 //--------- Define control characters ------------//
 
@@ -67,7 +67,5 @@ public:
    long   file_size()   { return file_length; }
    int    is_eof()      { return *data_ptr == CHAR_EOF; }
 };
-
-#endif
 
 

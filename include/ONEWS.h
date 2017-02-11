@@ -21,9 +21,10 @@
 //Filename    : ONEWS.H
 //Description : Object News
 
-#ifndef __ONEWS_H
-#define __ONEWS_H
-
+#ifdef _ONEWS_H_
+#error "Multiple inclusion of ONEWS.h"
+#endif
+#define _ONEWS_H_
 #include <stdint.h>
 
 #include <OBUTTON.h>
@@ -264,5 +265,3 @@ public:
 extern NewsArray news_array;
 
 //-------------------------------------------//
-
-#endif

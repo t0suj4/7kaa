@@ -21,12 +21,12 @@
 //Filename    :: ODYNARRB.H
 //Description :: Dynamic Array Object Version B
 
-#ifndef __ODYNARRB_H
-#define __ODYNARRB_H
-
-#ifndef __ODYNARR_H
-#include <ODYNARR.h>
+#ifdef _ODYNARRB_H_
+#error "Multiple inclusion of ODYNARRB.h"
 #endif
+#define _ODYNARRB_H_
+
+#include <ODYNARR.h>
 
 //------------ Define Constant -------------//
 
@@ -83,7 +83,5 @@ public:
 #pragma pack()
 
 //---------------------------------------------//
-
-#endif
 
 

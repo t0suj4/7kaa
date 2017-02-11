@@ -17,8 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#ifndef FILE_READER_H
-#define FILE_READER_H
+#ifdef _FILE_READER_H_
+#error "Multiple inclusion of file_reader.h"
+#endif
+#define _FILE_READER_H_
 
 #include <file_input_stream.h>
 
@@ -85,4 +87,3 @@ public:
 };
 
 /* vim: set ts=8 sw=3: */
-#endif

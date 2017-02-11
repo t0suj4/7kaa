@@ -22,12 +22,12 @@
 //Description : Header file of object WallRes
 //Ownership   : Gilbert
 
-#ifndef __OWALLRES_H
-#define __OWALLRES_H
-
-#ifndef __ORESDB_H
-#include <ORESDB.h>
+#ifdef _OWALLRES_H_
+#error "Multiple inclusion of OWALLRES.h"
 #endif
+#define _OWALLRES_H_
+
+#include <ORESDB.h>
 
 //------------ Define constant -------------//
 
@@ -115,5 +115,3 @@ private:
 extern WallRes wall_res;
 
 //----------------------------------------------------//
-
-#endif

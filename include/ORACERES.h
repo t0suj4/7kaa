@@ -21,12 +21,12 @@
 //Filename    : ORACERES.H
 //Description : Header file of object RaceRes
 
-#ifndef __ORACERES_H
-#define __ORACERES_H
-
-#ifndef __ORESDB_H
-#include <ORESDB.h>
+#ifdef _ORACERES_H_
+#error "Multiple inclusion of ORACERES.h"
 #endif
+#define _ORACERES_H_
+
+#include <ORESDB.h>
 
 //------------ Define race id. -------------//
 
@@ -161,5 +161,3 @@ private:
 extern RaceRes race_res;
 
 //----------------------------------------------------//
-
-#endif

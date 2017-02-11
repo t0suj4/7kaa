@@ -21,12 +21,12 @@
 //Filename    : OF_RESE.H
 //Description : Header of FirmResearch
 
-#ifndef __OF_RESE_H
-#define __OF_RESE_H
-
-#ifndef __OFIRM_H
-#include <OFIRM.h>
+#ifdef _OF_RESE_H_
+#error "Multiple inclusion of OF_RESE.h"
 #endif
+#define _OF_RESE_H_
+
+#include <OFIRM.h>
 
 
 //------- Define class FirmResearch --------//
@@ -83,5 +83,3 @@ private:
 #pragma pack()
 
 //--------------------------------------//
-
-#endif

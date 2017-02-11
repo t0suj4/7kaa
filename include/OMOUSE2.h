@@ -23,8 +23,10 @@
 
 //------ flags used in is_key ---------//
 
-#ifndef __OMOUSE2_H
-#define __OMOUSE2_H
+#ifdef _OMOUSE2_H_
+#error "Multiple inclusion of OMOUSE2.h"
+#endif
+#define _OMOUSE2_H_
 
 enum 
 {
@@ -48,5 +50,3 @@ enum
 	K_UNIQUE_KEY = K_IGNORE_SHIFT | K_IGNORE_CTRL
 		| K_IGNORE_ALT | K_IGNORE_NUM_LOCK | K_IGNORE_CAP_LOCK,
 };
-
-#endif

@@ -21,12 +21,12 @@
 //Filename    : OVBROWIF.H
 //Description : Object List Box
 
-#ifndef __OVBROWIF_H
-#define __OVBROWIF_H
-
-#ifndef __OVBROWSE_H
-#include <OVBROWSE.h>
+#ifdef _OVBROWIF_H_
+#error "Multiple inclusion of OVBROWIF.h"
 #endif
+#define _OVBROWIF_H_
+
+#include <OVBROWSE.h>
 
 //----------- Define variable type -----------//
 
@@ -54,6 +54,4 @@ protected:
 };
 
 //--------------------------------------------------//
-
-#endif
 

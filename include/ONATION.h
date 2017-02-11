@@ -22,20 +22,16 @@
 //Description : Header of class Nation
 //Owner		  : Alex
 
-#ifndef __ONATION_H
-#define __ONATION_H
+#ifdef _ONATION_H_
+#error "Multiple inclusion of ONATION.h"
+#endif
+#define _ONATION_H_
 
-#ifndef __ONATIONB_H
 #include <ONATIONB.h>
-#endif
 
-#ifndef __OUNIT_H
 #include <OUNIT.h>
-#endif
 
-#ifndef __OTOWN_H
 #include <OTOWN.h>
-#endif
 
 //--------- define parameters ----------//
 
@@ -629,10 +625,6 @@ public:
 };
 #pragma pack()
 
-#ifndef __ONATIONA_H
 #include <ONATIONA.h>
-#endif
 
 //-------------------------------------//
-
-#endif

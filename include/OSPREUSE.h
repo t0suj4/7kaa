@@ -22,20 +22,14 @@
 //Description : Header file of Object SeekPathReuse
 //Owner		  : Alex
 
-#ifndef __OSPREUSE_H
-#define __OSPREUSE_H
+#ifdef _OSPREUSE_H_
+#error "Multiple inclusion of OSPREUSE.h"
+#endif
+#define _OSPREUSE_H_
 
-#ifndef	__OSPATH_H
 #include <OSPATH.h>
-#endif
 
-#ifndef __ALL_H
 #include <ALL.h>
-#endif
-
-#ifndef __OWORLD_H
-#define <OWORLD.H>
-#endif
 
 //---------- Define constants ------------//
 enum{	REUSE_PATH_INITIAL=1,			// 0 is used for other searching call with no path reuse, or for error checking
@@ -212,5 +206,3 @@ class SeekPathReuse
 };
 
 extern SeekPathReuse seek_path_reuse;
-
-#endif

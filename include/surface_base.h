@@ -19,8 +19,10 @@
  */
 
 
-#ifndef __SURFACE_BASE_H
-#define __SURFACE_BASE_H
+#ifdef _SURFACE_BASE_H_
+#error "Multiple inclusion of surface_base.h"
+#endif
+#define _SURFACE_BASE_H_
 
 class SurfaceBase
 {
@@ -34,5 +36,3 @@ class SurfaceBase
 	// Drawing routines
 	virtual void  blt(Surface *src, int x = 0, int y = 0) =0;
 };
-
-#endif // __SURFACE_BASE_H

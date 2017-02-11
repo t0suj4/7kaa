@@ -21,20 +21,16 @@
 //Filename    : ONATIONB.H
 //Description : class NationBase
 
-#ifndef __ONATIONB_H
-#define __ONATIONB_H
+#ifdef _ONATIONB_H_
+#error "Multiple inclusion of ONATIONB.h"
+#endif
+#define _ONATIONB_H_
 
-#ifndef __OINFO_H
 #include <OINFO.h>
-#endif
 
-#ifndef __ORAWRES_H
 #include <ORAWRES.h>
-#endif
 
-#ifndef __OTALKMSG_H
 #include <OTALKMSG.h>
-#endif
 
 //---------- Define constant -----------//
 
@@ -444,4 +440,3 @@ public:
 //### begin alex 12/8 ###//
 extern short nation_hand_over_flag; // 0 for no nation hand over, 1-MAX_NATION for nation hand over
 //#### end alex 12/8 ####//
-#endif

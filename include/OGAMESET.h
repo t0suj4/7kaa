@@ -21,16 +21,14 @@
 //Filename    : OGAMESET.H
 //Description : Header file of Object GameSet
 
-#ifndef __OGAMESET_H
-#define __OGAMESET_H
+#ifdef _OGAMESET_H_
+#error "Multiple inclusion of OGAMESET.h"
+#endif
+#define _OGAMESET_H_
 
-#ifndef __ORESX_H
 #include <ORESX.h>
-#endif
 
-#ifndef __ODB_H
 #include <ODB.h>
-#endif
 
 //-------- Define struct SetRec ---------//
 
@@ -97,5 +95,3 @@ private:
 //---------------------------------------//
 
 extern GameSet game_set;
-
-#endif

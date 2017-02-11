@@ -22,8 +22,10 @@
 //Description : Header file of Video for Windows playback class
 //Owner       : Gilbert
 
-#ifndef __OVIDEO_H
-#define __OVIDEO_H
+#ifdef _OVIDEO_H_
+#error "Multiple inclusion of OVIDEO.h"
+#endif
+#define _OVIDEO_H_
 
 #include <strmif.h>
 
@@ -61,6 +63,4 @@ private:
 //----------------------------------------//
 
 extern Video video;
-
-#endif
 

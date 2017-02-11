@@ -21,12 +21,12 @@
 //Filename    : OIMAGERES.H
 //Description : Object ImageRes
 
-#ifndef __OIMAGERES_H
-#define __OIMAGERES_H
-
-#ifndef  __ORESX_H
-#include <ORESX.h>
+#ifdef _OIMGRES_H_
+#error "Multiple inclusion of OIMGRES.h"
 #endif
+#define _OIMGRES_H_
+
+#include <ORESX.h>
 
 //----------------------------------------//
 
@@ -61,5 +61,3 @@ extern ImageRes image_encyc, image_tpict, image_tutorial;
 extern ImageRes image_menu_plus;
 extern ImageRes& image_menu2;
 //--------------------------------------------//
-
-#endif

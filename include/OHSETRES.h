@@ -23,12 +23,12 @@
 // Ownership   : Gilbert
 
 
-#ifndef __OHSETRES_H
-#define __OHSETRES_H
-
-#ifndef __ORESDB_H
-#include <ORESDB.h>
+#ifdef _OHSETRES_H_
+#error "Multiple inclusion of OHSETRES.h"
 #endif
+#define _OHSETRES_H_
+
+#include <ORESDB.h>
 
 //------------ Define struct EqPatternRec ---------------//
 
@@ -147,5 +147,3 @@ private:
 };
 
 //----------------------------------------------------//
-
-#endif

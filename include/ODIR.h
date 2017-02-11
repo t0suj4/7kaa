@@ -21,8 +21,10 @@
 //Filename    : ODIR.H
 //Description : Object Directory Header
 
-#ifndef __ODIR_H
-#define __ODIR_H
+#ifdef _ODIR_H_
+#error "Multiple inclusion of ODIR.h"
+#endif
+#define _ODIR_H_
 
 #include <win32_compat.h>
 #include <ODYNARR.h>
@@ -48,5 +50,3 @@ public:
 };
 
 //--------------------------------------------//
-
-#endif

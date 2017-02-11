@@ -21,8 +21,10 @@
 //Filename    : asmfun.h
 //Description : Header file for asm compilation
 
-#ifndef _ASMFUN_H
-#define _ASMFUN_H
+#ifdef _ASMFUN_H_
+#error "Multiple inclusion of asmfun.h"
+#endif
+#define _ASMFUN_H_
 
 #ifdef USE_ASM
 #ifdef _MSC_VER
@@ -35,4 +37,3 @@
 #define IMGcall
 #endif
 
-#endif // _ASMFUN_H

@@ -22,8 +22,10 @@
 // Description : Multiplayer header, define symbols
 
 
-#ifndef __MPTYPES_H
-#define __MPTYPES_H
+#ifdef _MPTYPES_H_
+#error "Multiple inclusion of MPTYPES.H"
+#endif
+#define _MPTYPES_H_
 
 #include <stdint.h>
 
@@ -33,6 +35,4 @@
 #define MP_FRIENDLY_NAME_LEN 64
 // NOTE: MP_PLAYER_NAME_LEN must match PLAYER_NAME_LEN in OCONFIG.h
 #define MP_PLAYER_NAME_LEN 20
-
-#endif
 

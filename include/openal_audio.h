@@ -19,8 +19,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#ifndef OPENAL_AUDIO_H
-#define OPENAL_AUDIO_H
+#ifdef _OPENAL_AUDIO_H_
+#error "Multiple inclusion of openal_audio.h"
+#endif
+#define _OPENAL_AUDIO_H_
 
 #include <map>
 
@@ -173,5 +175,3 @@ private:
 };
 
 typedef OpenALAudio Audio;
-
-#endif

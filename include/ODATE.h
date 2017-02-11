@@ -21,12 +21,12 @@
 //Filename    : ODATE.H
 //Description : Header file of object date information
 
-#ifndef __ODATE_H
-#define __ODATE_H
-
-#ifndef __ALL_H
-#include <ALL.h>
+#ifdef _ODATE_H_
+#error "Multiple inclusion of ODATE.h"
 #endif
+#define _ODATE_H_
+
+#include <ALL.h>
 
 class DateInfo
 {
@@ -57,5 +57,3 @@ private:
 };
 
 extern DateInfo date;
-
-#endif

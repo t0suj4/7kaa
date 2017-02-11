@@ -22,8 +22,10 @@
 // Description : Header file of explored area mask
 // Owner       : Gilbert
 
-#ifndef __OEXPMASK_H
-#define __OEXPMASK_H
+#ifdef _OEXPMASK_H_
+#error "Multiple inclusion of OEXPMASK.h"
+#endif
+#define _OEXPMASK_H_
 
 struct Location;
 class ColorTable;
@@ -43,5 +45,3 @@ public:
 };
 
 extern ExploredMask explored_mask;
-
-#endif

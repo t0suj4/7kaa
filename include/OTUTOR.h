@@ -21,12 +21,12 @@
 //Filename    : OTUTOR.H
 //Description : Header file of object RaceRes
 
-#ifndef __OH
-#define __OH
-
-#ifndef __ORESX_H
-#include <ORESX.h>
+#ifdef _OTUTOR_H_
+#error "Multiple inclusion of OTUTOR.h"
 #endif
+#define _OTUTOR_H_
+
+#include <ORESX.h>
 
 //------------ Define constant -----------//
 
@@ -126,5 +126,3 @@ private:
 extern Tutor tutor;
 
 //----------------------------------------------------//
-
-#endif

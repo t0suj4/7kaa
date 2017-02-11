@@ -22,20 +22,16 @@
 //Description : Header file of Object Bullet
 //Owner		  : Alex
 
-#ifndef __OBULLET_H
-#define __OBULLET_H
+#ifdef _OBULLET_H_
+#error "Multiple inclusion of OBULLET.h"
+#endif
+#define _OBULLET_H_
 
-#ifndef __OSPRITE_H
 #include <OSPRITE.h>
-#endif
 
-#ifndef __OUNIT_H
 #include <OUNIT.h>
-#endif
 
-#ifndef __OFIRM_H
 #include <OFIRM.h>
-#endif
 
 //------ define the parent type ------//
 enum	{	BULLET_BY_UNIT = 1,
@@ -127,6 +123,4 @@ public:
 extern BulletArray bullet_array;
 
 //-----------------------------------------//
-
-#endif
 

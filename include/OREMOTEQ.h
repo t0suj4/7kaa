@@ -22,8 +22,10 @@
 // Description : header file of remote message queue
 
 
-#ifndef __OREMOTEQ_H
-#define __OREMOTEQ_H
+#ifdef _OREMOTEQ_H_
+#error "Multiple inclusion of OREMOTEQ.h"
+#endif
+#define _OREMOTEQ_H_
 
 #include <OVQUEUE.h>
 #include <stdint.h>
@@ -55,6 +57,4 @@ public:
 	void	traverse_next();
 	RemoteMsg *get_remote_msg(uint16_t * msgLen = NULL);
 };
-
-#endif
 

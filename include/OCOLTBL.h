@@ -21,8 +21,10 @@
 // Filename    : OCOLTBL.H
 // Description : Header file for color remap table ColorTable
 
-#ifndef __OCOLTBL_H
-#define __OCOLTBL_H
+#ifdef _OCOLTBL_H_
+#error "Multiple inclusion of OCOLTBL.h"
+#endif
+#define _OCOLTBL_H_
 
 typedef unsigned char BYTE;
 
@@ -128,5 +130,3 @@ private:
 	static HSVColor rgb2hsv(RGBColor &);
 	static RGBColor hsv2rgb(HSVColor &);
 };
-
-#endif

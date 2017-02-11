@@ -21,8 +21,10 @@
 //Filename        : ALL.H
 //Description : General-purpose header file
 
-#ifndef __ALL_H
-#define __ALL_H
+#ifdef _ALL_H_
+#error "Multiple inclusion of all.h"
+#endif
+#define _ALL_H_
 
 //--------- Include other headers -------//
 
@@ -93,4 +95,3 @@ extern Mem mem;
 
 //--------------------------------------------//
 
-#endif

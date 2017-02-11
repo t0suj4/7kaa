@@ -19,8 +19,10 @@
  */
 
 
-#ifndef _WIN32_COMPAT_H
-#define _WIN32_COMPAT_H
+#ifdef _WIN32_COMPAT_H_
+#error "Multiple inclusion of win32_compat.h"
+#endif
+#define _WIN32_COMPAT_H_
 
 
 #ifdef NO_WINDOWS // !WINE && !WIN32
@@ -99,6 +101,3 @@ inline char *strlwr(char *str)
 #include <windows.h>
 
 #endif
-
-
-#endif // _WIN32_COMPAT_H

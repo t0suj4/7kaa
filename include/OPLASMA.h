@@ -22,8 +22,10 @@
 // Description : header file of class Plasma
 // Ownership   : Gilbert
 
-#ifndef __OPLASMA_H
-#define __OPLASMA_H
+#ifdef _OPLASMA_H_
+#error "Multiple inclusion of OPLASMA.h"
+#endif
+#define _OPLASMA_H_
 
 typedef unsigned char BYTE;
 typedef unsigned short U16;
@@ -65,5 +67,3 @@ private:
 
 
 };
-
-#endif

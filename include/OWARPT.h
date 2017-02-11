@@ -22,8 +22,10 @@
 // Description : warning point on map
 
 
-#ifndef __OWARPT_H
-#define __OWARPT_H
+#ifdef _OWARPT_H_
+#error "Multiple inclusion of OWARPT.h"
+#endif
+#define _OWARPT_H_
 
 #include <OWORLDMT.h>
 
@@ -57,5 +59,3 @@ public:
 };
 
 extern WarPointArray war_point_array;
-
-#endif

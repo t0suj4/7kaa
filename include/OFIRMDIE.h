@@ -22,8 +22,10 @@
 // Description : destructing firm
 
 
-#ifndef __OFIRMDIE_H
-#define __OFIRMDIE_H
+#ifdef _OFIRMDIE_H_
+#error "Multiple inclusion of OFIRMDIE.h"
+#endif
+#define _OFIRMDIE_H_
 
 #include <ODYNARRB.h>
 #include <ORESDB.h>
@@ -104,5 +106,3 @@ public:
 
 extern FirmDieRes firm_die_res;
 extern FirmDieArray firm_die_array;
-
-#endif

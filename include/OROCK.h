@@ -22,8 +22,10 @@
 // Description : header file of Rock and RockArray
 // Owner       : Gilbert
 
-#ifndef __OROCK_H
-#define __OROCK_H
+#ifdef _OROCK_H_
+#error "Multiple inclusion of OROCK.h"
+#endif
+#define _OROCK_H_
 
 #include <ODYNARRB.h>
 
@@ -73,5 +75,3 @@ public:
 
 extern RockArray rock_array;
 extern RockArray dirt_array;
-
-#endif

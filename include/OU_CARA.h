@@ -22,28 +22,20 @@
 //Description : Header file of Unit Caravan
 //Owner		  : Alex
 
-#ifndef __OU_CARA_H
-#define __OU_CARA_H
+#ifdef _OU_CARA_H_
+#error "Multiple inclusion of OU_CARA.h"
+#endif
+#define _OU_CARA_H_
 
-#ifndef __ODYNARR_H
 #include <ODYNARR.h>
-#endif
 
-#ifndef __OSPATH_H
 #include <OSPATH.h>
-#endif
 
-#ifndef __OUNIT_H
 #include <OUNIT.h>
-#endif
 
-#ifndef __ORAWRES_H
 #include <ORAWRES.h>
-#endif
 
-#ifndef __F_MARK_H
 #include <OF_MARK.h>
-#endif
 
 //------------- Define constant -----------//
 
@@ -204,5 +196,3 @@ private:
 #pragma pack()
 
 //------------------------------------------//
-
-#endif

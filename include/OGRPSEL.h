@@ -18,8 +18,10 @@
  *
  */
 
-#ifndef __OGRPSEL_H
-#define __OGRPSEL_H
+#ifdef _OGRPSEL_H_
+#error "Multiple inclusion of OGRPSEL.h"
+#endif
+#define _OGRPSEL_H_
 
 #define MAX_SELECT_GROUP_NUM	9
 
@@ -40,5 +42,3 @@ class GroupSelect
 };
 
 extern GroupSelect group_select;
-
-#endif

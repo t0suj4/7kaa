@@ -22,8 +22,10 @@
 // Description : header file for fixed size binary block
 // Owner       : Gilbert
 
-#ifndef __OBLOB_H
-#define __OBLOB_H
+#ifdef _OBLOB_H_
+#error "Multiple inclusion of OBLOB.h"
+#endif
+#define _OBLOB_H_
 
 class Blob
 {
@@ -42,6 +44,3 @@ public:
 
 	char *p()			{ return ptr; }
 };
-
-
-#endif

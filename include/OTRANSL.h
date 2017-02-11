@@ -21,8 +21,10 @@
 //Filename    : OTRANSL.H
 //Description : Multi-lingual Translation Class Header
 
-#ifndef __OTRANSL_H
-#define __OTRANSL_H
+#ifdef _OTRANSL_H_
+#error "Multiple inclusion of OTRANSL.h"
+#endif
+#define _OTRANSL_H_
 
 
 //--------- Define struct TranslateRec -------//
@@ -61,5 +63,3 @@ public:
 extern Translate translate;
 
 //--------------------------------------------------//
-
-#endif
