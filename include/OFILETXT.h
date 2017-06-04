@@ -26,7 +26,6 @@
 #endif
 #define _OFILETXT_H_
 
-#include <OFILE.h>
 
 //--------- Define control characters ------------//
 

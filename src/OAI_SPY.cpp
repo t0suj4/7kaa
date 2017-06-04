@@ -22,11 +22,40 @@
 //Description: AI - Spy activities
 
 #include <ALL.h>
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
 #include <OFIRM.h>
+#include <OTOWNRES.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <ODYNARRB.h>
 #include <OTOWN.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
 #include <OSPY.h>
+#include <OFIRMA.h>
+#include <OERROR.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
 
 //--------- Begin of function Nation::think_spy --------//
 

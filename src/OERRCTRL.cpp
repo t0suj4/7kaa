@@ -21,14 +21,25 @@
 // Filename   : OERRCTRL.H
 // Descrition : Error control
 
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <GAMEDEF.h>
+#include <OVQUEUE.h>
+#include <cstdint>
 #include <OERRCTRL.h>
+#include <MPTYPES.h>
+#include <enet/enet.h>
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
 #include <multiplayer.h>
 #include <CRC.h>
 #include <ALL.h>
-#include <stdint.h>
 
 #define DEBUG_LOG_LOCAL 1
+#include <OSTR.h>
 #include <OLOG.h>
+#include <OERROR.h>
+#include <win32_compat.h>
 
 // ---------- define constant -----------//
 // 0 don't display log, 1 display exception, 2 display more detail, 3 display all

@@ -26,11 +26,6 @@
 #endif
 #define _OU_MARI_H_
 
-#include <OUNIT.h>
-
-#include <OF_MARK.h>
-
-#include <OU_CARA.h>
 
 //------- Define constant ---------//
 

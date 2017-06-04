@@ -26,7 +26,6 @@
 #endif
 #define _OTECHRES_H_
 
-#include <ORESX.h>
 
 //--------- Define constant -----------//
 

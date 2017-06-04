@@ -22,11 +22,39 @@
 //Filename		: OAI_INFO.CPP
 //Description	: AI - A.I. info structure
 
+#include <ALL.h>
+#include <win32_compat.h>
+#include <OFILE.h>
 #include <OSYS.h>
+#include <GAMEDEF.h>
+#include <ORESDB.h>
+#include <OTOWNRES.h>
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
+#include <ORES.h>
+#include <ORAWRES.h>
 #include <OTOWN.h>
+#include <OINFO.h>
+#include <OUNITRES.h>
+#include <OFIRM.h>
 #include <OF_MARK.h>
+#include <OSPRTRES.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
 #include <OU_CARA.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
+#include <OERROR.h>
 
 
 //--------- Begin of function Nation::update_ai_firm_array --------//

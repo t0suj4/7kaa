@@ -26,8 +26,6 @@
 #endif
 #define _ODYNARRB_H_
 
-#include <ODYNARR.h>
-
 //------------ Define Constant -------------//
 
 #define DEFAULT_REUSE_INTERVAL_DAYS		3
@@ -45,6 +43,8 @@ struct EmptyRoom
 	int   deleted_game_date;
 };
 #pragma pack()
+
+class File;
 
 //---------- Define class DynArrayB -----------//
 

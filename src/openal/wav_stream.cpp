@@ -22,10 +22,14 @@
 #include <string.h>
 #include <stdlib.h>
 
+#include <win32_compat.h>
+#include <OFILE.h>
 #include <ALL.h>
 #include <dbglog.h>
+#include <input_stream.h>
 #include <file_input_stream.h>
 #include <file_util.h>
+#include <audio_stream.h>
 #include <wav_stream.h>
 
 DBGLOG_DEFAULT_CHANNEL(Audio);

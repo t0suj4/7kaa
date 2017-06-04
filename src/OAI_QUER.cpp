@@ -21,10 +21,30 @@
 //Filename   : OAI_QUER.CPP
 //Description: AI - query functions
 
-#include <ALL.h>
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OTOWNRES.h>
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
+#include <ORES.h>
+#include <ORAWRES.h>
 #include <OTOWN.h>
+#include <OUNITRES.h>
+#include <OINFO.h>
 #include <OFIRM.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
 #include <ONATION.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <OWORLD.h>
+#include <OFIRMA.h>
+#include <OFIRMRES.h>
 
 
 //--------- Begin of function Nation::check_firm_ready --------//

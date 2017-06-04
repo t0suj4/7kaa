@@ -26,13 +26,6 @@
 #endif
 #define _OF_MARK_H_
 
-#include <OFIRM.h>
-
-#include <OINFO.h>
-
-#include <ORAWRES.h>
-
-#include <OTOWN.h>
 
 //---------- Define constant -----------//
 

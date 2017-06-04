@@ -26,7 +26,6 @@
 #endif
 #define _OF_CAMP_H_
 
-#include <OFIRM.h>
 
 //------------ define constant -----------//
 

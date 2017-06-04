@@ -30,12 +30,16 @@
 #include <windows.h>
 #endif
 
+#include <win32_compat.h>
+#include <OFILE.h>
 #include <OSYS.h>
 #include <OBOX.h>
+#include <vga_base.h>
 #include <OVGA.h>
 #include <ALL.h>
 
 #include <dbglog.h>
+#include <OERROR.h>
 
 DBGLOG_DEFAULT_CHANNEL(fatal);
 

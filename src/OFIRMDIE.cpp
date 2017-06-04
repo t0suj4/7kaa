@@ -23,13 +23,32 @@
 
 
 #include <OSTR.h>
+#include <GAMEDEF.h>
+#include <win32_compat.h>
+#include <OFILE.h>
+#include <ORESDB.h>
 #include <OFIRMRES.h>
-#include <OFIRMDIE.h>
+#include <ORESX.h>
+#include <ODB.h>
 #include <OGAMESET.h>
 #include <OGAME.h>
-#include <ORESDB.h>
 #include <ALL.h>
-
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
+#include <OFIRMDIE.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <OERROR.h>
+#include <OUNITRES.h>
+#include <OINFO.h>
+#include <OFIRM.h>
+#include <OFIRMID.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
 
 #define FIRM_BUILD_DB 	"FDBUILD"
 #define FIRM_FRAME_DB 	"FDFRAME"

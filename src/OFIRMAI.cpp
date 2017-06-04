@@ -21,14 +21,46 @@
 //Filename    : OFIRMAI.CPP
 //Description : AI functions for the class Firm
 
+#include <GAMEDEF.h>
+#include <win32_compat.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <OSKILL.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
+#include <OFIRM.h>
 #include <OF_INN.h>
+#include <OFIRMID.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OWORLD.h>
 #include <OF_MINE.h>
 #include <OF_FACT.h>
 #include <OF_CAMP.h>
+#include <ORES.h>
+#include <ORAWRES.h>
 #include <OF_MARK.h>
-#include <OUNITRES.h>
+#include <OTALKMSG.h>
 #include <OTALKRES.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
+#include <ONATIONA.h>
+#include <OFIRMA.h>
+#include <OSPRITE.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
+#include <OTOWNRES.h>
+#include <OTOWN.h>
+#include <OERROR.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
 
 //--------- Begin of function Firm::process_common_ai --------//
 //

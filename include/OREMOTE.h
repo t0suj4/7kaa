@@ -26,16 +26,6 @@
 #endif
 #define _OREMOTE_H_
 
-// #ifndef __WINDOWS_
-// #include <windows.h>
-// #endif
-
-// #ifndef __OWSIPX_H
-// #include <OWSIPX.h>
-// #endif
-
-#include <MPTYPES.h>
-#include <OREMOTEQ.h>
 
 //------ Define connectivity mode -------//
 

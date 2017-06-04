@@ -26,7 +26,6 @@
 #endif
 #define _OU_MONS_H_
 
-#include <OUNIT.h>
 
 enum	{	MONSTER_ACTION_STOP = 0,
 			MONSTER_ACTION_ATTACK,

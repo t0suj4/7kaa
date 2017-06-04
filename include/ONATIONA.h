@@ -26,15 +26,12 @@
 #endif
 #define _ONATIONA_H_
 
-#include <ODYNARRB.h>
-
-#include <ONATION.h>
-
 //---- at least wait for 1 year after a nation is deleted before setting up a new nation. ---//
 
 #define NEW_NATION_INTERVAL_DAYS		365
 
 struct NewNationPara;
+class Nation;
 
 //---------- Define class NationArray -----------//
 

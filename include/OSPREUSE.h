@@ -27,10 +27,6 @@
 #endif
 #define _OSPREUSE_H_
 
-#include <OSPATH.h>
-
-#include <ALL.h>
-
 //---------- Define constants ------------//
 enum{	REUSE_PATH_INITIAL=1,			// 0 is used for other searching call with no path reuse, or for error checking
 		REUSE_PATH_FIRST_SEEK,
@@ -47,6 +43,7 @@ enum{	GENERAL_GROUP_MOVEMENT = 1,	// 0 is used for error checking
 #define RNA_RESET_AMOUNT	10
 
 //---------- Define class SeekPathReuse -----------//
+class ResultNode;
 class SeekPathReuse
 {
 	public:

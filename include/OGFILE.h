@@ -26,12 +26,6 @@
 #endif
 #define _OGFILE_H_
 
-#include <OFILE.h>
-
-#include <ODYNARR.h>
-
-#include <ONATION.h>
-
 
 //------------ Define constant for game version == 1xx -----------------//
 #define	VERSION_1_MAX_RACE						7

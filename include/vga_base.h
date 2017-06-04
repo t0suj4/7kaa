@@ -27,7 +27,6 @@
 #endif
 #define _VGA_BASE_H_
 
-#include <OVGABUF.h>
 #include <COLOR.h>
 
 //----------- define constants ----------//
@@ -51,7 +50,7 @@
 #define get_bitmap_height(bitmapPtr) (*((short*)bitmapPtr+1))
 
 //-------- Define class Vga ----------------//
-
+class VgaBuf;
 class VgaBase
 {
 public:
@@ -72,8 +71,8 @@ public:
 	virtual void   free_custom_palette() =0;
 	virtual void   adjust_brightness(int changeValue) =0;
 
-	void use_front() { use_back_buf=0; active_buf = &vga_front; }
-	void use_back()  { use_back_buf=1; active_buf = &vga_back;  }
+	void use_front();
+	void use_back();
 
 	virtual void handle_messages() =0;
 	virtual void flag_redraw() =0;

@@ -25,10 +25,13 @@
 // Frank Jan Sorensen Alias:Frank Patxi (fjs@lab.jt.dk) for the
 // fireroutine.
 
+#include <win32_compat.h>
 #include <OFLAME.h>
+#include <IMGFUN.h>
 #include <OVGABUF.h>
 #include <ALL.h>
 #include <COLCODE.h>
+#include <OERROR.h>
 
 
 //-------------- Begin Function Flame::Flame ----------//

@@ -22,6 +22,6 @@
 #endif
 #define _FILE_UTIL_H_
 
-#include <OFILE.h>
+class File;
 
 bool seek(File *file, long off, int whence);

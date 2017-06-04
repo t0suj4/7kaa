@@ -23,20 +23,36 @@
 
 #include <string.h>
 
+#include <win32_compat.h>
 #include <ALL.h>
+#include <GAMEDEF.h>
 #include <IMGFUN.h>
+#include <vga_base.h>
 #include <OVGA.h>
 #include <vga_util.h>
 #include <OSTR.h>
 #include <OSYS.h>
+#include <OFILE.h>
 #include <ORES.h>
+#include <ODYNARR.h>
 #include <OINFO.h>
 #include <OGAME.h>
 #include <OMOUSE.h>
+#include <ORAWRES.h>
+#include <OTALKMSG.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
 #include <ONATION.h>
-#include <OGAME.h>
 #include <OHELP.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
 #include <OFONT.h>
+#include <OERROR.h>
+#include <ODYNARRB.h>
+#include <ONATIONA.h>
+#include <OVGABUF.h>
 
 //--------------------------------------------------------//
 // A font resource file is composed of three parts :

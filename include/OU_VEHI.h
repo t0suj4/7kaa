@@ -26,7 +26,6 @@
 #endif
 #define _OU_VEHI_H_
 
-#include <OUNIT.h>
 
 //----------- Define class UnitVehicle -----------//
 

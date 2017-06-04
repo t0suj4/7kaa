@@ -24,7 +24,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include <win32_compat.h>
 #include <OSTR.h>
+#include <misc_uuid.h>
 #include <OMISC.h>
 #include <ODATE.h>
 #include "gettext.h"

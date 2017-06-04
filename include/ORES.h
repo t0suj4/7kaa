@@ -26,8 +26,6 @@
 #endif
 #define _ORES_H_
 
-#include <OFILE.h>
-
 //--------- Define class Resource ----------//
 
 class Resource : public File

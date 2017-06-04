@@ -22,8 +22,6 @@
 #endif
 #define _MEM_INPUT_STREAM_H_
 
-#include <input_stream.h>
-
 class MemInputStream: public InputStream
 {
 private:

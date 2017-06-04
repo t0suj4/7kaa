@@ -26,7 +26,6 @@
 #endif
 #define _OFILE_H_
 
-#include <win32_compat.h>
 #include <stdio.h>
 #include <stdint.h>
 

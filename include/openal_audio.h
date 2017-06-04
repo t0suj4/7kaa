@@ -30,9 +30,9 @@
 #include OPENAL_ALC_H
 
 #include <audio_base.h>
-#include <audio_stream.h>
-#include <input_stream.h>
 
+class AudioStream;
+class InputStream;
 class OpenALAudio: public AudioBase
 {
 private:

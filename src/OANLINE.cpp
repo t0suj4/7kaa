@@ -23,9 +23,11 @@
 // Onwership   : Gilbert
 
 #include <OANLINE.h>
+#include <win32_compat.h>
+#include <IMGFUN.h>
 #include <OVGABUF.h>
-#include <ALL.h>
 #include <math.h>
+#include <OERROR.h>
 
 // ----------- Define color table
 unsigned char AnimLine::init_color_code[ANIMCOLOR_PERIOD][ANIMLINE_PERIOD] =

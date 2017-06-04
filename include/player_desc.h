@@ -27,9 +27,6 @@
 #endif
 #define _PLAYER_DESC_H_
 
-#include <MPTYPES.h>
-#include <enet/enet.h>
-
 class PlayerDesc
 {
 public:

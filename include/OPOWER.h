@@ -26,7 +26,6 @@
 #endif
 #define _OPOWER_H_
 
-#include <ALL.h>
 
 //-------- Define command id. -----------//
 

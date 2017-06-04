@@ -21,28 +21,53 @@
 //Filename    : OFIRM.CPP
 //Description : Object Firm
 
+#include <ALL.h>
 #include <string.h>
+#include <vga_base.h>
 #include <OVGA.h>
+#include <win32_compat.h>
+#include <OFILE.h>
 #include <ODATE.h>
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
 #include <OMLINK.h>
+#include <OINFO.h>
+#include <OFIRMID.h>
+#include <ORESDB.h>
+#include <GAMEDEF.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OUNITRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
 #include <OWORLD.h>
 #include <OPOWER.h>
 #include <OCONFIG.h>
 #include <OGAME.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
 #include <ONEWS.h>
 #include <OSYS.h>
 #include <OSPY.h>
 #include <OSITE.h>
-#include <OINFO.h>
-#include <ONEWS.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
 #include <OFIRM.h>
 #include <ORACERES.h>
+#include <OTOWNRES.h>
 #include <OTOWN.h>
-#include <OSPRITE.h>
 #include <OFIRMRES.h>
 #include <OF_MARK.h>
+#include <OVQUEUE.h>
+#include <OREMOTEQ.h>
 #include <OREMOTE.h>
 #include <OF_CAMP.h>
 #include <OF_HARB.h>
@@ -51,8 +76,13 @@
 // ###### begin Gilbert 2/10 ######//
 #include <OFIRMDIE.h>
 // ###### end Gilbert 2/10 ######//
-#include <OUNITRES.h>
 #include "gettext.h"
+#include <OERROR.h>
+#include <ONATIONA.h>
+#include <OFIRMA.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <OSTR.h>
 
 
 //---------- define static member vars -------------//

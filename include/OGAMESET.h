@@ -26,10 +26,6 @@
 #endif
 #define _OGAMESET_H_
 
-#include <ORESX.h>
-
-#include <ODB.h>
-
 //-------- Define struct SetRec ---------//
 
 struct SetRec

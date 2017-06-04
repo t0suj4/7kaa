@@ -28,8 +28,6 @@
 #endif
 #define _OHILLRES_H_
 
-#include <ORESDB.h>
-
 //---------- Define constant -------//
 enum
 {

@@ -24,6 +24,10 @@
 #include <OCOLTBL.h>
 #include <ALL.h>
 #include <math.h>
+#include <cstring>
+#include <OERROR.h>
+#include <win32_compat.h>
+#include <OFILE.h>
 
 // ---------- define const -----------//
 

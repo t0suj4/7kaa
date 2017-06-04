@@ -21,11 +21,41 @@
 //Filename   : OAI_UNIT.CPP
 //Description: AI - unit related functions
 
-#include <ALL.h>
+#include <win32_compat.h>
+#include <OFILE.h>
+#include <GAMEDEF.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <ODYNARR.h>
+#include <OUNITRES.h>
+#include <OWORLDMT.h>
+#include <OWORLD.h>
+#include <ODYNARRB.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
+#include <OINFO.h>
+#include <OFIRM.h>
 #include <OF_INN.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <OTOWNRES.h>
 #include <OTOWN.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
+#include <OERROR.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <OFIRMA.h>
+#include <OFIRMRES.h>
 
 
 //-------- Begin of function Nation::get_skilled_unit -------//

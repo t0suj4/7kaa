@@ -22,8 +22,7 @@
 #endif
 #define _FILE_INPUT_STREAM_H_
 
-#include <OFILE.h>
-#include <input_stream.h>
+class File;
 
 class FileInputStream: public InputStream
 {

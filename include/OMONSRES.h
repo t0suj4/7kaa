@@ -26,7 +26,6 @@
 #endif
 #define _OMONSRES_H_
 
-#include <ORESDB.h>
 
 //----------- Define constant ------------//
 

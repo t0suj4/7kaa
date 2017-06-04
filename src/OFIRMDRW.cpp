@@ -21,21 +21,55 @@
 //Filename    : OFIRMDRW.CPP
 //Description : Firm drawing routines
 
+#include <ALL.h>
 #include <COLCODE.h>
+#include <win32_compat.h>
+#include <OFILE.h>
 #include <OSYS.h>
+#include <vga_base.h>
 #include <OVGA.h>
-#include <ONATION.h>
-#include <OSPRITE.h>
-#include <OINFO.h>
+#include <ORES.h>
+#include <ODYNARR.h>
 #include <ORAWRES.h>
+#include <OTALKMSG.h>
+#include <OINFO.h>
+#include <GAMEDEF.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
+#include <ONATION.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
 #include <OPOWER.h>
 #include <OGAME.h>
 #include <OANLINE.h>
+#include <ORESX.h>
 #include <OIMGRES.h>
-#include <OWORLD.h>
+#include <OFIRM.h>
 #include <OF_BASE.h>
-#include <OSE.h>
+#include <OVOLUME.h>
+#include <OVQUEUE.h>
+#include <OREMOTEQ.h>
 #include <OREMOTE.h>
+#include <openal_audio.h>
+#include <OSE.h>
+#include <OFIRMDIE.h>
+#include <OFIRMRES.h>
+#include <OFIRMA.h>
+#include <OERROR.h>
+#include <IMGFUN.h>
+#include <OVGABUF.h>
+#include <ONATIONA.h>
+#include <OTOWNRES.h>
+#include <OTOWN.h>
 
 //------- define static vars -------//
 

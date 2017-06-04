@@ -26,11 +26,6 @@
 #endif
 #define _ONATIONB_H_
 
-#include <OINFO.h>
-
-#include <ORAWRES.h>
-
-#include <OTALKMSG.h>
 
 //---------- Define constant -----------//
 

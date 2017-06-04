@@ -26,7 +26,6 @@
 #endif
 #define _OSCROLL_H_
 
-#include <ALL.h>
 
 //--------- Define class ScrollBar --------//
 

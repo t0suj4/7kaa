@@ -26,8 +26,6 @@
 #endif
 #define _OFIRMA_H_
 
-#include <ODYNARRB.h>
-
 //--------- Define class FirmArray ----------//
 
 class Firm;

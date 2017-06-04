@@ -26,9 +26,6 @@
 #endif
 #define _OMATRIX_H_
 
-#include <OUNITRES.h>
-
-#include <OREGION.h>
 
 //----- Define bit meanings Location::flag ------//
 #define 	LOCATE_WALK_LAND			0x01
@@ -267,17 +264,18 @@ public:
 	//----- functions whose results affected by mobile_type -----//
 
 	//int   is_blocked(int mobileType)    { return mobileType==UNIT_AIR ? air_cargo_recno : cargo_recno; }     // return 1 or 0 (although both are the same)
-	int   unit_recno(int mobileType)    { return mobileType==UNIT_AIR ? air_cargo_recno : cargo_recno; }     // return the exact cargo recno
+	int   unit_recno(int mobileType);
 
 	int   has_unit(int mobileType);
-	int	has_any_unit(int mobileType = UNIT_LAND);
+	int   has_any_unit();
+	int	has_any_unit(int mobileType);
 	int 	get_any_unit(int& mobileType);
 	int   is_accessible(int mobileType);      // whether the location is accessible to the unit of the specific mobile type
 
 	int   is_unit_group_accessible(int mobileType, DWORD curGroupId);
 
 	//int   can_move(int mobileType)      { return is_accessible(mobileType) && cargo_recno==0; }
-	int   can_move(int mobileType)      { return is_accessible(mobileType) && (mobileType==UNIT_AIR ? !air_cargo_recno : !cargo_recno); }
+	int   can_move(int mobileType);
 
 	//### begin alex 24/6 ###//
 	//------------ power --------------//
@@ -349,25 +347,3 @@ protected:
 
 //--------- Define inline functions ----------//
 
-//-------- Begin of function Location::is_accessible --------//
-
-inline int Location::is_accessible(int mobileType)
-{
-	switch(mobileType)
-	{
-		case UNIT_LAND:
-			return walkable();
-			break;
-
-		case UNIT_SEA:
-			return sailable();
-			break;
-
-		case UNIT_AIR:
-			return 1;
-			break;
-	}
-
-	return 0;
-}
-//-------- End of function Location::is_accessible --------//

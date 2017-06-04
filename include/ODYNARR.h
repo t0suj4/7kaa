@@ -26,8 +26,6 @@
 #endif
 #define _ODYNARR_H_
 
-#include <ALL.h>
-
 #include <string.h>
 
 
@@ -43,6 +41,7 @@ enum { SORT_INT=1,
 		 SORT_CHAR_PTR,
 		 SORT_CHAR_STR };
 
+class File;
 
 //-------- BEGIN OF CLASS DynArrary ---------//
 
@@ -125,172 +124,3 @@ public :
 //--------- END OF CLASS DynArray ---------//
 
 
-//--------- BEGIN OF FUNCTION DynArray::get -----------//
-//
-// Return : the memory pointer to the body_buf of current element
-//          NULL if the record no. is invalid.
-//
-inline void* DynArray::get()
-{
-   if( cur_pos == 0 )
-      return NULL;
-
-   return (void*) (body_buf+(cur_pos-1)*ele_size);
-}
-
-inline void* DynArray::get(int specRec)
-{
-   if( specRec<1 || specRec>last_ele )
-      return NULL;
-
-   return (void*) (body_buf+(specRec-1)*ele_size);
-}
-
-//--------- END OF FUNCTION DynArray::get -----------//
-
-
-//--------- BEGIN OF FUNCTION DynArray::get_ptr -----------//
-//
-// The content of the entry is a pointer, return the content
-// is a pointer
-//
-// Return : the pointer
-//          NULL if the record no. is invalid.
-
-inline void* DynArray::get_ptr() const
-{
-   if( cur_pos == 0 )
-      return NULL;
-
-   return (void*) *((char**)(body_buf+(cur_pos-1)*ele_size));
-}
-
-inline void* DynArray::get_ptr(int specRec) const
-{
-   if( specRec < 1 || specRec > last_ele )
-      return NULL;
-
-   return (void*) *((char**)(body_buf+(specRec-1)*ele_size));
-}
-
-//--------- END OF FUNCTION DynArray::get_ptr -----------//
-
-
-//--------- BEGIN OF FUNCTION DynArray::read -----------//
-//
-// Read current record into the given buffer
-//
-inline void DynArray::read(void* ent)
-{
-   if( ent )
-      memcpy(ent, get(), ele_size );
-}
-//---------- END OF FUNCTION DynArray::read -----------//
-
-
-
-//--------- BEGIN OF FUNCTIONO DynArray::push,pop -----------//
-
-// <void*> ent = the address of the entity to be linked into the array
-
-inline void DynArray::push(void* ent)
-{
-   linkin(ent);
-}
-
-// [void*] ent = the address of the entity to be overwritten by current element
-
-inline void DynArray::pop(void* ent)
-{
-   end();
-   read(ent);
-   linkout();
-}
-
-//----------- END OF FUNCTION DynArray::push,pop ----------//
-
-
-//-------- BEGIN OF FUNCTIONO DynArray::start,end,fwd,bkwd -------------//
-//
-inline void DynArray::start()
-{
-   cur_pos = MIN(1,last_ele);
-}
-
-inline void DynArray::end()
-{
-   cur_pos = last_ele;
-}
-
-inline int DynArray::fwd()
-{
-   if (cur_pos < last_ele )
-   {
-      cur_pos++;
-      return 1;
-   }
-   else
-      return 0;
-}
-
-inline int DynArray::bkwd()
-{
-   if (cur_pos > 1)
-   {
-      cur_pos--;
-      return 1;
-   }
-   else
-      return 0;
-}
-
-//---------- END OF FUNCTION DynArray::start,end,fwd,bkwd ---------//
-
-
-//--------- BEGIN OF FUNCTION DynArray::jump,go,pos,size ----------//
-
-
-inline void DynArray::jump(int step)
-{
-   cur_pos+=step;
-
-   if ( cur_pos < 0 )
-      cur_pos = MIN(1,last_ele) ;
-
-   if ( cur_pos > last_ele )
-      cur_pos = last_ele;
-}
-
-
-inline void DynArray::go(int desPos)
-{
-   if ( desPos >= 1 && desPos <= last_ele )
-      cur_pos = desPos;
-}
-
-inline int DynArray::recno()
-{
-   return cur_pos;
-}
-
-inline int DynArray::size() const
-{
-   return last_ele;
-}
-
-//----------- END OF FUNCTION DynArray::jump,go,pos,size ---------//
-
-
-//-------- BEGIN OF FUNCTION DynArray::isstart,isend ------//
-
-inline int DynArray::is_start()
-{
-   return( cur_pos <= 1 );
-}
-
-inline int DynArray::is_end()
-{
-   return( cur_pos >= last_ele );
-}
-
-//-------- END OF FUNCTION DynArray::isstart,isend --------//

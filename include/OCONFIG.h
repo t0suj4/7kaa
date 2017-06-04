@@ -26,8 +26,6 @@
 #endif
 #define _OCONFIG_H_
 
-#include <OFILE.h>
-
 //------------- Define constant -------------//
 
 enum { OPTION_NONE=0, OPTION_LOW, OPTION_MODERATE, OPTION_HIGH, OPTION_VERY_HIGH };
@@ -46,7 +44,7 @@ enum { SMALL_STARTUP_RESOURCE  = 4000,
 		 VERY_LARGE_STARTUP_RESOURCE = 20000 };
 
 //---------- Define class Config -----------//
-
+class File;
 #pragma pack(1)
 class Config
 {

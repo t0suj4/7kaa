@@ -26,8 +26,6 @@
 #endif
 #define _OBUTTON_H_
 
-#include <OVGABUF.h>
-
 //------- Define constant ---------//
 
 enum  { BUTTON_TEXT=1, BUTTON_BITMAP, BUTTON_UDF };

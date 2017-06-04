@@ -21,9 +21,23 @@
 //Filename    : OF_BASE2.CPP
 //Description : Firm Base - part 2, the AI functions
 
+#include <GAMEDEF.h>
+#include <win32_compat.h>
+#include <OFILE.h>
+#include <ORES.h>
+#include <ODYNARR.h>
+#include <ORAWRES.h>
+#include <OTALKMSG.h>
+#include <OINFO.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
 #include <ONATION.h>
-#include <OTOWN.h>
+#include <OFIRM.h>
 #include <OF_BASE.h>
+#include <ODYNARRB.h>
+#include <ONATIONA.h>
 
 //--------- Begin of function FirmBase::process_ai ---------//
 

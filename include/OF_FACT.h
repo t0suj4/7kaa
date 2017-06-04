@@ -26,7 +26,6 @@
 #endif
 #define _OF_FACT_H_
 
-#include <OFIRM.h>
 
 //------- Define class FirmFactory --------//
 

@@ -27,7 +27,6 @@
 #endif
 #define _OB_FLAME_H_
 
-#include <OBULLET.h>
 
 // cur_action of BulletFlame is SPRITE_STOP before die
 

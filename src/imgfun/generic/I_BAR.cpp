@@ -24,8 +24,8 @@
  */
 
 
-#include <ALL.h>
 #include <IMGFUN.h>
+#include <cstring>
 
 
 //--------- BEGIN OF FUNCTION IMGbar -----------//

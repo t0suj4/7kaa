@@ -26,11 +26,6 @@
 #endif
 #define _OTALKRES_H_
 
-#include <OSTR.h>
-
-#include <ODYNARRB.h>
-
-#include <OTALKMSG.h>
 
 //-------- define constant ----------//
 

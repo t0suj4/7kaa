@@ -22,12 +22,43 @@
 //Description: AI - building firms
 
 #include <ALL.h>
-#include <OUNIT.h>
-#include <OF_CAMP.h>
-#include <OREGIONS.h>
+#include <OBUTTON.h>
+#include <OBOX.h>
+#include <win32_compat.h>
+#include <OFILE.h>
+#include <OSYS.h>
 #include <OCONFIG.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
+#include <ORESDB.h>
+#include <GAMEDEF.h>
+#include <OSPRTRES.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OUNITRES.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
+#include <OFIRM.h>
+#include <OF_CAMP.h>
 #include <OSITE.h>
+#include <OTALKMSG.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
+#include <OTOWNRES.h>
+#include <OTOWN.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <OFIRMA.h>
 
 
 //--------- Begin of function Nation::think_build_firm --------//

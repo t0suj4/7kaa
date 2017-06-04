@@ -27,11 +27,6 @@
 #endif
 #define _ONATION_H_
 
-#include <ONATIONB.h>
-
-#include <OUNIT.h>
-
-#include <OTOWN.h>
 
 //--------- define parameters ----------//
 
@@ -624,7 +619,5 @@ public:
 	int			read_file(File* filePtr);
 };
 #pragma pack()
-
-#include <ONATIONA.h>
 
 //-------------------------------------//

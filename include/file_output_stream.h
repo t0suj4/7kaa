@@ -22,8 +22,9 @@
 #endif
 #define _FILE_OUTPUT_STREAM_H_
 
-#include <OFILE.h>
 #include <output_stream.h>
+
+class File;
 
 class FileOutputStream: public OutputStream
 {

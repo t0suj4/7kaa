@@ -22,9 +22,25 @@
 //Description: AI - think about expanding the military force
 
 #include <ALL.h>
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OTOWNRES.h>
+#include <ORES.h>
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
+#include <ORAWRES.h>
 #include <OTOWN.h>
+#include <OUNITRES.h>
+#include <OINFO.h>
+#include <OFIRM.h>
 #include <OF_CAMP.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
 #include <ONATION.h>
+#include <OFIRMA.h>
 
 //--------- Begin of function Nation::think_military --------//
 

@@ -21,28 +21,62 @@
 //Filename    : OFIRMIF.CPP
 //Description : Firm interface routines
 
+#include <win32_compat.h>
 #include <OSTR.h>
 #include <KEY.h>
+#include <vga_base.h>
 #include <OVGA.h>
 #include <vga_util.h>
 #include <OHELP.h>
 #include <OMOUSE.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
 #include <OFONT.h>
 #include <OBUTT3D.h>
 #include <OBUTTON.h>
 #include <OSLIDER.h>
-#include <ONATION.h>
+#include <OFILE.h>
+#include <ORES.h>
+#include <ODYNARR.h>
+#include <ORAWRES.h>
+#include <GAMEDEF.h>
+#include <OTALKMSG.h>
 #include <OINFO.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
+#include <ONATION.h>
 #include <ORACERES.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
 #include <OSPY.h>
+#include <OTOWNRES.h>
 #include <OTOWN.h>
-#include <OWORLD.h>
 #include <OFIRM.h>
+#include <OVQUEUE.h>
+#include <OREMOTEQ.h>
 #include <OREMOTE.h>
+#include <ORESX.h>
 #include <OIMGRES.h>
 #include <OGAME.h>
 #include <OSYS.h>
+#include <IMGFUN.h>
+#include <OVGABUF.h>
+#include <ONATIONA.h>
+#include <OFIRMRES.h>
+#include <ALL.h>
 #include "gettext.h"
 
 //---------- Define static variables ------------//

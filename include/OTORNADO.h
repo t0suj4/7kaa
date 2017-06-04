@@ -27,15 +27,6 @@
 #endif
 #define _OTORNADO_H_
 
-#include <OSPRITE.h>
-
-//#ifndef __OUNIT_H
-//#include <OUNIT.h>
-//#endif
-
-//#ifndef __OFIRM_H
-//#include <OFIRM.h>
-//#endif
 
 //--------- Define constant -----------//
 

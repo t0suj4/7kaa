@@ -21,11 +21,39 @@
 //Filename   : OAI_MAR2.CPP
 //Description: AI functions for processing AI marine actions
 
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <ORES.h>
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
+#include <ORAWRES.h>
+#include <OTOWNRES.h>
 #include <OTOWN.h>
+#include <OFIRMID.h>
 #include <OREGIONS.h>
+#include <OINFO.h>
+#include <OSPRTRES.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <OUNITRES.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
+#include <OU_CARA.h>
 #include <OU_MARI.h>
+#include <OFIRM.h>
 #include <OF_HARB.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
+#include <OERROR.h>
+#include <OFIRMA.h>
 
 //-------- Begin of function Nation::ai_sea_travel -------//
 //

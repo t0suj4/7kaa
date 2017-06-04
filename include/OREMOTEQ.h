@@ -27,7 +27,6 @@
 #endif
 #define _OREMOTEQ_H_
 
-#include <OVQUEUE.h>
 #include <stdint.h>
 
 struct RemoteMsg;

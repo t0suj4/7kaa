@@ -21,19 +21,49 @@
 //Filename   : OAI_MAIN.CPP
 //Description: AI - main functions
 
+#include <ALL.h>
+#include <win32_compat.h>
+#include <OFILE.h>
 #include <OSYS.h>
+#include <OTALKMSG.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <GAMEDEF.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
 #include <ONATION.h>
-#include <OWORLD.h>
 #include <OGAME.h>
+#include <OSPRTRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
 #include <OSPY.h>
 #include <OCONFIG.h>
-#include <OUNIT.h>
 #include <OFIRM.h>
+#include <OTOWNRES.h>
 #include <OTOWN.h>
 #include <OTALKRES.h>
 #include <OF_MINE.h>
-#include <OINFO.h>
+#include <OVQUEUE.h>
+#include <OSTR.h>
 #include <OLOG.h>
+#include <OERROR.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <ONATIONA.h>
+#include <OFIRMA.h>
 
 //--------- Begin of function Nation::Nation --------//
 

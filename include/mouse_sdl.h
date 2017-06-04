@@ -27,7 +27,6 @@
 #endif
 #define _MOUSE_SDL_H_
 
-#include <win32_compat.h>
 
 //-------- Define macro constant --------//
 //

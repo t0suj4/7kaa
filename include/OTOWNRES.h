@@ -26,10 +26,6 @@
 #endif
 #define _OTOWNRES_H_
 
-#include <ALL.h>
-
-#include <ORESDB.h>
-
 #include <OTOWNREC.h>
 
 //--------- define game constants --------//

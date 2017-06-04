@@ -29,8 +29,6 @@
 #define _OTOWNNETWORK_H_
 
 #include <vector>
-#include <ODYNARRB.h>
-
 
 
 // TownNetwork, a collection of town_recno's, which are all in the same network

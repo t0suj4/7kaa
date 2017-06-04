@@ -27,7 +27,6 @@
 #endif
 #define _OROCK_H_
 
-#include <ODYNARRB.h>
 
 // --------- define class Rock -----------//
 

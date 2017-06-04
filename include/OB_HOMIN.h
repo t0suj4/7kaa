@@ -26,7 +26,6 @@
 #endif
 #define _OB_HOMIN_H_
 
-#include <OBULLET.h>
 
 #pragma pack(1)
 class BulletHoming : public Bullet

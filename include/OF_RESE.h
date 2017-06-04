@@ -26,8 +26,6 @@
 #endif
 #define _OF_RESE_H_
 
-#include <OFIRM.h>
-
 
 //------- Define class FirmResearch --------//
 

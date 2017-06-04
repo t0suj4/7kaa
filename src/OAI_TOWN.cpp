@@ -22,10 +22,35 @@
 //Description: AI - processing town
 
 #include <ALL.h>
-#include <OUNIT.h>
-#include <OF_INN.h>
-#include <OTOWN.h>
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OFIRMID.h>
 #include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <ODYNARR.h>
+#include <OUNITRES.h>
+#include <OWORLDMT.h>
+#include <OWORLD.h>
+#include <ODYNARRB.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
+#include <OINFO.h>
+#include <OFIRM.h>
+#include <OF_INN.h>
+#include <OTOWNRES.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <OTOWN.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
 
 

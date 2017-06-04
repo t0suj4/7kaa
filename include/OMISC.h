@@ -27,7 +27,6 @@
 #define _OMISC_H_
 
 #include <stdint.h>
-#include <misc_uuid.h>
 
 //-------- Define macro constant ---------//
 

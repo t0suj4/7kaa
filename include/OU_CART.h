@@ -26,7 +26,6 @@
 #endif
 #define _OU_CART_H_
 
-#include <OUNIT.h>
 
 #pragma pack(1)
 class UnitExpCart : public Unit

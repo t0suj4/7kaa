@@ -26,7 +26,6 @@
 #endif
 #define _OIMGRES_H_
 
-#include <ORESX.h>
 
 //----------------------------------------//
 

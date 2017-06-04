@@ -21,10 +21,31 @@
 //Filename   : OAI_DIPL.CPP
 //Description: AI functions on diplomacy
 
+#include <ALL.h>
+#include <win32_compat.h>
+#include <OTALKMSG.h>
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
 #include <OTALKRES.h>
 #include <OCONFIG.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESX.h>
 #include <OTECHRES.h>
+#include <OINFO.h>
+#include <ORES.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ORAWRES.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
 #include <ONATION.h>
+#include <ONATIONA.h>
+#include <OERROR.h>
+#include <OTOWNRES.h>
+#include <OTOWN.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
 
 
 //----- Begin of function Nation::think_diplomacy -----//

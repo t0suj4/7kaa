@@ -21,13 +21,44 @@
 //Filename    : OF_CAMP2.CPP
 //Description : Firm Military Camp - AI functions
 
-#include <ONATION.h>
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <ODYNARR.h>
 #include <OINFO.h>
+#include <OFILE.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <OTALKMSG.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
+#include <ONATION.h>
 #include <OCONFIG.h>
+#include <OTOWNRES.h>
+#include <ODYNARRB.h>
 #include <OTOWN.h>
-#include <OSPY.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
+#include <OFIRM.h>
 #include <OF_CAMP.h>
+#include <ONATIONA.h>
+#include <OERROR.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <OFIRMA.h>
+#include <ALL.h>
+#include <OSPY.h>
 
 //--------- Begin of function FirmCamp::init_derived ---------//
 

@@ -26,7 +26,6 @@
 #endif
 #define _OF_WAR_H_
 
-#include <OFIRM.h>
 
 //-------- Define constant ---------//
 

@@ -26,7 +26,6 @@
 #endif
 #define _OREGIONS_H_
 
-#include <OFIRMID.h>
 
 //-------- Define constant ---------//
 

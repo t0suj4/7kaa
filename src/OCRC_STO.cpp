@@ -21,17 +21,48 @@
 // Filename    : OCRC_STO.H
 // Description : store of crc of objects
 
+#include <win32_compat.h>
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
+#include <GAMEDEF.h>
 #include <ONATIONA.h>
+#include <OFILE.h>
+#include <OINFO.h>
+#include <OFIRMID.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OUNITRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
 #include <OFIRMA.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <OTOWNRES.h>
 #include <OTOWN.h>
 #include <OBULLET.h>
 #include <OREBEL.h>
 #include <OSPY.h>
+#include <OTALKMSG.h>
 #include <OTALKRES.h>
+#include <OVQUEUE.h>
+#include <OREMOTEQ.h>
 #include <OREMOTE.h>
+#include <OSTR.h>
 #include <OCRC_STO.h>
 #include <CRC.h>
+#include <ONATIONB.h>
+#include <ONATION.h>
+#include <OFIRM.h>
+#include <OERROR.h>
 
 CrcStore::CrcStore() :
 	nations(0), units(0), firms(0), towns(0), bullets(0), rebels(0), spies(0), talk_msgs(0)

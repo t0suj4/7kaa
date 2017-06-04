@@ -26,9 +26,6 @@
 #endif
 #define _OF_MINE_H_
 
-#include <OFIRM.h>
-
-#include <ORAWRES.h>
 
 //-------- define constant ---------//
 

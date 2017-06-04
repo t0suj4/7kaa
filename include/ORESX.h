@@ -28,8 +28,6 @@
 
 #include <stdint.h>
 
-#include <ALL.h>
-
 //--------- Define structure ResIndex ----------//
 
 #pragma pack(1)

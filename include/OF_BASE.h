@@ -26,11 +26,6 @@
 #endif
 #define _OF_BASE_H_
 
-#include <OUNIT.h>
-
-#include <OSKILL.h>
-
-#include <OFIRM.h>
 
 //------- Define constant -----------//
 

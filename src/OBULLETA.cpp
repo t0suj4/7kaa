@@ -22,14 +22,42 @@
 //Description : Object Bullet Array
 //Owner		  : Alex
 
+#include <ALL.h>
+#include <vga_base.h>
 #include <OVGA.h>
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
+#include <OFIRMID.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OUNITRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
 #include <OBULLET.h>
-#include <OWORLD.h>
+#include <OTOWNRES.h>
+#include <ORES.h>
+#include <ORAWRES.h>
 #include <OTOWN.h>
 #include <OB_PROJ.h>
 #include <OB_HOMIN.h>
 #include <OB_FLAME.h>
+#include <OERROR.h>
+#include <OFIRM.h>
+#include <OFIRMRES.h>
+#include <OFIRMA.h>
 
 
 //--------- Begin of function BulletArray::BulletArray ---------//

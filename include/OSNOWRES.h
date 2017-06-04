@@ -27,7 +27,6 @@
 #endif
 #define _OSNOWRES_H_
 
-#include <ORESDB.h>
 
 // ----------- Define struct SnowRec --------- //
 //

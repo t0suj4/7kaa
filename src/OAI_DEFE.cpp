@@ -22,8 +22,34 @@
 //Description: AI on defense
 
 #include <ALL.h>
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <ODYNARR.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <OWORLD.h>
+#include <OSPRTRES.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
+#include <OTALKMSG.h>
 #include <OTALKRES.h>
+#include <OINFO.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
+#include <ONATIONA.h>
+#include <OERROR.h>
 
 //----- Begin of function Nation::ai_defend -----//
 //

@@ -26,9 +26,6 @@
 #endif
 #define _OSITE_H_
 
-#include <ODYNARRB.h>
-
-#include <ORAWRES.h>
 
 //-------- Define Site Type --------//
 

@@ -22,9 +22,33 @@
 //Description: AI economy functions
 
 #include <ALL.h>
+#include <win32_compat.h>
+#include <ODYNARR.h>
+#include <OFILE.h>
+#include <OINFO.h>
+#include <ORESDB.h>
+#include <GAMEDEF.h>
+#include <OSPRTRES.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OUNITRES.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
-#include <OFIRMALL.h>
+#include <OFIRM.h>
+#include <OTALKMSG.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
+#include <OFIRMA.h>
 
 
 //--------- Begin of function Nation::think_reduce_expense --------//

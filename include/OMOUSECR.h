@@ -26,11 +26,6 @@
 #endif
 #define _OMOUSECR_H_
 
-#include <ALL.h>
-
-#include <OVGA.h>
-
-#include <ORESDB.h>
 
 //------------ Define cursor id. ----------//
 

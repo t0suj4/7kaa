@@ -29,9 +29,6 @@
 #define _OROCKRES_H_
 
 
-#include <GAMEDEF.h>
-#include <ORESDB.h>
-
 // ----------- Define constant ----------//
 #define ROCK_BLOCKING_TYPE 'R'
 #define DIRT_NON_BLOCKING_TYPE 'D'

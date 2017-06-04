@@ -27,9 +27,6 @@
 #endif
 #define _OSE_H_
 
-#include <OAUDIO.h>
-#include <ORESX.h>
-#include <OVOLUME.h>
 
 // ------ Define sound effect no. ------//
 // note : wave file should be less than 64k in size, otherwise

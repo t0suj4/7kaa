@@ -23,7 +23,25 @@
 
 // note : Effect and effect_array are not saved
 
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
+#include <OFIRMID.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OUNITRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
 #include <OEFFECT.h>
+#include <OERROR.h>
 
 // ------- Begin of function Effect::Effect -------//
 Effect::Effect() : Sprite()

@@ -27,11 +27,6 @@
 #endif
 #define _OBULLET_H_
 
-#include <OSPRITE.h>
-
-#include <OUNIT.h>
-
-#include <OFIRM.h>
 
 //------ define the parent type ------//
 enum	{	BULLET_BY_UNIT = 1,
@@ -41,6 +36,7 @@ enum	{	BULLET_BY_UNIT = 1,
 //----------- Define class Bullet -----------//
 
 class Unit;
+class File;
 
 #pragma pack(1)
 class Bullet : public Sprite
@@ -87,6 +83,8 @@ public:
 #pragma pack()
 
 //------- Define class BulletArray ---------//
+
+class Firm;
 
 class BulletArray : public SpriteArray
 {

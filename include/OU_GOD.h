@@ -26,9 +26,6 @@
 #endif
 #define _OU_GOD_H_
 
-#include <OUNIT.h>
-
-#include <OFIRM.h>
 
 //----------- Define class God -----------//
 

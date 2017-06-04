@@ -26,12 +26,6 @@
 #endif
 #define _OFIRMRES_H_
 
-#include <GAMEDEF.h>
-
-#include <OFIRM.h>
-
-#include <ORESDB.h>
-
 //------- Define constant ----------//
 
 #define MAX_FIRM_FRAME			11		// Maximum frames for firm animation

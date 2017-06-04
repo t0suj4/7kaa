@@ -26,9 +26,6 @@
 #endif
 #define _ORAWRES_H_
 
-#include <ORES.h>
-
-#include <ODYNARR.h>
 
 //------------- define constant --------------//
 

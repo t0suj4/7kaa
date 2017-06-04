@@ -27,7 +27,6 @@
 #endif
 #define _OPLANT_H_
 
-#include <ORESDB.h>
 
 //------------- Define climate zone ------------//
 

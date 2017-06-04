@@ -41,7 +41,17 @@ namespace
 {
    int window_pitch;
 }  // namespace
+void VgaBase::use_front()
+{
+   use_back_buf=0;
+   active_buf = &vga_front;
+} 
 
+void VgaBase::use_back()
+{
+   use_back_buf=1;
+   active_buf = &vga_back;
+}
 //-------- Begin of function VgaSDL::VgaSDL ----------//
 
 VgaSDL::VgaSDL()

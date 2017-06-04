@@ -26,9 +26,6 @@
 #endif
 #define _OWORLDMT_H_
 
-#include <OMATRIX.h>
-
-#include <ODYNARR.h>
 
 //-------- World matrix size ------------//
 

@@ -21,9 +21,14 @@
 //Filename    : ODYNARRB.CPP
 //Description : Object Dynamic Array Version B
 
-#include <OINFO.h>
+#include <ALL.h>
+#include <ODYNARR.h>
 #include <ODYNARRB.h>
+#include <win32_compat.h>
+#include <OINFO.h>
 #include <dbglog.h>
+#include <OFILE.h>
+#include <input_stream.h>
 #include <file_io_visitor.h>
 
 using namespace FileIOVisitor;

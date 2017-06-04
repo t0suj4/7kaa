@@ -22,12 +22,26 @@
 // Filename    : multiplayer.cpp
 // Description : Multiplayer game support.
 
+// header dependencies
+#include <MPTYPES.h>
+#include <enet/enet.h>
+#include <player_desc.h>
+#include <win32_compat.h>
+#include <OFILE.h>
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
+#include <stdint.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <GAMEDEF.h>
+//---------------------------
+
 #include <multiplayer.h>
-#include <ALL.h>
 #include <version.h>
 #include <string.h>
 #include <stdint.h>
 #include <dbglog.h>
+#include <cassert>
 
 DBGLOG_DEFAULT_CHANNEL(MultiPlayer);
 
@@ -321,8 +335,8 @@ int MultiPlayer::open_port(uint16_t port, int fallback)
 {
 	ENetAddress address;
 
-	err_when(!init_flag);
-	err_when(host);
+	assert(init_flag);
+	assert(!host);
 
 	address.host = ENET_HOST_ANY;
 	address.port = port;
@@ -372,7 +386,7 @@ int MultiPlayer::poll_sessions()
 	int ret;
 	int login_failed;
 
-	err_when(!init_flag);
+	assert(init_flag);
 
 	if (session_monitor == ENET_SOCKET_NULL) {
 		return MP_POLL_NO_SOCKET;
@@ -493,7 +507,10 @@ int MultiPlayer::create_session(char *sessionName, char *password, int maxPlayer
 {
 	const char *name;
 
-	err_when(!init_flag || maxPlayers <= 0 || maxPlayers > MAX_NATION || host);
+	assert(init_flag);
+	assert(maxPlayers > 0);
+	assert(maxPlayers <= MAX_NATION);
+	assert(!host);
 
 #ifdef HOST_ANY_PORT
 	if (!open_port(0, 0)) {
@@ -535,7 +552,7 @@ int MultiPlayer::connect_host()
 	ENetPeer *peer;
 	PlayerDesc *game_host;
 
-	err_when(!host);
+	assert(host);
 
 	// If host is not known, we will get it from the service later.
 	if (joined_session.address.host == ENET_HOST_ANY)
@@ -559,7 +576,8 @@ int MultiPlayer::connect_host()
 //
 int MultiPlayer::join_session(SessionDesc *session)
 {
-	err_when(!session || host);
+  	assert(session);
+	assert(!host);
 
 	if (!open_port(0, 0)) {
 		MSG("Unable to open a port for the session.\n");
@@ -580,7 +598,7 @@ int MultiPlayer::close_session()
 	ENetPeer *peer;
 	int count;
 
-	err_when(!host);
+	assert(host);
 
 	joined_session.flags = 0;
 
@@ -706,9 +724,7 @@ int MultiPlayer::add_player(uint32_t playerId, char *name, ENetAddress *address,
 	PlayerDesc *player = NULL;
 	ENetPeer *peer;
 
-	if (playerId == my_player_id) {
-		err_now("add player");
-	}
+	assert(playerId != my_player_id);
 	peer = get_peer(playerId);
 	if (!peer && address->host != ENET_HOST_ANY) {
 		peer = get_peer(address);
@@ -765,8 +781,8 @@ int MultiPlayer::auth_player(uint32_t playerId, char *name, char *password)
 	ENetPeer *peer;
 	PlayerDesc *player;
 
-	err_when(!host);
-	err_when(!(joined_session.flags & SESSION_HOSTING));
+	assert(host);
+	assert(joined_session.flags & SESSION_HOSTING);
 
 	peer = get_peer(playerId);
 	if (!peer || !peer->data) {
@@ -819,7 +835,7 @@ void MultiPlayer::delete_player(uint32_t playerId)
 	ENetPeer *peer;
 	PlayerDesc *player;
 
-	err_when(!host);
+	assert(host);
 
 	player = NULL;
 	peer = get_peer(playerId);
@@ -1007,7 +1023,7 @@ ENetPeer *MultiPlayer::get_peer(uint32_t playerId)
 {
 	ENetPeer *peer;
 
-	err_when(!host);
+	assert(host);
 
 	for (peer = host->peers; peer < &host->peers[host->peerCount]; ++peer) {
 		if (peer->data != NULL) {
@@ -1032,7 +1048,7 @@ ENetPeer *MultiPlayer::get_peer(ENetAddress *address)
 {
 	ENetPeer *peer;
 
-	err_when(!host);
+	assert(host);
 
 	for (peer = host->peers; peer < &host->peers[host->peerCount]; ++peer) {
 		if (cmp_addr(&peer->address, address))
@@ -1081,7 +1097,7 @@ int MultiPlayer::send(uint32_t to, void *data, uint32_t msg_size)
 {
 	ENetPacket *packet;
 
-	err_when(!host);
+	assert(host);
 
 	if (to == my_player_id) {
 		return 0;
@@ -1225,23 +1241,23 @@ void MultiPlayer::send_req_session_addr()
 //
 // The value of from is set to the playerId if the player was found.
 // If a player was not found from is set to 0.
-// Currently, pointers for from and size are always expected.
 char *MultiPlayer::receive(uint32_t *from, uint32_t *size, int *sysMsgCount)
 {
 	int ret;
 	ENetEvent event;
 	PlayerDesc *player;
 	char *got_recv;
-	err_when(!host);
+	assert(from);
+	assert(size);
+	assert(host);
 
 	if (sysMsgCount)
 		*sysMsgCount = 0;
 	*from = 0;
 
 	ret = enet_host_service(host, &event, 0);
-	if (ret < 0) {
-		err_now("enet_host_service");
-	} else if (ret == 0) {
+	assert(ret >= 0);
+	if (ret == 0) {
 		return NULL;
 	}
 
@@ -1316,7 +1332,7 @@ char *MultiPlayer::receive(uint32_t *from, uint32_t *size, int *sysMsgCount)
 		break;
 
 	default:
-		err_now("unhandled enet event");
+		assert(0||"unhandled enet event");
 	}
 
 	return got_recv;
@@ -1351,6 +1367,6 @@ void MultiPlayer::sort_sessions(int sortType)
 		current_sessions.quick_sort(sort_session_name);
 		break;
 	default:
-		err_here();
+		assert(0||"unhandled sortType");
 	}
 }

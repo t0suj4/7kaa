@@ -26,10 +26,6 @@
 #endif
 #define _OGODRES_H_
 
-#include <ONATION.h>
-
-#include <OFILE.h>
-
 //------------ Define god id. -------------//
 
 enum { MAX_GOD=10 };

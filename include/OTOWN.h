@@ -26,15 +26,6 @@
 #endif
 #define _OTOWN_H_
 
-#include <ODYNARRB.h>
-
-#include <OSKILL.h>
-
-#include <OFIRMID.h>
-
-#include <ORAWRES.h>
-
-#include <OTOWNRES.h>
 
 //------- define constant --------//
 

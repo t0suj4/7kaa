@@ -26,10 +26,6 @@
 #endif
 #define _OBOX_H_
 
-#include <ALL.h>
-
-#include <OBUTTON.h>
-
 //------- constant for arrow box ----------//
 
 enum { ARROW_BOX_WIDTH        = 390,
@@ -37,6 +33,8 @@ enum { ARROW_BOX_WIDTH        = 390,
        ARROW_BOX_Y_MARGIN     = 15,
        ARROW_BOX_TITLE_HEIGHT = 20,
        ARROW_BOX_LINE_SPACE   = 4   };
+
+class Button;
 
 //--------- Define class Box ------------//
 
@@ -52,7 +50,7 @@ public:
 public:
    // ready to use one-step call functions
 
-	int  ask(const char*, const char* =NULL, const char* =NULL, int= -1, int= -1);
+	int  ask(const char*, const char* =nullptr, const char* =nullptr, int= -1, int= -1);
 	void msg(const char* msgStr, int enableTimeOut=1, int x1= -1, int y1= -1);
 	void print(char*, ... );
 	void tell(const char*,int= -1, int= -1);
@@ -66,13 +64,13 @@ public:
 
    void calc_size(const char*,int,int= -1, int= -1);
 
-   int  ask_button(const char* =NULL,const char* =NULL,int=1);
-   void ask_button(Button&,Button&,char* =NULL,char* =NULL);
+   int  ask_button(const char* =nullptr,const char* =nullptr,int=1);
+   void ask_button(Button&,Button&,char* =nullptr,char* =nullptr);
    void ok_button(int=1);
 
    // arrow box
 
-   void arrow_box(char*, char* =NULL, int=1);
+   void arrow_box(char*, char* =nullptr, int=1);
    void close_arrow_box();
    void calc_arrow_box(char*, int, int, int=0);
    void calc_arrow_box(int, int, int, int);

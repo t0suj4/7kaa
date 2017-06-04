@@ -27,8 +27,10 @@
 #include <ctype.h>
 #include <string.h>
 #include <dbglog.h>
+#include <win32_compat.h>
 #include <OFILE.h>
 #include <errno.h>
+#include <OERROR.h>
 
 DBGLOG_DEFAULT_CHANNEL(File);
 

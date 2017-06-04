@@ -27,11 +27,6 @@
 #endif
 #define _OSPATH_H_
 
-#include <ALL.h>
-
-#include <OVGA.h>
-
-#include <OWORLD.h>
 
 //---------- Define constants ------------//
 

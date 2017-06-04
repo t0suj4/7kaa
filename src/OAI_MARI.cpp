@@ -21,14 +21,46 @@
 //Filename   : OAI_MARI.CPP
 //Description: AI functions on sea exploration, trading
 
+#include <ALL.h>
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OTOWNRES.h>
+#include <ORES.h>
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
+#include <ORAWRES.h>
 #include <OTOWN.h>
+#include <OFIRMID.h>
 #include <OREGIONS.h>
-#include <OU_MARI.h>
+#include <OSPRTRES.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
 #include <OUNITRES.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
+#include <OU_CARA.h>
+#include <OU_MARI.h>
 #include <OSITE.h>
+#include <OINFO.h>
+#include <OFIRM.h>
 #include <OF_HARB.h>
 #include <OF_CAMP.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
+#include <ONATIONA.h>
+#include <OERROR.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <OFIRMA.h>
+#include <OFIRMRES.h>
 
 //--------- Begin of function Nation::think_marine --------//
 //

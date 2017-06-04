@@ -26,11 +26,6 @@
 #endif
 #define _OWORLD_H_
 
-#include <OWORLDMT.h>
-
-#include <ALL.h>
-
-#include <OUNITRES.h>
 
 //----------- Define constant ------------//
 
@@ -237,41 +232,6 @@ private:
 	void	fill_hill(short x, short y);
 };
 
-//-------- Begin of function World::get_unit_recno -------//
-
-inline short World::get_unit_recno(int xLoc, int yLoc, int mobileType)
-{
-	if( mobileType==UNIT_AIR )
-		return loc_matrix[MAX_WORLD_X_LOC*yLoc+xLoc].air_cargo_recno;
-	else
-		return loc_matrix[MAX_WORLD_X_LOC*yLoc+xLoc].cargo_recno;
-}
-//--------- End of function World::get_unit_recno -------//
-
-
-//-------- Begin of function World::set_unit_recno -------//
-
-inline void World::set_unit_recno(int xLoc,int yLoc, int mobileType, int newCargoRecno)
-{
-	if( mobileType==UNIT_AIR )
-		loc_matrix[MAX_WORLD_X_LOC*yLoc+xLoc].air_cargo_recno = newCargoRecno;
-	else
-		loc_matrix[MAX_WORLD_X_LOC*yLoc+xLoc].cargo_recno = newCargoRecno;
-
-	err_when(mobileType!=UNIT_AIR && loc_matrix[MAX_WORLD_X_LOC*yLoc+xLoc].is_firm());
-}
-//--------- End of function World::set_unit_recno -------//
-
-
-//--------- Begin of function World::distance_rating --------//
-//
-inline int World::distance_rating(int xLoc1, int yLoc1, int xLoc2, int yLoc2)
-{
-	int curDistance = misc.points_distance(xLoc1, yLoc1, xLoc2, yLoc2);
-
-	return 100 - 100 * curDistance / MAX_WORLD_X_LOC;
-}
-//----------- End of function World::distance_rating --------//
 
 
 extern World world;

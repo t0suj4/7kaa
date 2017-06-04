@@ -26,18 +26,6 @@
 #endif
 #define _OUNIT_H_
 
-#include <OSPRITE.h>
-
-#include <OSPATH.h>
-
-#include <OUNITRES.h>
-
-#include <OBUTTON.h>
-
-#include <OSKILL.h>
-
-#include <OSPREUSE.h>
-
 #ifdef NO_DEBUG_UNIT
 #undef DEBUG
 #endif
@@ -190,7 +178,8 @@ struct TeamInfo
 #pragma pack()
 
 //----------- Define class Unit -----------//
-
+class AttackInfo;
+class ResultNode;
 #pragma pack(1)
 class Unit : public Sprite
 {

@@ -21,12 +21,41 @@
 //Filename    : OFIRM2.CPP
 //Description : Class Firm - part 2
 
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
 #include <OFIRM.h>
+#include <OTOWNRES.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <ODYNARRB.h>
 #include <OTOWN.h>
 #include <OSPY.h>
+#include <OTALKMSG.h>
+#include <OFIRMID.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
 #include <ORACERES.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
+#include <OERROR.h>
+#include <OFIRMRES.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
 
 //--------- Begin of function Firm::kill_overseer ---------//
 //

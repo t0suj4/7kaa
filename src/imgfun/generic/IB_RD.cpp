@@ -24,9 +24,9 @@
  */
 
 
-#include <ALL.h>		// for memset()
 #include <IMGFUN.h>
 #include <COLCODE.h>
+#include <cstring>
 
 
 

@@ -24,13 +24,25 @@
 #include <math.h>
 #include <vector>
 #include <cstdlib>
+#include <algorithm>
 
 #include <OVGALOCK.h>
 #include <dbglog.h>
+#include <win32_compat.h>
+#include <OFILE.h>
+#include <input_stream.h>
 #include <file_input_stream.h>
 #include <mem_input_stream.h>
-#include <openal_audio.h>
+#include <audio_stream.h>
 #include <wav_stream.h>
+#include <OVOLUME.h>
+#include <ORESX.h>
+#include <openal_audio.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <GAMEDEF.h>
+
+using namespace std;
 
 #define LWAV_STREAM_BUFSIZ    0x1000
 #define LWAV_BANKS            4
@@ -80,8 +92,8 @@ static inline long ratio_to_millibels(float ratio)
 /* panning is in [-10,000; 10,000] */
 static void set_source_panning(ALuint source, int panning)
 {
-	panning = MAX(panning, -10000);
-	panning = MIN(panning, 10000);
+	panning = max(panning, -10000);
+	panning = min(panning, 10000);
 
 	alSource3f(source, AL_POSITION,
 			PANNING_MAX_X * panning / 10000.f, 0, PANNING_Z);
@@ -90,8 +102,8 @@ static void set_source_panning(ALuint source, int panning)
 /* volume is in [-10,000; 0] */
 static void set_source_volume(ALuint source, int volume_millibels)
 {
-	volume_millibels = MAX(volume_millibels, -10000);
-	volume_millibels = MIN(volume_millibels, 0);
+	volume_millibels = max(volume_millibels, -10000);
+	volume_millibels = min(volume_millibels, 0);
 
 	MSG("set_source_volume(%x, %f)\n",
 		source, millibels_to_ratio(volume_millibels));
@@ -144,7 +156,7 @@ static typename M::key_type unused_key(const M *map)
 	typename M::key_type id;
 
 	id = max_key(map) + 1;
-	id = MAX(id, 1);
+	id = max(id, 1);
 
 	if (map->find(id) == map->end())
 		return id;
@@ -152,7 +164,7 @@ static typename M::key_type unused_key(const M *map)
 	do
 	{
 		id++;
-		id = MAX(id, 1);
+		id = max(id, 1);
 	}
 	while (map->find(id) != map->end());
 
@@ -208,7 +220,7 @@ int OpenALAudio::init_wav()
 	ALCint size;
 	int max_sources;
 
-	std::vector<ALCint> attributes;
+	vector<ALCint> attributes;
 
 	assert(!this->wav_init_flag);
 
@@ -467,7 +479,7 @@ int OpenALAudio::get_free_wav_ch()
 
 	free_count = this->max_normal_sources - this->normal_sources;
 
-	return MAX(free_count, 0);
+	return max(free_count, 0);
 }
 
 // stop a short sound effect started by play_wav or play_resided_wav
@@ -918,8 +930,8 @@ void OpenALAudio::set_wav_volume(int vol)
 
 	MSG("set_wav_volume(%i)\n", vol);
 
-	vol = MAX(vol, 0);
-	vol = MIN(vol, 100);
+	vol = max(vol, 0);
+	vol = min(vol, 100);
 	vol = vol * 100 - 10000;
 	diff = vol - this->wav_volume;
 	gain_mult = millibels_to_ratio(diff);
@@ -1048,7 +1060,7 @@ void OpenALAudio::StreamContext::apply_fading(void *buffer, size_t frames)
 			}
 
 			f += incr;
-			f = MAX(f, 0.f);
+			f = max(f, 0.f);
 		}
 		break;
 
@@ -1061,7 +1073,7 @@ void OpenALAudio::StreamContext::apply_fading(void *buffer, size_t frames)
 				s16buf[n * ch + c] = f * s16buf[n * ch + c] + .5f;
 
 			f += incr;
-			f = MAX(f, 0.f);
+			f = max(f, 0.f);
 		}
 		break;
 
@@ -1071,7 +1083,7 @@ void OpenALAudio::StreamContext::apply_fading(void *buffer, size_t frames)
 	}
 
 	this->fade_frames_played += frames;
-	this->fade_frames_played = MIN(this->fade_frames_played, this->fade_frames);
+	this->fade_frames_played = min(this->fade_frames_played, this->fade_frames);
 }
 
 bool OpenALAudio::StreamContext::stream_data(int new_buffer_count)
@@ -1123,7 +1135,7 @@ bool OpenALAudio::StreamContext::stream_data(int new_buffer_count)
 		}
 
 		size_t space_frames = BUFFER_SIZE / this->stream->frame_size();
-		space_frames = MIN(space_frames, max_frames);
+		space_frames = min(space_frames, max_frames);
 		frames_read = this->stream->read(data_buffer, space_frames);
 
 		if (frames_read == 0)

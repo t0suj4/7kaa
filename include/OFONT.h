@@ -26,10 +26,6 @@
 #endif
 #define _OFONT_H_
 
-#include <ALL.h>
-
-#include <OVGABUF.h>
-
 //------- Define constant ------------//
 
 #define DEFAULT_LINE_SPACE  2   // 2 pixels space between lines

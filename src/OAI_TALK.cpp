@@ -21,11 +21,44 @@
 //Filename   : OAI_TALK.CPP
 //Description: AI routines on diplomacy.
 
+#include <ALL.h>
+#include <win32_compat.h>
 #include <OCONFIG.h>
+#include <OTALKMSG.h>
+#include <ODYNARR.h>
+#include <ODYNARRB.h>
 #include <OTALKRES.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESX.h>
 #include <OTECHRES.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <OINFO.h>
+#include <OFIRM.h>
+#include <ORES.h>
+#include <ORAWRES.h>
 #include <OF_MARK.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
 #include <ONATION.h>
+#include <OERROR.h>
+#include <ONATIONA.h>
+#include <OTOWNRES.h>
+#include <OTOWN.h>
+#include <OFIRMA.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
 
 
 //-------- Declare static functions ---------//

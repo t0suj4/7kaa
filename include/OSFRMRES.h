@@ -26,11 +26,6 @@
 #endif
 #define _OSFRMRES_H_
 
-#include <ALL.h>
-
-#include <OSPRTRES.h>
-
-
 //-------- Define struct SpriteFrameRec ----------//
 
 struct SpriteFrameRec

@@ -21,13 +21,27 @@
 //Filename    : OCONFIG.CPP
 //Description : Config Object
 
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
 #include <OSYS.h>
 #include <OHELP.h>
-#include <ONATION.h>
+#include <OTALKMSG.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
+#include <ORES.h>
+#include <ORESDB.h>
+#include <ORAWRES.h>
 #include <OUNITRES.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
+#include <ONATION.h>
 #include <OFIRMRES.h>
 #include <OCONFIG.h>
 #include <dbglog.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <OERROR.h>
 #include "gettext.h"
 
 DBGLOG_DEFAULT_CHANNEL(Config);

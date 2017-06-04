@@ -24,8 +24,8 @@
  */
 
 
-#include <ALL.h>
 #include <IMGFUN.h>
+#include <cstring>
 
 #define BLACK 0
 #define FIXED_WIDTH 32

@@ -26,7 +26,6 @@
 #endif
 #define _OB_PROJ_H_
 
-#include <OBULLET.h>
 
 #pragma pack(1)
 class Projectile : public Bullet

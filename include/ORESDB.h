@@ -26,7 +26,6 @@
 #endif
 #define _ORESDB_H_
 
-#include <OFILE.h>
 
 //--------- Define class ResourceDb ----------//
 

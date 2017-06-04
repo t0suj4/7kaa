@@ -426,6 +426,16 @@ void Location::walkable_reset()
 }
 // ----------- End of function Location::walkable_reset -------//
 
+int Location::unit_recno(int mobileType)
+{
+  return mobileType==UNIT_AIR ? air_cargo_recno : cargo_recno;
+}     // return the exact cargo recno
+
+int Location::can_move(int mobileType)
+{
+  return is_accessible(mobileType) &&
+    (mobileType==UNIT_AIR ? !air_cargo_recno : !cargo_recno);
+}
 
 // ----------- Begin of function Location::is_plateau ---------//
 int Location::is_plateau()
@@ -861,6 +871,10 @@ int Location::has_unit(int mobileType)
 }
 //-------- End of function Location::has_unit --------//
 
+int Location::has_any_unit()
+{
+	return has_any_unit(UNIT_LAND);
+}
 
 //-------- Begin of function Location::has_any_unit --------//
 // <int> mobileType - (default: UNIT_LAND)
@@ -968,4 +982,28 @@ int Location::is_power_off()
 	return (loc_flag & LOCATE_POWER_OFF);
 }
 //-------- End of function Location::is_power_off --------//
+
+
+//-------- Begin of function Location::is_accessible --------//
+
+int Location::is_accessible(int mobileType)
+{
+	switch(mobileType)
+	{
+		case UNIT_LAND:
+			return walkable();
+			break;
+
+		case UNIT_SEA:
+			return sailable();
+			break;
+
+		case UNIT_AIR:
+			return 1;
+			break;
+	}
+
+	return 0;
+}
+//-------- End of function Location::is_accessible --------//
 //#### end alex 24/6 ####//

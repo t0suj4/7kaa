@@ -26,17 +26,6 @@
 #endif
 #define _OFIRM_H_
 
-#include <GAMEDEF.h>
-
-#include <OFIRMA.h>
-
-#include <OINFO.h>
-
-#include <OFIRMID.h>
-
-#include <OFIRMRES.h>
-
-#include <OSKILL.h>
 
 //----------- Define constant ------------//
 
@@ -130,6 +119,8 @@ class FirmInn;
 class FirmResearch;
 class FirmWar;
 class FirmHarbor;
+
+class File;
 
 //----------- Define class Firm ------------//
 

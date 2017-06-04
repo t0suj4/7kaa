@@ -26,12 +26,6 @@
 #endif
 #define _OSPRITE_H_
 
-#include <ODYNARRB.h>
-
-#include <OSPRTRES.h>
-
-#include <OWORLD.h>
-
 //---------- Define action types ---------//
 
 enum { SPRITE_IDLE=1,
@@ -51,6 +45,7 @@ enum { SPRITE_IDLE=1,
 //---------- Define class Sprite -----------//
 
 #pragma pack(1)
+class SpriteFrame;
 class Sprite
 {
 public:

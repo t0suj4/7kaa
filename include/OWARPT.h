@@ -27,7 +27,6 @@
 #endif
 #define _OWARPT_H_
 
-#include <OWORLDMT.h>
 
 struct WarPoint
 {

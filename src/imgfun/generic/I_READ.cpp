@@ -23,8 +23,8 @@
  * converted to c++
  */
 
-#include <ALL.h>	// for memcpy
 #include <IMGFUN.h>
+#include <cstring>
 
 
 //----------- BEGIN OF FUNCTION IMGread ------------//

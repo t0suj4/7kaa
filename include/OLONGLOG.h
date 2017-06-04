@@ -26,7 +26,6 @@
 #endif
 #define _OLONGLOG_H_
 
-#include <OFILE.h>
 
 class LongLog : public File
 {

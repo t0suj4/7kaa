@@ -26,7 +26,6 @@
 #endif
 #define _OMLINK_H_
 
-#include <ODYNARRB.h>
 
 //--------- Define struct MLinkNode -----------//
 

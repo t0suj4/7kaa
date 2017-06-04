@@ -24,6 +24,8 @@
 #include <string.h>
 
 #include <ALL.h>
+#include <win32_compat.h>
+#include <OFILE.h>
 #include <ODB.h>
 
 

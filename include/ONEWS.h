@@ -27,9 +27,6 @@
 #define _ONEWS_H_
 #include <stdint.h>
 
-#include <OBUTTON.h>
-#include <ODYNARRB.h>
-#include <OVBROWSE.h>
 
 //----- Maximum no. of news ---------//
 

@@ -21,7 +21,25 @@
 // Filename    : OB_FLAME.CPP
 // Description : non-moving bullet attack (flamethrower)
 
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OUNITRES.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <ODYNARR.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OBULLET.h>
 #include <OB_FLAME.h>
+#include <OERROR.h>
 
 
 BulletFlame::BulletFlame() : Bullet()

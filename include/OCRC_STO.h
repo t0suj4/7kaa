@@ -27,8 +27,6 @@
 #endif
 #define _OCRC_STO_H_
 
-#include <OVQUEUE.h>
-#include <OSTR.h>
 
 class CrcStore
 {

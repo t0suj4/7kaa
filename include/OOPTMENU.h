@@ -27,10 +27,6 @@
 #endif
 #define _OOPTMENU_H_
 
-#include <OCONFIG.h>
-#include <OBUTTCUS.h>
-#include <OBUTT3D.h>
-#include <OSLIDCUS.h>
 
 class OptionMenu
 {

@@ -21,12 +21,43 @@
 //Filename   : OAI_GRAN.CPP
 //Description: AI grand plans
 
+#include <win32_compat.h>
 #include <OCONFIG.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <ODYNARR.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OUNITRES.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
+#include <OTALKMSG.h>
 #include <OTALKRES.h>
 #include <ORACERES.h>
-#include <OREGIONS.h>
+#include <OINFO.h>
+#include <OFIRM.h>
 #include <OF_CAMP.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
+#include <ONATIONA.h>
+#include <OTOWNRES.h>
+#include <OTOWN.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <OERROR.h>
+#include <OFIRMA.h>
 
 
 //----- Begin of function Nation::think_grand_plan -----//

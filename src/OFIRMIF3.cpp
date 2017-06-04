@@ -21,20 +21,55 @@
 //Filename    : OFIRMIF3.CPP
 //Description : Firm interface functions - part 3
 
+#include <win32_compat.h>
+#include <vga_base.h>
 #include <OVGA.h>
+#include <GAMEDEF.h>
 #include <vga_util.h>
+#include <misc_uuid.h>
+#include <OFILE.h>
+#include <OMISC.h>
 #include <OFONT.h>
+#include <ODYNARR.h>
 #include <OINFO.h>
 #include <OSYS.h>
 #include <OBUTT3D.h>
 #include <OMOUSE.h>
 #include <ONEWS.h>
+#include <OFIRMID.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OUNITRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
 #include <ORACERES.h>
+#include <OTALKMSG.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
 #include <OSPY.h>
 #include <OFIRM.h>
+#include <OVQUEUE.h>
+#include <OREMOTEQ.h>
 #include <OREMOTE.h>
+#include <OERROR.h>
+#include <ONATIONA.h>
+#include <OSTR.h>
+#include <ALL.h>
+#include <OFIRMA.h>
+#include <IMGFUN.h>
+#include <OVGABUF.h>
 #include "gettext.h"
 
 //---------- Define constant ------------//

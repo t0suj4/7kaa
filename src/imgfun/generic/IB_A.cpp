@@ -24,8 +24,8 @@
  */
 
 
-#include <ALL.h>		// for memcpy
 #include <IMGFUN.h>
+#include <cstring>
 
 
 

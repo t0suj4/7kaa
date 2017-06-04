@@ -27,11 +27,12 @@
 #define _VGA_SDL_H_
 
 #include <OCOLTBL.h>
-#include <vga_base.h>
 
 #include <SDL.h>
 
 #define VGA_PALETTE_SIZE 256
+
+class VgaBuf;
 
 //-------- Define class VgaSDL ----------------//
 

@@ -24,6 +24,7 @@
 
 #include <OBLOB.h>
 #include <ALL.h>
+#include <cstring>
 
 
 Blob::Blob() : ptr(NULL), size(0)

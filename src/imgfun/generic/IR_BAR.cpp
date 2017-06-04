@@ -24,7 +24,6 @@
  */
 
 
-#include <ALL.h>
 #include <IMGFUN.h>
 
 

@@ -21,26 +21,61 @@
 //Filename    : OFIRMIF2.CPP
 //Description : Firm interface functions - part 2
 
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ODYNARR.h>
 #include <OINFO.h>
+#include <vga_base.h>
 #include <OVGA.h>
 #include <vga_util.h>
 #include <OSYS.h>
+#include <ODYNARRB.h>
 #include <OSPY.h>
 #include <OSTR.h>
 #include <OHELP.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
 #include <OFONT.h>
 #include <OMOUSE.h>
 #include <OVBROWIF.h>
 #include <OGAME.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <OTALKMSG.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
 #include <ONATION.h>
 #include <OBUTT3D.h>
+#include <ORESX.h>
 #include <OIMGRES.h>
-#include <ORAWRES.h>
 #include <ORACERES.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
 #include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
 #include <OFIRM.h>
+#include <OVQUEUE.h>
+#include <OREMOTEQ.h>
 #include <OREMOTE.h>
+#include <OERROR.h>
+#include <ONATIONA.h>
+#include <OFIRMRES.h>
+#include <OFIRMA.h>
+#include <IMGFUN.h>
+#include <OVGABUF.h>
+#include <OTOWNRES.h>
+#include <OTOWN.h>
 #include "gettext.h"
 
 //------------- Define coordinations -----------//

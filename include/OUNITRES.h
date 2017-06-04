@@ -26,10 +26,6 @@
 #endif
 #define _OUNITRES_H_
 
-#include <ALL.h>
-
-#include <ORESDB.h>
-
 #ifdef NO_DEBUG_UNIT
 #undef DEBUG
 #endif

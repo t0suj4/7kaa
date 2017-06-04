@@ -21,8 +21,28 @@
 //Filename    : OBATTLE.CPP
 //Description : Battle Object
 
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
 #include <OSYS.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
+#include <OFIRMID.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OUNITRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
 #include <OWORLD.h>
+#include <ODYNARRB.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
 #include <OPOWER.h>
 #include <OCONFIG.h>
 #include <OSPY.h>
@@ -31,21 +51,35 @@
 #include <OSITE.h>
 #include <ORACERES.h>
 #include <OGODRES.h>
+#include <ORESX.h>
 #include <OTECHRES.h>
-#include <OCONFIG.h>
+#include <OVQUEUE.h>
+#include <OREMOTEQ.h>
 #include <OREMOTE.h>
+#include <OTOWNRES.h>
+#include <ORES.h>
+#include <ORAWRES.h>
 #include <OTOWN.h>
 #include <OFIRM.h>
 #include <ONEWS.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
 #include <OMONSRES.h>
 #include <OWALLRES.h>
-#include <OINFO.h>
 #include <OUNITALL.h>
 #include <OGAME.h>
 #include <OBATTLE.h>
+#include <vga_base.h>
 #include <OMOUSECR.h>
 #include <vga_util.h>
+#include <ONATIONA.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <OERROR.h>
+#include <IMGFUN.h>
+#include <OVGABUF.h>
+#include <OFIRMA.h>
 
 //---------- define static functions -------------//
 

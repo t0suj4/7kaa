@@ -21,13 +21,22 @@
 //Filename    : OBUTT3D.CPP
 //Description : 3D Button Object
 
+#include <win32_compat.h>
+#include <OFILE.h>
 #include <OSYS.h>
+#include <vga_base.h>
 #include <OVGA.h>
 #include <vga_util.h>
 #include <OHELP.h>
 #include <OMOUSE.h>
+#include <ORESX.h>
 #include <OIMGRES.h>
 #include <OBUTT3D.h>
+#include <OERROR.h>
+#include <IMGFUN.h>
+#include <OVGABUF.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
 
 //---------- define static vars ----------//
 

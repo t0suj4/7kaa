@@ -26,13 +26,9 @@
 #endif
 #define _OLOG_H_
 
-#include <OSTR.h>
-#include <OVQUEUE.h>
-
 //#define ENABLE_LOG
 
 #define DEBUG_LOG_GLOBAL 0
-#include <OLOG.h>
 // 1 to force enable debug log of that module, even though DEBUG_LOG_GLOBAL is 0
 // -1 to force disable debug log of that module, even though DEBUG_LOG_GLOBAL is 1
 // 0 to follow DEBUG_LOG_GLOBAL

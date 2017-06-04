@@ -26,9 +26,6 @@
 #endif
 #define _OGAME_H_
 
-#include <ALL.h>
-#include <OCONFIG.h>
-
 //-------- Define game modes -----------//
 
 enum { GAME_PREGAME=1,
@@ -84,6 +81,7 @@ struct ScenInfo
 
 struct Location;
 struct NewNationPara;
+class File;
 
 #pragma pack(1)
 class Game

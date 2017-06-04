@@ -26,8 +26,6 @@
 #endif
 #define _OVGABUF_H_
 
-#include <win32_compat.h>
-#include <IMGFUN.h>
 #include <surface.h>
 
 //-------- Define class VgaBuf ----------------//

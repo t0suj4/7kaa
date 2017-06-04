@@ -26,15 +26,6 @@
 #endif
 #define _ALL_H_
 
-//--------- Include other headers -------//
-
-#include <win32_compat.h>
-#include <OMISC.h>
-#include <OSTR.h>
-#include <OFILE.h>
-#include <GAMEDEF.h>
-#include <OERROR.h>
-
 
 //-------- Define macro functions -------//
 

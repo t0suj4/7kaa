@@ -21,14 +21,43 @@
 //Filename   : OAI_CAP2.CPP
 //Description: AI - capturing AI towns
 
-#include <stdlib.h>
 #include <ALL.h>
+#include <win32_compat.h>
+#include <GAMEDEF.h>
 #include <OGAME.h>
 #include <OCONFIG.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <ODYNARR.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <OWORLD.h>
+#include <OSPRTRES.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
+#include <OINFO.h>
+#include <OFIRM.h>
+#include <ORES.h>
+#include <ORAWRES.h>
 #include <OFIRMALL.h>
+#include <OTALKMSG.h>
 #include <OTALKRES.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
+#include <OTOWNRES.h>
+#include <OTOWN.h>
+#include <ONATIONA.h>
+#include <OERROR.h>
+#include <OFIRMA.h>
+#include <stdlib.h>
 
 //--------- Begin of function Nation::think_capture_new_enemy_town --------//
 //

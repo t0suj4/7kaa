@@ -27,12 +27,6 @@
 #endif
 #define _OREGION_H_
 
-#ifndef DEBUG
-#include <OREGIONS.h>
-#endif
-
-#include <ALL.h>
-
 //---------- define constant ---------//
 
 #define MAX_REGION 	255
@@ -65,6 +59,7 @@ struct RegionInfo
 //------- Define class RegionArray ----------//
 
 class RegionStat;
+class File;
 
 #pragma pack(1)
 class RegionArray

@@ -21,8 +21,31 @@
 // Filename    : OB_HOMIN.H
 // Description : BulletHoming, Homing bullet
 
-#include <OB_HOMIN.h>
+#include <ALL.h>
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OUNITRES.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <ODYNARR.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
 #include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OBULLET.h>
+#include <OB_HOMIN.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
+#include <OERROR.h>
+#include <cstdlib>
 
 
 // --------- define constant --------//

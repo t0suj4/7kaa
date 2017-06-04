@@ -21,18 +21,47 @@
 //Filename    : OFIRMA.CPP
 //Description : Object Firm Array
 
+#include <vga_base.h>
 #include <OVGA.h>
+#include <GAMEDEF.h>
+#include <win32_compat.h>
+#include <OFILE.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
+#include <OFIRMID.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OUNITRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
 #include <OWORLD.h>
 #include <OPOWER.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
 #include <OSYS.h>
 #include <OGAME.h>
+#include <OTOWNRES.h>
 #include <OTOWN.h>
-#include <OINFO.h>
 #include <OFIRMRES.h>
+#include <OFIRM.h>
+#include <OSKILL.h>
 #include <OFIRMALL.h>
 #include <OSERES.h>
+#include <OVQUEUE.h>
+#include <OSTR.h>
 #include <OLOG.h>
+#include <OFIRMA.h>
+#include <ONATIONA.h>
+#include <OERROR.h>
+#include <IMGFUN.h>
+#include <OVGABUF.h>
 
 //### begin alex 22/9 ###//
 #ifdef DEBUG

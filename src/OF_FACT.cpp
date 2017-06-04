@@ -21,25 +21,50 @@
 //Filename    : OF_FACT.CPP
 //Description : Firm Factory
 
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <ODYNARR.h>
 #include <OINFO.h>
+#include <vga_base.h>
 #include <OVGA.h>
 #include <vga_util.h>
 #include <OSTR.h>
-#include <OUNIT.h>
-#include <OGAME.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
 #include <OFONT.h>
-#include <OMOUSE.h>
 #include <OBUTT3D.h>
-#include <ONATION.h>
+#include <OFILE.h>
+#include <ORES.h>
 #include <ORAWRES.h>
-#include <ORACERES.h>
-#include <OTOWNRES.h>
-#include <OWORLD.h>
+#include <OTALKMSG.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
+#include <ONATION.h>
+#include <OFIRM.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
 #include <OF_MINE.h>
 #include <OF_MARK.h>
 #include <OF_FACT.h>
+#include <OVQUEUE.h>
+#include <OREMOTEQ.h>
 #include <OREMOTE.h>
+#include <OSKILL.h>
+#include <ODYNARRB.h>
+#include <OFIRMA.h>
+#include <ORESX.h>
+#include <OAUDIO.h>
+#include <OSERES.h>
+#include <OVOLUME.h>
 #include <OSE.h>
+#include <ALL.h>
+#include <IMGFUN.h>
+#include <OVGABUF.h>
+#include <OERROR.h>
+#include <ONATIONA.h>
 #include "gettext.h"
 
 

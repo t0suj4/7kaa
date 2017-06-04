@@ -26,7 +26,6 @@
 #endif
 #define _OEFFECT_H_
 
-#include <OSPRITE.h>
 
 class Effect : public Sprite
 {

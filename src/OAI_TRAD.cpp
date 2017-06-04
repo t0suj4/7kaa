@@ -21,9 +21,34 @@
 //Filename   : OAI_TRAD.CPP
 //Description: AI - process trading
 
-#include <ALL.h>
+#include <win32_compat.h>
+#include <OFILE.h>
+#include <GAMEDEF.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <ODYNARR.h>
+#include <OUNITRES.h>
+#include <OWORLDMT.h>
+#include <OWORLD.h>
+#include <ODYNARRB.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
+#include <OUNIT.h>
+#include <ORES.h>
+#include <ORAWRES.h>
 #include <OU_CARA.h>
+#include <OINFO.h>
+#include <OFIRM.h>
 #include <OF_MARK.h>
+#include <OTALKMSG.h>
+#include <ONATIONB.h>
 #include <ONATION.h>
 
 //--------- Begin of function Nation::think_trading --------//

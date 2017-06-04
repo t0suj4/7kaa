@@ -28,10 +28,6 @@
 
 #include <stdint.h>
 
-#include <OSKILL.h>
-#include <ODYNARR.h>
-#include <OWORLD.h>
-
 //---------- Define constant ---------//
 
 enum { INFO_REPAINT=10, INFO_UPDATE, INFO_SPECIAL };
@@ -97,6 +93,8 @@ struct TalkMsgDisp
 	int	date;
 	char	is_reply;
 };
+
+class File;
 
 //----------- Define class Info -------------//
 

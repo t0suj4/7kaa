@@ -25,7 +25,10 @@
 
 #include <ALL.h>
 #include <KEY.h>
+#include <win32_compat.h>
+#include <OFILE.h>
 #include <OFILETXT.h>
+#include <OERROR.h>
 
 
 //---- marco function for advancing to next token, bypassing space, ',' and ':' ---//

@@ -26,7 +26,6 @@
 #endif
 #define _OTUTOR_H_
 
-#include <ORESX.h>
 
 //------------ Define constant -----------//
 

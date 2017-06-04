@@ -21,12 +21,45 @@
 //Filename    : OFIRMRES.CPP
 //Description : Firm material resource object
 
+#include <win32_compat.h>
+#include <OFILE.h>
 #include <OSYS.h>
+#include <ODB.h>
+#include <GAMEDEF.h>
+#include <ORESX.h>
 #include <OGAMESET.h>
+#include <ODYNARR.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OUNITRES.h>
+#include <OFIRMID.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
+#include <OWORLDMT.h>
+#include <ODYNARRB.h>
 #include <OWORLD.h>
+#include <OSPRITE.h>
+#include <OSKILL.h>
+#include <OSPATH.h>
+#include <OSPREUSE.h>
 #include <OUNIT.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <OTALKMSG.h>
+#include <OINFO.h>
+#include <ONATIONB.h>
+#include <ONATIONA.h>
 #include <ONATION.h>
 #include <OFIRMRES.h>
+#include <OSTR.h>
+#include <ALL.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
+#include <OERROR.h>
+#include <IMGFUN.h>
+#include <OVGABUF.h>
 #include "gettext.h"
 
 //---------- #define constant ------------//

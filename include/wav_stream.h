@@ -24,9 +24,6 @@
 #endif
 #define _WAV_STREAM_H_
 
-#include <audio_stream.h>
-#include <input_stream.h>
-
 class WavStream: public AudioStream
 {
 private:

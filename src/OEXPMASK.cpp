@@ -24,12 +24,27 @@
 
 
 #include <OEXPMASK.h>
+#include <win32_compat.h>
 #include <OFILE.h>
+#include <GAMEDEF.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
+#include <OFIRMID.h>
+#include <ORESDB.h>
+#include <OSPRTRES.h>
+#include <OSFRMRES.h>
+#include <OUNITRES.h>
+#include <OREGIONS.h>
+#include <OREGION.h>
+#include <OMATRIX.h>
 #include <OWORLDMT.h>
+#include <IMGFUN.h>
 #include <OVGABUF.h>
 #include <OSTR.h>
 #include <OCOLTBL.h>
 #include <OCONFIG.h>
+#include <ALL.h>
+#include <OERROR.h>
 
 // --------- Define Constant ------//
 #define MASK_FILENAME "EXPLMASK.BIN"

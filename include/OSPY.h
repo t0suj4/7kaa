@@ -26,7 +26,6 @@
 #endif
 #define _OSPY_H_
 
-#include <ODYNARRB.h>
 
 //------- define constant -------//
 

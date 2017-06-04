@@ -27,7 +27,6 @@
 #endif
 #define _OTERRAIN_H_
 
-#include <ORESDB.h>
 
 //---------- Define terrain type id. ----------//
 

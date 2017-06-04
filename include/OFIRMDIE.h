@@ -27,8 +27,6 @@
 #endif
 #define _OFIRMDIE_H_
 
-#include <ODYNARRB.h>
-#include <ORESDB.h>
 
 struct FirmBuild;
 struct FirmBitmap;
@@ -60,6 +58,8 @@ private:
 	void	load_build_info();
 	void	load_bitmap_info();
 };
+
+class Firm;
 
 // -------- define class FirmDie --------//
 

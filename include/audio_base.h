@@ -23,9 +23,8 @@
 #endif
 #define _AUDIO_BASE_H_
 
-#include <ORESX.h>
-#include <OVOLUME.h>
 
+class DsVolume;
 class AudioBase
 {
 public:

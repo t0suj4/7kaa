@@ -27,13 +27,6 @@
 #endif
 #define _MULTIPLAYER_H_
 
-#include <MPTYPES.h>
-#include <player_desc.h>
-#include <ODYNARRB.h>
-#include <stdint.h>
-#include <enet/enet.h>
-#include <OMISC.h>
-
 #define MP_SERVICE_PROVIDER_NAME_LEN 64
 #define MP_SESSION_NAME_LEN 64
 #define MP_PASSWORD_LEN 32
@@ -154,7 +147,7 @@ struct SessionDesc
 	guuid_t &session_id() { return id; }
 };
 
-
+class PlayerDesc;
 class MultiPlayer
 {
 private:

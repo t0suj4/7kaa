@@ -21,10 +21,29 @@
 //Filename	 : OAI_MONS.CPP
 //Description: AI functions for dealing with the monsters.
 
+#include <win32_compat.h>
+#include <GAMEDEF.h>
+#include <OFILE.h>
+#include <ORESDB.h>
+#include <OUNITRES.h>
+#include <ODYNARR.h>
+#include <OINFO.h>
+#include <OFIRM.h>
 #include <OF_MONS.h>
+#include <OTALKMSG.h>
+#include <ORES.h>
+#include <ORAWRES.h>
+#include <ONATIONB.h>
+#include <OFIRMID.h>
 #include <ONATION.h>
 #include <OCONFIG.h>
 #include <OMONSRES.h>
+#include <ODYNARRB.h>
+#include <OFIRMA.h>
+#include <OTOWNRES.h>
+#include <OTOWN.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
 
 //--------- Begin of function Nation::think_attack_monster --------//
 

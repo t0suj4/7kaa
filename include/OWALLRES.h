@@ -27,7 +27,6 @@
 #endif
 #define _OWALLRES_H_
 
-#include <ORESDB.h>
 
 //------------ Define constant -------------//
 

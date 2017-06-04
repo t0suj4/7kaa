@@ -26,8 +26,6 @@
 #endif
 #define _ODATE_H_
 
-#include <ALL.h>
-
 class DateInfo
 {
 public:

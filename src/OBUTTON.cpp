@@ -24,13 +24,22 @@
 #include <KEY.h>
 #include <ALL.h>
 #include <OHELP.h>
+#include <misc_uuid.h>
+#include <OMISC.h>
 #include <OFONT.h>
+#include <win32_compat.h>
+#include <OFILE.h>
 #include <OSYS.h>
 #include <OMOUSE.h>
+#include <vga_base.h>
 #include <OVGA.h>
 #include <vga_util.h>
+#include <ORESX.h>
 #include <OIMGRES.h>
 #include <OBUTTON.h>
+#include <OERROR.h>
+#include <IMGFUN.h>
+#include <OVGABUF.h>
 
 //----------- Begin of function Button::Button -----------//
 //

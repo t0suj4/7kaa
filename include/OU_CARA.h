@@ -27,15 +27,6 @@
 #endif
 #define _OU_CARA_H_
 
-#include <ODYNARR.h>
-
-#include <OSPATH.h>
-
-#include <OUNIT.h>
-
-#include <ORAWRES.h>
-
-#include <OF_MARK.h>
 
 //------------- Define constant -----------//
 
@@ -107,6 +98,10 @@ public:
 	void			mp_pick_up_toggle(int pos);
 };
 #pragma pack()
+
+class FirmMarket;
+class MarketGoods;
+class Firm;
 
 //----------- Define class Caravan -----------//
 
